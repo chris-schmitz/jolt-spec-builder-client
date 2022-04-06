@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <JoltBuilder></JoltBuilder>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import JoltBuilder from "@/layouts/JoltBuilder";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    JoltBuilder
   }
 }
 </script>
 
 <style>
+html, body {
+  padding: 0;
+  margin: 0;
+  background: darkgray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
 </style>
