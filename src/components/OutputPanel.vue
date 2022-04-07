@@ -2,7 +2,7 @@
   <div class="output-panel-container">
     <h1>Output Panel</h1>
     <textarea
-        :value="modelValue"
+        :value="JSON.stringify(modelValue, null, 2)"
         @input="$emit('update:modelValue', $event.target.value)"
     />
   </div>

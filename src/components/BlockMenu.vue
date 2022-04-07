@@ -2,12 +2,12 @@
   <div class="block-menu">
     <h1>Block menu</h1>
     <div class="block-container">
-      <div
+      <button
           class="block"
           v-for="block in blocks"
           v-text="block.label"
           v-bind:key="block.type"
-      ></div>
+      ></button>
     </div>
   </div>
 
@@ -26,7 +26,27 @@ export default {
         {
           label: "Default",
           type: "defaultr"
-        }
+        },
+        {
+          label: "Shift",
+          type: "shiftr"
+        },
+        {
+          label: "Sort",
+          type: "sortr"
+        },
+        {
+          label: "Rename Column",
+          type: "renamer"
+        },
+        {
+          label: "Un-nest",
+          type: "unnester"
+        },
+        {
+          label: "Nest",
+          type: "nestr"
+        },
       ]
     }
   }
