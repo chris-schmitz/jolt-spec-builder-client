@@ -2,6 +2,7 @@
   <div class="jolt-builder-layout">
     <div class="header">
       <h1>Jolt Builder</h1>
+      <button @click="submit">submit</button> <!-- todo ripout after adding blur trigger?? -->
     </div>
     <div class="body">
       <div class="left-panel">
@@ -11,8 +12,8 @@
         <spec-panel :spec-blocks="specBlocks"></spec-panel>
       </div>
       <div class="right-panel">
-        <input-panel></input-panel>
-        <output-panel></output-panel>
+        <input-panel v-model="input"></input-panel>
+        <output-panel v-model="output"></output-panel>
       </div>
     </div>
   </div>
@@ -34,42 +35,30 @@ export default {
   },
   data() {
     return {
-      test: "pending...",
+      input: "",
+      output: "",
       specBlocks: [
         {
-          id: 1,
-          label: "Raw Jolt",
-          type: "raw-jolt",
-          document: {
-            "operation": "shift",
-            "spec": {
-              "rating": {
-                "primary": {
-                  "value": "Rating"
-                },
-                "*": {
-                  "value": "SecondaryRatings.&1.Value",
-                  "$": "SecondaryRatings.&.Id"
-                }
+          "operation": "shift",
+          "spec": {
+            "rating": {
+              "primary": {
+                "value": "Rating"
+              },
+              "*": {
+                "value": "SecondaryRatings.&1.Value",
+                "$": "SecondaryRatings.&.Id"
               }
             }
           }
         },
         {
-          id: 2,
-          label: "Raw Jolt",
-          type: "raw-jolt",
-          document: {
-            "operation": "shift",
-            "spec": {
-              "rating": {
-                "primary": {
-                  "value": "Rating"
-                },
-                "*": {
-                  "value": "SecondaryRatings.&1.Value",
-                  "$": "SecondaryRatings.&.Id"
-                }
+          "operation": "default",
+          "spec": {
+            "Range": 5,
+            "SecondaryRatings": {
+              "*": {
+                "Range": 5
               }
             }
           }
@@ -77,11 +66,30 @@ export default {
       ]
     }
   },
+  methods: {
+    async submit() {
+      const input = this.input
+      const spec = JSON.stringify(this.specBlocks)
+      const content = await this._submitSpecAndInput({spec, input})
+      this.output = content
+    },
+    async _submitSpecAndInput(body) {
+      const response = await fetch("http://localhost:8080/transform", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+      })
+      const content = await response.json()
+      return content
+    },
+    updateInput(event) {
+      this.input = event.data
+    }
+  },
   created() {
-    fetch("http://localhost:8080/")
-        .then(response => response.text())
-        // .then(response => response.json())
-        .then(data => this.test = data)
   }
 }
 </script>
@@ -105,7 +113,6 @@ export default {
 }
 
 .body {
-  background: purple;
   display: flex;
   flex: 1;
 }

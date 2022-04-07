@@ -1,14 +1,18 @@
 <template>
   <div class="input-panel-container">
     <h1>Input Panel</h1>
-    <textarea></textarea>
+    <textarea
+        :value="modelValue"
+        @input="$emit('update:modelValue', $event.target.value)"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "InputPanel"
-}
+  name: "InputPanel",
+  props: ["modelValue"],
+};
 </script>
 
 <style scoped>
@@ -22,5 +26,4 @@ export default {
 textarea {
   flex: 1;
 }
-
 </style>

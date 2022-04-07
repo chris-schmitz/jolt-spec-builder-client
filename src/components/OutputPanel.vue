@@ -1,14 +1,18 @@
 <template>
   <div class="output-panel-container">
     <h1>Output Panel</h1>
-    <textarea></textarea>
+    <textarea
+        :value="modelValue"
+        @input="$emit('update:modelValue', $event.target.value)"
+    />
   </div>
 
 </template>
 
 <script>
 export default {
-  name: "OutputPanel"
+  name: "OutputPanel",
+  props: ["modelValue"]
 }
 </script>
 
