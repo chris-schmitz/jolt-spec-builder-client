@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
 .input-panel-container {
-  background: honeydew;
+  /*background: honeydew;*/
   flex: 1;
   display: flex;
   flex-direction: column;

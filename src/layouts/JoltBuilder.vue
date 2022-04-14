@@ -3,13 +3,18 @@
     <div class="header">
       <h1>Jolt Builder</h1>
       <button @click="submit">submit</button> <!-- todo ripout after adding blur trigger?? -->
+      <select v-model="specView">
+        <option value="blocks">Blocks</option>
+        <option value="full">Full Spec</option>
+      </select>
     </div>
     <div class="body">
       <div class="left-panel">
         <block-menu></block-menu>
       </div>
       <div class="center-panel">
-        <spec-panel :spec-blocks="specBlocks"></spec-panel>
+        <spec-panel v-if="specView === 'blocks'"></spec-panel>
+        <full-spec-input v-if="specView === 'full'"></full-spec-input>
       </div>
       <div class="right-panel">
         <input-panel v-model="input"></input-panel>
@@ -24,10 +29,14 @@ import BlockMenu from "@/components/BlockMenu";
 import SpecPanel from "@/components/SpecPanel"
 import InputPanel from "@/components/InputPanel"
 import OutputPanel from "@/components/OutputPanel"
+import sharedState from "@/store/shared-state"
+import FullSpecInput from "@/components/FullSpecInput";
+
 
 export default {
   name: "JoltBuilder",
   components: {
+    FullSpecInput,
     BlockMenu,
     SpecPanel,
     InputPanel,
@@ -37,33 +46,8 @@ export default {
     return {
       input: "",
       output: "",
-      specBlocks: [
-        {
-          "operation": "shift",
-          "spec": {
-            "rating": {
-              "primary": {
-                "value": "Rating"
-              },
-              "*": {
-                "value": "SecondaryRatings.&1.Value",
-                "$": "SecondaryRatings.&.Id"
-              }
-            }
-          }
-        },
-        {
-          "operation": "default",
-          "spec": {
-            "Range": 5,
-            "SecondaryRatings": {
-              "*": {
-                "Range": 5
-              }
-            }
-          }
-        }
-      ]
+      specBlocks: sharedState.specBlocks,
+      specView: 'blocks'
     }
   },
   methods: {
@@ -83,10 +67,8 @@ export default {
         body: JSON.stringify(body)
       })
       const content = await response.json()
+      console.log('updated')
       return content
-    },
-    updateInput(event) {
-      this.input = event.data
     }
   },
   created() {
@@ -97,7 +79,7 @@ export default {
 <style scoped>
 /* TODO ripout */
 .jolt-builder-layout * {
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 
 .jolt-builder-layout {
@@ -108,7 +90,7 @@ export default {
 
 
 .header {
-  background: magenta;
+  /*background: magenta;*/
   /*flex: 0 0 25px;*/
 }
 
@@ -124,13 +106,14 @@ export default {
 }
 
 .left-panel {
-  background: green;
+  /*background: green;*/
   flex: 0 0 150px;
   display: flex;
 }
 
 .center-panel {
   flex: 1;
+  /*background: crimson;*/
 }
 
 .right-panel {

@@ -58,7 +58,7 @@ export default {
   /*flex: 1;*/
   display: flex;
   flex-direction: column;
-  background: orangered;
+  /*background: orangered;*/
   /*justify-content: space-around;*/
 }
 
@@ -66,13 +66,13 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: pink;
+  /*background: pink;*/
   flex: 1;
 }
 
 .block {
-  border: 1px solid red;
-  background: lightblue;
+  /*border: 1px solid red;*/
+  /*background: lightblue;*/
   flex: 0 0 80px;
   margin-top: 10px;
   display: flex;

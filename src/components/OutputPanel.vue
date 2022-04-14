@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 .output-panel-container {
-  background: crimson;
+  /*background: crimson;*/
   flex: 1;
   display: flex;
   flex-direction: column;
