@@ -1,6 +1,9 @@
 <template>
   <!--  TODO replace with a contenteditable div -->
-  <textarea :value="blockContent" @input="updateBlockContent"></textarea>
+  <div>
+    <h2>Raw Operation</h2>
+    <textarea :value="blockContent" @input="updateBlockContent"></textarea>
+  </div>
   <!--  <p v-text="block"></p>-->
 </template>
 

@@ -7,6 +7,7 @@
           v-for="block in blocks"
           v-text="block.label"
           v-bind:key="block.type"
+          @click="insertBlock(block.type)"
       ></button>
     </div>
   </div>
@@ -14,40 +15,61 @@
 </template>
 
 <script>
+import sharedState from "@/store/shared-state.js"
+
 export default {
   name: "BlockMenu",
   data() {
     return {
+      spec: sharedState.specBlocks,
+
+      // * pull out to a class, prob worth switching to typescript at some point
       blocks: [
         {
           label: "Raw Jolt",
-          type: "raw-jolt"
+          type: "raw-jolt",
+          template: {}
         },
         {
           label: "Default",
-          type: "defaultr"
+          type: "defaultr",
+          template: {}
         },
         {
           label: "Shift",
-          type: "shiftr"
+          type: "shiftr",
+          template: {
+            "operation": "shift",
+            "spec": {}
+          }
         },
         {
           label: "Sort",
-          type: "sortr"
+          type: "sortr",
+          template: {}
         },
         {
           label: "Rename Column",
-          type: "renamer"
+          type: "renamer",
+          template: {}
         },
         {
           label: "Un-nest",
-          type: "unnester"
+          type: "unnester",
+          template: {}
         },
         {
           label: "Nest",
-          type: "nestr"
+          type: "nestr",
+          template: {}
         },
       ]
+    }
+  },
+  methods: {
+    insertBlock(type) {
+      const block = this.blocks.filter(b => b.type === type).pop()
+      this.spec.splice(this.spec.length, 0, block.template)
     }
   }
 }

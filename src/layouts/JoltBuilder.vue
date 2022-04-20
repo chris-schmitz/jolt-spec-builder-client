@@ -113,6 +113,7 @@ export default {
 
 .center-panel {
   flex: 1;
+  /*overflow-y: scroll;*/
   /*background: crimson;*/
 }
 

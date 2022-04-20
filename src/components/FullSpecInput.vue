@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <textarea :value="specBlocks" @input="specBlocks = $event.target.value"></textarea>
-    <div>{{ spec }}</div>
+    <div style="background: white">{{ JSON.stringify(spec, null, 2) }}</div>
   </div>
 </template>
 
