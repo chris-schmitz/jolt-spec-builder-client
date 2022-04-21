@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <textarea :value="specBlocks" @input="specBlocks = $event.target.value"></textarea>
-    <div style="background: white">{{ JSON.stringify(spec, null, 2) }}</div>
+    <!--    <div style="background: white">{{ JSON.stringify(spec, null, 2) }}</div>-->
   </div>
 </template>
 
@@ -11,6 +11,8 @@ import sharedState from '@/store/shared-state.js'
 export default {
   name: "FullSpecInput",
   data() {
+    console.log("grabbing shared state")
+    console.log(JSON.stringify(sharedState.specBlocks))
     return {
       spec: sharedState.specBlocks
     }

@@ -1,6 +1,6 @@
 <template>
   <!--  TODO replace with a contenteditable div -->
-  <div>
+  <div class="block-wrapper">
     <h2>Raw Operation</h2>
     <textarea :value="blockContent" @input="updateBlockContent"></textarea>
   </div>
@@ -28,5 +28,14 @@ export default {
 </script>
 
 <style scoped>
+.block-wrapper {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  flex: 1;
+}
 
 </style>

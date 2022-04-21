@@ -3,8 +3,8 @@
   <div class="block-wrapper">
     <h2>Shift</h2>
     <textarea :value="shiftInstructionsString" @input="saveContent"></textarea>
-    <input type="checkbox" id="pass-along" v-model="passAlongOtherContent" @change="togglePassAlong"><label for="pass-along">Pass along other data to next
-    operation</label>
+    <label for="pass-along">Pass along other data to next
+      operation: <input type="checkbox" id="pass-along" v-model="passAlongOtherContent" @change="togglePassAlong"></label>
   </div>
 </template>
 
@@ -35,9 +35,6 @@ export default {
     }
   },
   methods: {
-    updateShiftInstructions(content) {
-      this.shiftInstructions = content
-    },
     togglePassAlong() {
       const operation = this.formatShiftOperation(this.shiftInstructions)
       this.notifyOfBlockUpdate(operation)
@@ -49,11 +46,9 @@ export default {
     formatShiftOperation(shiftInstructions) {
       const operation = {
         "operation": "shift",
+        "blockType": "shift",
+        "passAlong": this.passAlongOtherContent,
         "spec": shiftInstructions
-      }
-
-      if (this.passAlongOtherContent) {
-        operation.spec["@"] = ""
       }
 
       return operation
@@ -67,12 +62,13 @@ export default {
 
 <style scoped>
 textarea {
-  width: 100%;
-  height: 100%;
+  flex: 1;
 }
 
 .block-wrapper {
   height: 200px;
-  width: 90%;
+  /*width: 90%;*/
+  display: flex;
+  flex-direction: column;
 }
 </style>

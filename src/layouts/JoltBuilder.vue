@@ -46,14 +46,14 @@ export default {
     return {
       input: "",
       output: "",
-      specBlocks: sharedState.specBlocks,
+      // specBlocks: sharedState.specBlocks,
       specView: 'blocks'
     }
   },
   methods: {
     async submit() {
       const input = this.input
-      const spec = JSON.stringify(this.specBlocks)
+      const spec = JSON.stringify(sharedState.specBlocks)
       const content = await this._submitSpecAndInput({spec, input})
       this.output = content
     },
