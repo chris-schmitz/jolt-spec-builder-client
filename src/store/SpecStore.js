@@ -43,7 +43,7 @@ function transformSpecToBlocks(spec) {
     })
 }
 
-function transformBlocksToSpec(blocks) {
+export function transformBlocksToSpec(blocks) {
   const spec = blocks
     .map(block => {
       switch (block.renderComponent) {

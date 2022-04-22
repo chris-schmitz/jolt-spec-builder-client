@@ -27,12 +27,11 @@
 
 <script>
 import BlockMenu from "@/components/BlockMenu";
-// import SpecPanel from "@/components/SpecPanel"
 import SpecRenderer from "@/components/SpecRenderer";
 import InputPanel from "@/components/InputPanel"
 import OutputPanel from "@/components/OutputPanel"
-import sharedState from "@/store/shared-state"
 import FullSpecInput from "@/components/FullSpecInput";
+import {transformBlocksToSpec, useSpecStore} from "@/store/SpecStore";
 
 
 export default {
@@ -56,7 +55,7 @@ export default {
   methods: {
     async submit() {
       const input = this.input
-      const spec = JSON.stringify(sharedState.specBlocks)
+      const spec = transformBlocksToSpec(this.store.specBlocks)
       const content = await this._submitSpecAndInput({spec, input})
       this.output = content
     },
@@ -75,6 +74,12 @@ export default {
     }
   },
   created() {
+  },
+  setup() {
+    const store = useSpecStore()
+    return {
+      store,
+    }
   }
 }
 </script>
