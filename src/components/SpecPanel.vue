@@ -12,9 +12,7 @@
         @updateBlock="updateBlock"
         @blockOperationUpdated="updateBlockOperation"
     ></component>
-    {{ test }}
     <hr>
-    {{ specBlocks[0]?.spec }}
   </div>
 
 </template>
@@ -24,13 +22,14 @@ import RawJolt from "@/components/transformation-widgets/RawJolt";
 import ShiftOperation from "@/components/transformation-widgets/ShiftOperation";
 import sharedState from "@/store/shared-state"
 
+
 export default {
   name: "SpecPanel",
   components: {RawJolt, ShiftOperation},
   data() {
     return {
       specBlocks: "",
-      test: sharedState.specBlocks[0]?.spec
+      test: sharedState.specBlocks[0]?.spec,
     }
   },
   methods: {

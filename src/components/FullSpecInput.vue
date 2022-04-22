@@ -1,32 +1,28 @@
 <template>
   <div class="wrapper">
-    <textarea :value="specBlocks" @input="specBlocks = $event.target.value"></textarea>
-    <!--    <div style="background: white">{{ JSON.stringify(spec, null, 2) }}</div>-->
+    <textarea :value="specStore.joltSpec" @input="handleInput"></textarea>
+    <!--    <textarea :value="specBlocks" @input="specBlocks = $event.target.value"></textarea>-->
   </div>
 </template>
 
 <script>
-import sharedState from '@/store/shared-state.js'
+import {useSpecStore} from "@/store/SpecStore";
 
 export default {
   name: "FullSpecInput",
   data() {
-    console.log("grabbing shared state")
-    console.log(JSON.stringify(sharedState.specBlocks))
-    return {
-      spec: sharedState.specBlocks
+  },
+  computed: {},
+  methods: {
+    handleInput(event) {
+      this.specStore.setJoltSpec(event.target.value)
+      this.specStore.updateBlocksFromJoltSpec()
     }
   },
-  computed: {
-    specBlocks: {
-      get() {
-        return JSON.stringify(this.spec, null, 2)
-      },
-      set(value) {
-        // * this feels hacky, but it's the only way I was able to get it to work re: reactivity
-        this.spec.splice(0, this.spec.length, ...JSON.parse(value, null, 2))
-      }
-    }
+  setup() {
+    const specStore = useSpecStore()
+
+    return {specStore}
   }
 }
 </script>

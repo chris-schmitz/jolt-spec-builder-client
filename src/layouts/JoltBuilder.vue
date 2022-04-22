@@ -13,7 +13,8 @@
         <block-menu></block-menu>
       </div>
       <div class="center-panel">
-        <spec-panel v-if="specView === 'blocks'"></spec-panel>
+        <spec-renderer v-if="specView === 'blocks'"></spec-renderer>
+        <!--        <spec-panel v-if="specView === 'blocks'"></spec-panel>-->
         <full-spec-input v-if="specView === 'full'"></full-spec-input>
       </div>
       <div class="right-panel">
@@ -26,7 +27,8 @@
 
 <script>
 import BlockMenu from "@/components/BlockMenu";
-import SpecPanel from "@/components/SpecPanel"
+// import SpecPanel from "@/components/SpecPanel"
+import SpecRenderer from "@/components/SpecRenderer";
 import InputPanel from "@/components/InputPanel"
 import OutputPanel from "@/components/OutputPanel"
 import sharedState from "@/store/shared-state"
@@ -38,7 +40,8 @@ export default {
   components: {
     FullSpecInput,
     BlockMenu,
-    SpecPanel,
+    // SpecPanel,
+    SpecRenderer,
     InputPanel,
     OutputPanel
   },
