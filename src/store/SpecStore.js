@@ -1,31 +1,27 @@
 import {defineStore} from 'pinia'
+import {formatForShiftComponent, formatForShiftJoltOperation} from '@/store/shape-transformations/shift.js'
+import {formatForRawComponent} from "@/store/shape-transformations/raw.js";
 
 export const RenderComponentTypes = {
   "RAW": "raw",
   "SHIFT": "shift"
 }
 
-function formatForRawComponent(operation) {
-  operation.renderComponent = RenderComponentTypes.RAW
-  return operation
+// TODO: consider moving
+// ? does it make sense to leave this logic in here, or would this be better
+// ? placed in a utility file?
+export const determineBlockComponent = (block) => {
+  switch (block.renderComponent) {
+    case 'shift':
+      return 'ShiftOperation'
+    default:
+      return 'RawJolt'
+  }
 }
 
-function formatForShiftComponent(operation) {
-  operation.renderComponent = RenderComponentTypes.SHIFT
-  if ("@" in operation.spec || "@1" in operation.spec) {
-    operation.renderData.passAlong = true
-    delete operation.spec["@"]
-    delete operation.spec["@1"]
-  } else {
-    operation.renderData.passAlong = false
-  }
-  return operation;
-}
 
 function transformSpecToBlocks(spec) {
-  const specJson = JSON.parse(spec, null, 2)
-
-  const blocksArray = specJson
+  return spec
     .map(operation => {
       if (!("renderData" in operation)) {
         operation.renderData = {}
@@ -33,7 +29,7 @@ function transformSpecToBlocks(spec) {
       return operation
     })
     .map(object => {
-      switch (object.renderComponent) {
+      switch (object.renderComponent || object.operation) {
         case "shift":
           return formatForShiftComponent(object)
         case "default":
@@ -47,8 +43,29 @@ function transformSpecToBlocks(spec) {
     })
 }
 
+function transformBlocksToSpec(blocks) {
+  const spec = blocks
+    .map(block => {
+      switch (block.renderComponent) {
+        case "shift":
+          return formatForShiftJoltOperation(block)
+        case "default":
+        case "sort":
+        case "remove":
+        case "cardinality":
+          return block
+        default:
+          return block
+      }
+    })
+    .map(operation => {
+      delete operation.renderData
+      return operation
+    })
+  return JSON.stringify(spec, null, 2)
+}
 
-export const useSpecStore = defineStore('spec', {
+export const useSpecStore = defineStore('Spec Store', {
   state() {
     return {
       joltSpec: "",
@@ -60,11 +77,17 @@ export const useSpecStore = defineStore('spec', {
       this.joltSpec = spec
     },
     updateBlocksFromJoltSpec() {
-      this.specBlocks = JSON.parse(this.joltSpec, null, 2)
+      const spec = JSON.parse(this.joltSpec, null, 2)
+      this.specBlocks = transformSpecToBlocks(spec)
     },
     updateJoltSpecFromBlocks() {
-      this.joltSpec = JSON.stringify(this.specBlocks, null, 2)
+      const spec = transformBlocksToSpec(this.specBlocks)
+      this.joltSpec = spec
     },
+    updateBlock({operation, index}) {
+      this.specBlocks.splice(index, 1, operation)
+    }
+    ,
     addBlock(block, index) {
       const targetIndex = index ? index : this.specBlocks.length
       this.specBlocks.splice(targetIndex, 0, block)

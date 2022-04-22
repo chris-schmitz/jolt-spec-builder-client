@@ -10,18 +10,18 @@ import {useSpecStore} from "@/store/SpecStore";
 
 export default {
   name: "FullSpecInput",
-  data() {
-  },
-  computed: {},
   methods: {
     handleInput(event) {
       this.specStore.setJoltSpec(event.target.value)
-      this.specStore.updateBlocksFromJoltSpec()
+    }
+  },
+  created() {
+    if (this.specStore.specBlocks.length > 0) {
+      this.specStore.updateJoltSpecFromBlocks()
     }
   },
   setup() {
     const specStore = useSpecStore()
-
     return {specStore}
   }
 }

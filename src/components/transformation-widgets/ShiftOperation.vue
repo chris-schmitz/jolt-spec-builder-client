@@ -20,10 +20,7 @@ export default {
   },
   computed: {
     shiftInstructionsString() {
-      const instructionsStripped = this.shiftInstructions
-      delete instructionsStripped["@1"]
-      delete instructionsStripped["@"]
-      return JSON.stringify(instructionsStripped, null, 2)
+      return JSON.stringify(this.shiftInstructions, null, 2)
     }
   },
   watch: {
@@ -31,6 +28,7 @@ export default {
       immediate: true,
       handler(newValue) {
         this.shiftInstructions = newValue.spec
+        this.passAlongOtherContent = newValue.renderData.passAlong
       }
     }
   },
@@ -43,15 +41,20 @@ export default {
       const operation = this.formatShiftOperation(JSON.parse(event.target.value, null, 2))
       this.notifyOfBlockUpdate(operation)
     },
+
+    // TODO: move
+    // * move out to the shift tools, but only once things fit together. Really
+    // * stuff like intruducing typescript may resovle the need to move it, but even still
+    // * it seems like a "group like business logic" move
     formatShiftOperation(shiftInstructions) {
-      const operation = {
+      return {
         "operation": "shift",
-        "blockType": "shift",
-        "passAlong": this.passAlongOtherContent,
+        "renderComponent": "shift",
+        "renderData": {
+          "passAlong": this.passAlongOtherContent,
+        },
         "spec": shiftInstructions
       }
-
-      return operation
     },
     notifyOfBlockUpdate(operation) {
       this.$emit("block-operation-updated", {index: this.index, operation})

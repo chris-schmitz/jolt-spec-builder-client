@@ -1,24 +1,50 @@
 <template>
-  <div>
-    joltSpec
-    {{ store.specBlocks }}
+  <div class="renderer-wrapper">
+    <component
+        v-for="(block,index) in store.specBlocks"
+        v-bind:key="index"
+        :block="block"
+        :index="index"
+        :is="determineBlockComponent(block)"
+        @block-operation-updated="updateBlock"
+    >
+      {{ block }}
+    </component>
   </div>
 </template>
 
 <script>
-import {useSpecStore} from "@/store/SpecStore.js";
+import {determineBlockComponent, useSpecStore} from "@/store/SpecStore.js";
+import ShiftOperation from "@/components/transformation-widgets/ShiftOperation";
+import RawJolt from "@/components/transformation-widgets/RawJolt";
 
 
 export default {
-  name: "SpecPanel",
-  data() {
-    return {}
+  name: "SpecRenderer",
+  components: {
+    ShiftOperation,
+    RawJolt
+  },
+  beforeCreate() {
+    // ? should this be in a lifecycle hook or the composition api hook?
+    if (this.store.joltSpec)
+      this.store.updateBlocksFromJoltSpec()
+  },
+  methods: {
+    updateBlock(event) {
+      this.store.updateBlock(event)
+      //  TODO next steps:
+      //  - format the blocks as a spec in a variable
+      //  - pull the input and fire the API call
+      //  - throw the output in output
+      //  ! DON'T update the jolt spec in the store
+    }
   },
   setup() {
-    console.log(useSpecStore)
     const store = useSpecStore()
     return {
-      store
+      store,
+      determineBlockComponent
     }
   }
 }
