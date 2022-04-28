@@ -1,32 +1,26 @@
 <template>
   <div class="wrapper">
-    <textarea :value="specStore.joltSpec" @input="handleInput"></textarea>
+    <textarea :value="store.joltSpec" @input="handleInput"></textarea>
     <!--    <textarea :value="specBlocks" @input="specBlocks = $event.target.value"></textarea>-->
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import {useSpecStore} from '@/store/SpecStore';
-import {defineComponent} from "vue";
+import {defineComponent, onBeforeMount, onMounted} from "vue";
 
-export default defineComponent({
-  name: 'FullSpecInput',
-  methods: {
-    // TODO: wtf figure out what type we need to use for this STANDARD DOM EVENT!!
-    handleInput(event: any) {
-      this.specStore.setJoltSpec(event.target.value);
-    },
-  },
-  created() {
-    if (this.specStore.specBlocks.length > 0) {
-      this.specStore.updateJoltSpecFromBlocks();
-    }
-  },
-  setup() {
-    const specStore = useSpecStore();
-    return {specStore};
-  },
-});
+const store = useSpecStore()
+
+function handleInput(event: InputEvent) {
+  store.setJoltSpec(event.target.value);
+}
+
+onBeforeMount(() => {
+  if (store.specBlocks.length > 0) {
+    // store.updateBlocksFromJoltSpec()
+    store.updateJoltSpecFromBlocks();
+  }
+})
 </script>
 
 <style scoped>

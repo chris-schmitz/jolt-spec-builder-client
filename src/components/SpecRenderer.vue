@@ -8,45 +8,46 @@
         :is="determineBlockComponent(block)"
         @block-operation-updated="updateBlock"
     >
-      {{ block }}
     </component>
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import {BlockUpdateRequest, determineBlockComponent, useSpecStore} from '@/store/SpecStore';
-import ShiftOperation from '@/components/transformation-widgets/ShiftOperation.vue';
-import RawJolt from '@/components/transformation-widgets/RawJolt.vue';
-import {defineComponent} from "vue";
+import ShiftOperation from "@/components/transformation-widgets/ShiftOperation.vue";
+import RawJolt from "@/components/transformation-widgets/RawJolt.vue";
+import TesterOperation from "@/components/transformation-widgets/TesterOperation.vue"
+import {defineComponent, onBeforeMount} from "vue";
+import {markAsUsed} from "@/util/BuilderUtilities";
 
-export default defineComponent({
-  name: 'SpecRenderer',
-  components: {
-    ShiftOperation,
-    RawJolt,
-  },
-  beforeCreate() {
-    // ? should this be in a lifecycle hook or the composition api hook?
-    if (this.store.joltSpec) this.store.updateBlocksFromJoltSpec();
-  },
-  methods: {
-    updateBlock(event: BlockUpdateRequest) {
-      this.store.updateBlock(event);
-      //  TODO next steps:
-      //  - format the blocks as a spec in a variable
-      //  - pull the input and fire the API call
-      //  - throw the output in output
-      //  ! DON'T update the jolt spec in the store
-    },
-  },
-  setup() {
-    const store = useSpecStore();
-    return {
-      store,
-      determineBlockComponent,
-    };
-  },
-});
+const components = defineComponent("")
+
+const store = useSpecStore();
+
+// TODO: how do we want to organize this?
+// ? now that we're using the composition API we have a lot more freedom re: organizing business logic
+// ? which is great, but how do we want to do it?  What's clean and readable? right now let's just roughly
+// ? group it in file while converting to composition API from option API, but after that, consider how it
+// ? should be organized and what can be extracted from the file
+
+// ^ ==== Store Operations ==== ^ //
+function updateBlocks() {
+  if (store.joltSpec) store.updateBlocksFromJoltSpec();
+}
+
+
+// ^ ==== Block logic ==== ^ //
+function updateBlock(event: BlockUpdateRequest) {
+  store.updateBlock(event);
+  //  TODO next steps:
+  //  - format the blocks as a spec in a variable
+  //  - pull the input and fire the API call
+  //  - throw the output in output
+  //  ! DON'T update the jolt spec in the store
+}
+
+// ^ ==== Life cycle hooks ==== ^ //
+onBeforeMount(updateBlocks)
 </script>
 
 <style scoped>

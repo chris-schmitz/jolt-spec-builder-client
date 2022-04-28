@@ -4,7 +4,7 @@
       <h1>Jolt Builder</h1>
       <button @click="submit">submit</button>
       <!-- todo ripout after adding blur trigger?? -->
-      <select v-model="specView">
+      <select v-model="state.specView">
         <option value="blocks">Blocks</option>
         <option value="full">Full Spec</option>
       </select>
@@ -14,71 +14,98 @@
         <block-menu></block-menu>
       </div>
       <div class="center-panel">
-        <spec-renderer v-if="specView === 'blocks'"></spec-renderer>
-        <!--        <spec-panel v-if="specView === 'blocks'"></spec-panel>-->
-        <full-spec-input v-if="specView === 'full'"></full-spec-input>
+        <spec-renderer v-if="state.specView === 'blocks'"></spec-renderer>
+        <!--        <spec-panel v-if="state.specView === 'blocks'"></spec-panel>-->
+        <full-spec-input v-if="state.specView === 'full'"></full-spec-input>
       </div>
       <div class="right-panel">
-        <input-panel v-model="input"></input-panel>
-        <output-panel v-model="output"></output-panel>
+        <input-panel v-model="state.input"></input-panel>
+        <output-panel v-model="state.output"></output-panel>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import BlockMenu from '@/components/BlockMenu.vue';
 import SpecRenderer from '@/components/SpecRenderer.vue';
 import InputPanel from '@/components/InputPanel.vue';
 import OutputPanel from '@/components/OutputPanel.vue';
 import FullSpecInput from '@/components/FullSpecInput.vue';
-import {transformBlocksToSpec, useSpecStore} from '@/store/SpecStore';
-import {defineComponent, reactive, toRefs} from 'vue'
+import {convertBlocktoSpec, useSpecStore} from '@/store/SpecStore';
+import {defineComponent, reactive, ref, toRefs} from 'vue'
 
+const store = useSpecStore();
+const state = reactive({
 
-export default defineComponent({
-  name: 'JoltBuilder',
-  components: {
-    FullSpecInput,
-    BlockMenu,
-    SpecRenderer,
-    InputPanel,
-    OutputPanel,
-  },
-  setup() {
-    const store = useSpecStore();
-    const state = reactive({
-      input: '',
-      output: '',
-      specView: 'blocks',
-    });
+  input: '',
+  output: '',
+  specView: 'blocks',
+})
 
-    return {...toRefs(state), store}
-  },
-  methods: {
-    async submit() {
-      const input = this.input;
-      const spec = transformBlocksToSpec(this.store.specBlocks);
-      const content = await this._submitSpecAndInput({spec, input});
-      this.output = content;
-      return Promise.resolve()
+async function submit() {
+  const spec = convertBlocktoSpec(store.specBlocks);
+  const content = await _submitSpecAndInput({spec, input: state.input});
+  state.output = content;
+  return Promise.resolve()
+}
+
+// TODO: come back and add type to body
+async function _submitSpecAndInput(body: any) {
+  const response = await fetch('http://localhost:8080/transform', {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
     },
-    // TODO: come back and add type to body
-    async _submitSpecAndInput(body: any) {
-      const response = await fetch('http://localhost:8080/transform', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(body),
-      });
-      const content = await response.json();
-      console.log('updated');
-      return content;
-    },
-  },
-});
+    body: JSON.stringify(body),
+  });
+  return await response.json();
+}
+
+// export default defineComponent({
+//   name: 'JoltBuilder',
+//   components: {
+//     FullSpecInput,
+//     BlockMenu,
+//     SpecRenderer,
+//     InputPanel,
+//     OutputPanel,
+//   },
+//   setup() {
+//     const store = useSpecStore();
+//     const state = reactive({
+//       input: '',
+//       output: '',
+//       specView: 'blocks',
+//     });
+//
+//     return {...toRefs(state), store}
+//   },
+//   methods: {
+//     async submit() {
+//       const input = this.input;
+//       const spec = transformBlocksToSpec(this.store.specBlocks);
+//       const content = await this._submitSpecAndInput({spec, input});
+//       this.output = content;
+//       return Promise.resolve()
+//     },
+//     // TODO: come back and add type to body
+//     async _submitSpecAndInput(body: any) {
+//       const response = await fetch('http://localhost:8080/transform', {
+//         method: 'POST',
+//         headers: {
+//           Accept: 'application/json',
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(body),
+//       });
+//       const content = await response.json();
+//       console.log('updated');
+//       return content;
+//     },
+//   },
+// });
 </script>
 
 <style scoped>

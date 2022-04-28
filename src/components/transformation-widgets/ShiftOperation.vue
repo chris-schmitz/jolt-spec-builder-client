@@ -11,76 +11,68 @@
       <input
           type="checkbox"
           id="pass-along"
-          v-model="passAlongOtherContent"
+          v-model="state.passAlongOtherContent"
           @change="togglePassAlong"
       /></label>
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import {JoltOperation, RenderComponentTypes} from '@/store/SpecStore';
-import {defineComponent, reactive, toRefs} from "vue";
+import {ref, defineProps, computed, watch, defineEmits, reactive} from "vue";
+
+const state = reactive({
+  shiftInstructions: "",
+  passAlongOtherContent: true
+})
+const props = defineProps<{ block: object, index: number }>()
+const shiftInstructionsString = computed(() => JSON.stringify(state.shiftInstructions, null, 2))
 
 
-export default defineComponent({
-  name: 'ShiftOperation',
-  props: ['block', 'index'],
-  setup() {
-    const state = reactive({
-      shiftInstructions: '',
-      passAlongOtherContent: true,
-    })
-    return {...toRefs(state)}
-  },
-  computed: {
-    shiftInstructionsString(): string {
-      return JSON.stringify(this.shiftInstructions, null, 2);
+watch(props.block, (newValue) => {
+      state.shiftInstructions = newValue.spec
+      state.passAlongOtherContent = newValue.renderData.passAlong
     },
-  },
-  watch: {
-    block: {
-      immediate: true,
-      handler(newValue) {
-        this.shiftInstructions = newValue.spec;
-        this.passAlongOtherContent = newValue.renderData.passAlong;
-      },
-    },
-  },
-  methods: {
-    togglePassAlong() {
-      const operation = this.formatShiftOperation(this.shiftInstructions);
-      this.notifyOfBlockUpdate(operation);
-    },
-    // TODO: UUUUGH figure out the type for this DOM event !!!
-    saveContent(event: any) {
-      const operation = this.formatShiftOperation(
-          JSON.parse(event.target.value)
-      );
-      this.notifyOfBlockUpdate(operation);
-    },
+    {immediate: true}
+)
 
-    // TODO: move
-    // * move out to the shift tools, but only once things fit together. Really
-    // * stuff like intruducing typescript may resovle the need to move it, but even still
-    // * it seems like a "group like business logic" move
-    formatShiftOperation(shiftInstructions: any): JoltOperation {
-      return {
-        operation: 'shift',
-        renderComponent: RenderComponentTypes.SHIFT,
-        renderData: {
-          passAlong: this.passAlongOtherContent,
-        },
-        spec: shiftInstructions,
-      };
+function togglePassAlong() {
+  const operation = formatShiftOperation(state.shiftInstructions);
+  notifyOfBlockUpdate(operation);
+}
+
+// TODO: UUUUGH figure out the type for this DOM event !!!
+function saveContent(event: any) {
+  const operation = formatShiftOperation(
+      JSON.parse(event.target.value)
+  )
+  notifyOfBlockUpdate(operation);
+}
+
+// TODO: move
+// * move out to the shift tools, but only once things fit together. Really
+// * stuff like intruducing typescript may resovle the need to move it, but even still
+// * it seems like a "group like business logic" move
+function formatShiftOperation(shiftInstructions: any): JoltOperation {
+  return {
+    operation: 'shift',
+    renderComponent: RenderComponentTypes.SHIFT,
+    renderData: {
+      passAlong: state.passAlongOtherContent,
     },
-    notifyOfBlockUpdate(operation: JoltOperation) {
-      this.$emit('block-operation-updated', {
-        index: this.index,
-        operation,
-      });
-    },
-  },
-});
+    spec: shiftInstructions,
+  };
+}
+
+const emit = defineEmits(['block-operation-updated'])
+
+function notifyOfBlockUpdate(operation: JoltOperation) {
+  emit('block-operation-updated', {
+    index: props.index,
+    operation,
+  });
+}
+
 </script>
 
 <style scoped>

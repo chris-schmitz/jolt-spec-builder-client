@@ -7,30 +7,21 @@
   <!--  <p v-text="block"></p>-->
 </template>
 
-<script>
+<script lang="ts" setup>
 // TODO: add ts language and figure out how to correctly type the computed props
-import {defineComponent} from "vue";
+import {computed, defineProps, defineEmits} from "vue";
 
-export default defineComponent({
-  name: 'RawJolt',
-  props: ['block', 'index'],
-  computed: {
-    blockContent: {
-      get() {
-        return JSON.stringify(this.block, null, 2)
-      },
-    },
-  },
-  methods: {
-    updateBlockContent(event) {
-      // this.blockContent = event.body
-      this.$emit('updateBlock', {
-        data: event.target.value,
-        index: this.index,
-      })
-    },
-  },
-});
+const props = defineProps<{ block: object, index: number }>()
+const blockContent = computed(() => JSON.stringify(props.block, null, 2))
+
+const blockUpdateEmit = defineEmits("updateBlock")
+
+function updateBlockContent(event: InputEvent) {
+  blockUpdateEmit({
+    data: event.target.value,
+    index: this.index,
+  })
+}
 </script>
 
 <style scoped>
