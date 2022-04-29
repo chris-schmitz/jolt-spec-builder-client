@@ -32,8 +32,9 @@ import SpecRenderer from '@/components/SpecRenderer.vue';
 import InputPanel from '@/components/InputPanel.vue';
 import OutputPanel from '@/components/OutputPanel.vue';
 import FullSpecInput from '@/components/FullSpecInput.vue';
-import {convertBlocktoSpec, useSpecStore} from '@/store/SpecStore';
+import {useSpecStore} from '@/store/SpecStore';
 import {defineComponent, reactive, ref, toRefs} from 'vue'
+import {convertBlockToSpec} from "@/domain/ui-block/UiBlockUtilities";
 
 const store = useSpecStore();
 const state = reactive({
@@ -44,7 +45,7 @@ const state = reactive({
 })
 
 async function submit() {
-  const spec = convertBlocktoSpec(store.specBlocks);
+  const spec = convertBlockToSpec(store.specBlocks);
   const content = await _submitSpecAndInput({spec, input: state.input});
   state.output = content;
   return Promise.resolve()

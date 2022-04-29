@@ -15,7 +15,8 @@
 
 <script lang="ts" setup>
 import {reactive} from "vue";
-import {RenderComponentTypes, useSpecStore} from "@/store/SpecStore";
+import {useSpecStore} from "@/store/SpecStore";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 
 const store = useSpecStore()
 
@@ -29,7 +30,7 @@ const state = reactive({
       type: 'raw-jolt',
       template: {
         renderData: {},
-        renderComponent: RenderComponentTypes.RAW,
+        renderComponent: UiBlockTypes.RAW,
       },
     },
     {
@@ -37,7 +38,7 @@ const state = reactive({
       type: 'defaultr',
       template: {
         renderData: {},
-        renderComponent: RenderComponentTypes.RAW,
+        renderComponent: UiBlockTypes.RAW,
       },
     },
     {
@@ -47,7 +48,7 @@ const state = reactive({
         operation: 'shift',
         spec: {
           renderData: {},
-          renderComponent: RenderComponentTypes.RAW,
+          renderComponent: UiBlockTypes.RAW,
         },
       },
     },
@@ -56,7 +57,7 @@ const state = reactive({
       type: 'sortr',
       template: {
         renderData: {},
-        renderComponent: RenderComponentTypes.RAW,
+        renderComponent: UiBlockTypes.RAW,
       },
     },
     {
@@ -64,7 +65,7 @@ const state = reactive({
       type: 'renamer',
       template: {
         renderData: {},
-        renderComponent: RenderComponentTypes.RAW,
+        renderComponent: UiBlockTypes.RAW,
       },
     },
     {
@@ -72,7 +73,7 @@ const state = reactive({
       type: 'unnester',
       template: {
         renderData: {},
-        renderComponent: RenderComponentTypes.RAW,
+        renderComponent: UiBlockTypes.RAW,
       },
     },
     {
@@ -80,7 +81,7 @@ const state = reactive({
       type: 'nestr',
       template: {
         renderData: {},
-        renderComponent: RenderComponentTypes.RAW,
+        renderComponent: UiBlockTypes.RAW,
       },
     },
     {
@@ -88,7 +89,7 @@ const state = reactive({
       type: 'shift',
       template: {
         operation: 'shift',
-        renderComponent: RenderComponentTypes.PARSED_INGREDIENTS,
+        renderComponent: UiBlockTypes.PARSED_INGREDIENTS,
         renderData: {},
         spec: {
           "@": "",

@@ -18,7 +18,7 @@ const blockUpdateEmit = defineEmits("updateBlock")
 
 function updateBlockContent(event: InputEvent) {
   blockUpdateEmit({
-    data: event.target.value,
+    data: event.target.value || "",
     index: this.index,
   })
 }

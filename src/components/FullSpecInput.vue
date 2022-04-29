@@ -12,7 +12,7 @@ import {defineComponent, onBeforeMount, onMounted} from "vue";
 const store = useSpecStore()
 
 function handleInput(event: InputEvent) {
-  store.setJoltSpec(event.target.value);
+  store.setJoltSpec(event.target.value || "");
 }
 
 onBeforeMount(() => {

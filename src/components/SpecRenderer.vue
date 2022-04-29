@@ -13,14 +13,9 @@
 </template>
 
 <script lang="ts" setup>
-import {BlockUpdateRequest, determineBlockComponent, useSpecStore} from '@/store/SpecStore';
-import ShiftOperation from "@/components/transformation-widgets/ShiftOperation.vue";
-import RawJolt from "@/components/transformation-widgets/RawJolt.vue";
-import TesterOperation from "@/components/transformation-widgets/TesterOperation.vue"
-import {defineComponent, onBeforeMount} from "vue";
-import {markAsUsed} from "@/util/BuilderUtilities";
-
-const components = defineComponent("")
+import {useSpecStore} from '@/store/SpecStore';
+import {onBeforeMount} from "vue";
+import {BlockUpdateRequest, determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
 
 const store = useSpecStore();
 

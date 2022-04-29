@@ -18,8 +18,10 @@
 </template>
 
 <script lang="ts" setup>
-import {JoltOperation, RenderComponentTypes} from '@/store/SpecStore';
 import {ref, defineProps, computed, watch, defineEmits, reactive} from "vue";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
+import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 
 const state = reactive({
   shiftInstructions: "",
@@ -29,7 +31,7 @@ const props = defineProps<{ block: object, index: number }>()
 const shiftInstructionsString = computed(() => JSON.stringify(state.shiftInstructions, null, 2))
 
 
-watch(props.block, (newValue) => {
+watch(props.block, (newValue: UIBlockOperation) => {
       state.shiftInstructions = newValue.spec
       state.passAlongOtherContent = newValue.renderData.passAlong
     },
@@ -56,7 +58,7 @@ function saveContent(event: any) {
 function formatShiftOperation(shiftInstructions: any): JoltOperation {
   return {
     operation: 'shift',
-    renderComponent: RenderComponentTypes.SHIFT,
+    renderComponent: UiBlockTypes.SHIFT,
     renderData: {
       passAlong: state.passAlongOtherContent,
     },
