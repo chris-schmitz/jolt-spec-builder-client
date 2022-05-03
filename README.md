@@ -12,6 +12,7 @@ edit. <come back and clarify this explanation>
 
 - [x] translate an existing jolt document into a data structure that can be represented in customizable UI blocks
 - [x] translate the customizable UI blocks back into valid jolt syntax
+- [ ] submit data for transformation on blur of UI components
 - [ ] validate jolt built from UI blocks
 - [ ] create UI blocks that represent each of the stock jolt operations with tools that make understanding and building those blocks easier
 - [ ] allow for reordering of blocks

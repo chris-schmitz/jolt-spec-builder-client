@@ -1,23 +1,24 @@
 <template>
   <div class="wrapper">
-    <textarea :value="store.joltSpec" @input="handleInput"></textarea>
-    <!--    <textarea :value="specBlocks" @input="specBlocks = $event.target.value"></textarea>-->
+    <textarea :value="specListAsString" @change="handleInput"></textarea>
   </div>
 </template>
 
 <script lang="ts" setup>
 import {useSpecStore} from '@/store/SpecStore';
-import {defineComponent, onBeforeMount, onMounted} from "vue";
+import {onBeforeMount, computed} from "vue";
 
 const store = useSpecStore()
 
+const specListAsString = computed(() => JSON.stringify(store.joltSpecList, null, 2))
+
 function handleInput(event: InputEvent) {
-  store.setJoltSpec(event.target.value || "");
+  const specList = JSON.parse((event.target as HTMLTextAreaElement).value)
+  store.setJoltSpec(specList);
 }
 
 onBeforeMount(() => {
-  if (store.specBlocks.length > 0) {
-    // store.updateBlocksFromJoltSpec()
+  if (store.specBlockList.length > 0) {
     store.updateJoltSpecFromBlocks();
   }
 })

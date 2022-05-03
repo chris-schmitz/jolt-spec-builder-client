@@ -2,24 +2,57 @@
   <!--  TODO replace with a contenteditable div -->
   <div class="block-wrapper">
     <h2>Raw Operation</h2>
-    <textarea :value="blockContent" @input="updateBlockContent"></textarea>
+    <textarea :value="state.renderData" @input="updateBlockContent"></textarea>
   </div>
-  <!--  <p v-text="block"></p>-->
 </template>
 
 <script lang="ts" setup>
 // TODO: add ts language and figure out how to correctly type the computed props
-import {computed, defineProps, defineEmits} from "vue";
+import {computed, defineProps, defineEmits, reactive, watch} from "vue";
+import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import {BlockRenderData, BlockUpdateRequest} from "@/domain/ui-block/UiBlockUtilities";
 
-const props = defineProps<{ block: object, index: number }>()
-const blockContent = computed(() => JSON.stringify(props.block, null, 2))
+const state = reactive({
+  renderData: {},
+})
 
-const blockUpdateEmit = defineEmits("updateBlock")
+const props = defineProps<{ block: UIBlockOperation, index: number }>()
+const blockckContent = computed(() => JSON.stringify(props.block, null, 2))
+
+const emit = defineEmits(["block-operation-updated"])
+// const emit = defineEmits<{
+//   (e: 'block-operation-updated', value: BlockUpdateRequest): void
+// }>()
+
+
+let operation: string,
+    spec: object,
+    renderComponent: UiBlockTypes,
+    renderData: BlockRenderData
+
+function formatForRender(block: UIBlockOperation) {
+  const bblock = JSON.parse(JSON.stringify(block));
+  ({operation, spec, renderComponent, renderData} = bblock)
+  return JSON.stringify({operation, spec}, null, 2)
+}
+
+function formatForStorage(blockString: string): UIBlockOperation {
+  const block = JSON.parse(blockString)
+  block.renderComponent = renderComponent
+  block.renderData = renderData
+  return block
+}
+
+watch(() => props.block, (newValue) => {
+  state.renderData = formatForRender(newValue)
+}, {immediate: true})
 
 function updateBlockContent(event: InputEvent) {
-  blockUpdateEmit({
-    data: event.target.value || "",
-    index: this.index,
+  let operation = formatForStorage((event.target as HTMLTextAreaElement).value)
+  emit("block-operation-updated", {
+    operation,
+    index: props.index,
   })
 }
 </script>
@@ -29,6 +62,7 @@ function updateBlockContent(event: InputEvent) {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  height: 200px;
 }
 
 textarea {

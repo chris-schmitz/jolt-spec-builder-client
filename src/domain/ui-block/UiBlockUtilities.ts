@@ -34,7 +34,7 @@ export function determineBlockComponent(block: JoltOperation) {
     }
 }
 
-export function convertBlockToSpec(blocksProxies: JoltOperation[]) {
+export function convertBlockToSpecList(blocksProxies: UIBlockOperation[]) {
     const blocks = JSON.parse(JSON.stringify(blocksProxies))
     const spec = blocks
         .map((block: UIBlockOperation) => {
@@ -50,11 +50,11 @@ export function convertBlockToSpec(blocksProxies: JoltOperation[]) {
                     return block
             }
         })
-    return JSON.stringify(spec, null, 2)
+    return spec
 }
 
 
-export function convertSpecListToBlocks(spec: any) {
+export function convertSpecListToBlocks(spec: JoltOperation[]): UIBlockOperation[] {
     return spec
         .map((object: JoltOperation) => {
             switch (object.renderComponent || object.operation) {
@@ -64,9 +64,9 @@ export function convertSpecListToBlocks(spec: any) {
                 case 'sort':
                 case 'remove':
                 case 'cardinality':
-                    return RawTransformer.formatForRawComponent(object)
+                    return RawTransformer.toUiBlock(object)
                 default:
-                    return RawTransformer.formatForRawComponent(object)
+                    return RawTransformer.toUiBlock(object)
             }
         })
 }

@@ -1,48 +1,48 @@
 import {defineStore} from 'pinia'
-import {BlockUpdateRequest, convertBlockToSpec, convertSpecListToBlocks} from "@/domain/ui-block/UiBlockUtilities";
+import {BlockUpdateRequest, convertBlockToSpecList, convertSpecListToBlocks} from "@/domain/ui-block/UiBlockUtilities";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {joltSpecDocToUiBlock} from "@/domain/jolt-spec/Utilities";
+import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 
 
 interface SpecStoreState {
-    joltSpec: string
-    specBlocks: UIBlockOperation[]
+    input: string,
+    output: string,
+    joltSpecList: JoltOperation[]
+    specBlockList: UIBlockOperation[]
 }
 
 export const useSpecStore = defineStore('Spec Store', {
     state(): SpecStoreState {
         return {
-            joltSpec: '',
-            specBlocks: [],
+            input: "",
+            output: "",
+            joltSpecList: [],
+            specBlockList: [],
         }
     },
     getters: {
-        nextIndex: (state: SpecStoreState) => state.specBlocks.length
+        nextIndex: (state: SpecStoreState) => state.specBlockList.length,
     },
     actions: {
-        // TODO: consider type change
-        // ? should we accept this as a JoltOperation and convert it to a string?
-        // * look at the places where this is being called and see what the type is naturally
-        setJoltSpec(spec: string) {
-            this.joltSpec = spec
+        setJoltSpec(spec: JoltOperation[]) {
+            this.joltSpecList = spec
         },
         updateBlocksFromJoltSpec() {
-            const spec = JSON.parse(this.joltSpec)
-            this.specBlocks = convertSpecListToBlocks(spec)
+            this.specBlockList = convertSpecListToBlocks(this.joltSpecList)
         },
         updateJoltSpecFromBlocks() {
-            const spec = convertBlockToSpec(this.specBlocks)
-            this.joltSpec = spec
+            this.joltSpecList = convertBlockToSpecList(this.specBlockList)
         },
         updateBlock(payload: BlockUpdateRequest) {
-            this.specBlocks.splice(payload.index, 1, payload.operation)
+            this.specBlockList.splice(payload.index, 1, payload.operation)
         },
         addBlock(payload: BlockUpdateRequest) {
             const {index, operation} = payload
             const block = joltSpecDocToUiBlock(operation)
-            const targetIndex = index ? index : this.specBlocks.length
-            this.specBlocks.splice(targetIndex, 0, block)
-        },
+            const targetIndex = index ? index : this.specBlockList.length
+            this.specBlockList.splice(targetIndex, 0, block)
+        }
     },
 })
 

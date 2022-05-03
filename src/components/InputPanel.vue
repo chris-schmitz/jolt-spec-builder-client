@@ -23,5 +23,6 @@ const props = defineProps(["modelValue"])
 
 textarea {
   flex: 1;
+  /*height: 200px;*/
 }
 </style>

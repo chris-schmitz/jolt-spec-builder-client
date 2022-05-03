@@ -4,7 +4,7 @@
     <h2>Shift</h2>
     <textarea
         :value="shiftInstructionsString"
-        @input="saveContent"
+        @blur="saveContent"
     ></textarea>
     <label for="pass-along"
     >Pass along other data to next operation:
@@ -18,22 +18,22 @@
 </template>
 
 <script lang="ts" setup>
-import {ref, defineProps, computed, watch, defineEmits, reactive} from "vue";
+import {defineProps, computed, watch, defineEmits, reactive} from "vue";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 
 const state = reactive({
-  shiftInstructions: "",
+  shiftInstructions: {},
   passAlongOtherContent: true
 })
-const props = defineProps<{ block: object, index: number }>()
+const props = defineProps<{ block: UIBlockOperation, index: number }>()
 const shiftInstructionsString = computed(() => JSON.stringify(state.shiftInstructions, null, 2))
 
 
-watch(props.block, (newValue: UIBlockOperation) => {
+watch(() => props.block, (newValue: UIBlockOperation) => {
       state.shiftInstructions = newValue.spec
-      state.passAlongOtherContent = newValue.renderData.passAlong
+      state.passAlongOtherContent = newValue.renderData.passAlong as boolean
     },
     {immediate: true}
 )
@@ -43,19 +43,35 @@ function togglePassAlong() {
   notifyOfBlockUpdate(operation);
 }
 
-// TODO: UUUUGH figure out the type for this DOM event !!!
-function saveContent(event: any) {
-  const operation = formatShiftOperation(
-      JSON.parse(event.target.value)
-  )
-  notifyOfBlockUpdate(operation);
+function saveContent(event: InputEvent) {
+  console.log("saving content from shift operator")
+  const content = (event.target as HTMLTextAreaElement).value
+
+  if (isValidJson(content)) {
+    const operation = formatShiftOperation(JSON.parse(content))
+    notifyOfBlockUpdate(operation);
+  } else {
+    console.log("bad json")
+    //  TODO: add UI error
+  }
+
+}
+
+// TODO: move out to utility file
+function isValidJson(value: string): boolean {
+  try {
+    JSON.parse(value)
+    return true
+  } catch (error) {
+    return false
+  }
 }
 
 // TODO: move
 // * move out to the shift tools, but only once things fit together. Really
 // * stuff like intruducing typescript may resovle the need to move it, but even still
 // * it seems like a "group like business logic" move
-function formatShiftOperation(shiftInstructions: any): JoltOperation {
+function formatShiftOperation(shiftInstructions: object): UIBlockOperation {
   return {
     operation: 'shift',
     renderComponent: UiBlockTypes.SHIFT,
