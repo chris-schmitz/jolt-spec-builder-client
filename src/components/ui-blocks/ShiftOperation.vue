@@ -5,6 +5,7 @@
     <textarea
         :value="shiftInstructionsString"
         @blur="saveContent"
+        :class="{'bad-format': badFormat}"
     ></textarea>
     <label for="pass-along"
     >Pass along other data to next operation:
@@ -18,15 +19,17 @@
 </template>
 
 <script lang="ts" setup>
-import {defineProps, computed, watch, defineEmits, reactive} from "vue";
+import {defineProps, computed, watch, defineEmits, reactive, ref} from "vue";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 
 const state = reactive({
   shiftInstructions: {},
-  passAlongOtherContent: true
+  passAlongOtherContent: true,
 })
+let badFormat = ref(false)
+
 const props = defineProps<{ block: UIBlockOperation, index: number }>()
 const shiftInstructionsString = computed(() => JSON.stringify(state.shiftInstructions, null, 2))
 
@@ -34,9 +37,19 @@ const shiftInstructionsString = computed(() => JSON.stringify(state.shiftInstruc
 watch(() => props.block, (newValue: UIBlockOperation) => {
       state.shiftInstructions = newValue.spec
       state.passAlongOtherContent = newValue.renderData.passAlong as boolean
+
+      if (isValidJson(JSON.stringify(state.shiftInstructions))) {
+        setBadFormat(false)
+      } else {
+        setBadFormat(true)
+      }
     },
     {immediate: true}
 )
+
+function setBadFormat(value: boolean) {
+  badFormat.value = value
+}
 
 function togglePassAlong() {
   const operation = formatShiftOperation(state.shiftInstructions);
@@ -44,15 +57,14 @@ function togglePassAlong() {
 }
 
 function saveContent(event: InputEvent) {
-  console.log("saving content from shift operator")
   const content = (event.target as HTMLTextAreaElement).value
 
   if (isValidJson(content)) {
+    setBadFormat(false)
     const operation = formatShiftOperation(JSON.parse(content))
     notifyOfBlockUpdate(operation);
   } else {
-    console.log("bad json")
-    //  TODO: add UI error
+    setBadFormat(true)
   }
 
 }
@@ -104,4 +116,5 @@ textarea {
   display: flex;
   flex-direction: column;
 }
+
 </style>

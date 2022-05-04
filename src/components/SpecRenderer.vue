@@ -6,7 +6,7 @@
         :block="block"
         :index="index"
         :is="determineBlockComponent(block)"
-        @block-operation-updated="updateBlock"
+        @block-operation-updated="updateSingleBlock"
     >
     </component>
   </div>
@@ -31,16 +31,15 @@ class TransformationRequest {
   }
 
   toString() {
-    // return JSON.stringify({"input": this.input, "spec": JSON.stringify(this.specList)})
-    return `{"input": "${this.input}", "spec": "${JSON.stringify(this.specList).replace('"', "\"")}"`
+    const spec = JSON.stringify(this.specList)
+    const input = this.input
+    return JSON.stringify({input, spec})
   }
 }
 
-const
-    store = useSpecStore();
+const store = useSpecStore();
 
-const
-    uiBlocks = computed(() => store.specBlockList)
+const uiBlocks = computed(() => store.specBlockList)
 
 // TODO: how do we want to organize this?
 // ? now that we're using the composition API we have a lot more freedom re: organizing business logic
@@ -49,25 +48,19 @@ const
 // ? should be organized and what can be extracted from the file
 
 // ^ ==== Store Operations ==== ^ //
-function
-
-updateBlocks() {
+function updateBlocks() {
   if (store.joltSpecList.length > 0) {
     store.updateBlocksFromJoltSpec()
   }
 }
 
 
-function
-
-runTransformation() {
+async function runTransformation() {
   const specList = convertBlockToSpecList(store.specBlockList)
-  _submitSpecAndInput(new TransformationRequest(store.input, specList))
+  store.output = await _submitSpecAndInput(new TransformationRequest(store.input, specList))
 }
 
-async function
-
-_submitSpecAndInput(request: TransformationRequest) {
+async function _submitSpecAndInput(request: TransformationRequest) {
   const response = await fetch('http://localhost:8080/transform', {
     method: 'POST',
     headers: {
@@ -80,9 +73,7 @@ _submitSpecAndInput(request: TransformationRequest) {
 }
 
 // ^ ==== Block logic ==== ^ //
-function
-
-updateBlock(event: BlockUpdateRequest) {
+function updateSingleBlock(event: BlockUpdateRequest) {
   store.updateBlock(event);
   runTransformation()
 }
@@ -90,6 +81,17 @@ updateBlock(event: BlockUpdateRequest) {
 // ^ ==== Life cycle hooks ==== ^ //
 onBeforeMount(updateBlocks)
 </script>
+
+<style>
+/*! Note that this is specifically style unscoped to this component, so it will cascade like normal css! */
+/*^ I don't really consider this hacky b/c it's how css is supposed to work, but in terms of not scoping style to a component
+  ^ in order to target children and the double style tag stuff it's def not typical vue stuff, so it's at least worth calling out
+^*/
+.bad-format {
+  background: #FFB4C0;
+  border: 2px solid orangered;
+}
+</style>
 
 <style scoped>
 

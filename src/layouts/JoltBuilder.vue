@@ -16,8 +16,8 @@
         <full-spec-input v-if="state.specView === 'full'"></full-spec-input>
       </div>
       <div class="right-panel">
-        <input-panel v-model="state.input"></input-panel>
-        <output-panel v-model="state.output"></output-panel>
+        <input-panel v-model="store.input"></input-panel>
+        <output-panel v-model="store.output"></output-panel>
       </div>
     </div>
   </div>
