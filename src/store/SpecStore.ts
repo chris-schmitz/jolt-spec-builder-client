@@ -1,8 +1,8 @@
 import {defineStore} from 'pinia'
-import {BlockUpdateRequest} from "@/domain/ui-block/UiBlockUtilities";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {convertBlockToSpecList, convertSpecListToBlocks, joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
+import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
 
 
 interface SpecStoreState {

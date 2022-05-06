@@ -15,9 +15,10 @@
 <script lang="ts" setup>
 import {useSpecStore} from '@/store/SpecStore';
 import {onBeforeMount} from "vue";
-import {BlockUpdateRequest, determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
+import {determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {convertBlockToSpecList} from "@/utilities/TransformationUtilities";
+import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
 
 
 class TransformationRequest {

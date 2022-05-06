@@ -18,6 +18,7 @@ import {reactive} from "vue";
 import {useSpecStore} from "@/store/SpecStore";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
+import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
 
 const store = useSpecStore()
 
@@ -38,99 +39,70 @@ const blockButtons: UiBlockButton[] = [
   {
     label: 'Raw Jolt',
     type: 'raw-jolt',
-    template: {
-      id: "",
-      operation: "",
+    template: joltSpecDocToUiBlock({
+      operation: "<FILL IN DESIRED OPERATION>",
       spec: {},
-      renderData: {},
       renderComponent: UiBlockTypes.RAW,
-    },
+    }),
   },
   {
     label: 'Default',
     type: 'defaultr',
-    template: {
-      id: "",
+    template: joltSpecDocToUiBlock({
       operation: "default",
       spec: {},
-      renderData: {},
       renderComponent: UiBlockTypes.DEFAULT,
-    },
+    })
   },
   {
     label: 'Shift',
     type: 'shiftr',
-    template: {
-      id: "",
+    template: joltSpecDocToUiBlock({
       operation: 'shift',
       renderComponent: UiBlockTypes.SHIFT,
-      renderData: {
-        passAlong: true
-      },
       spec: {},
-    },
+    })
   },
   {
     label: 'Single Cardinality',
     type: 'single',
-    template: {
-      id: "",
+    template: joltSpecDocToUiBlock({
       operation: 'shift',
       renderComponent: UiBlockTypes.SHIFT,
-      renderData: {
-        passAlong: true
-      },
       spec: {},
-    },
+    })
   },
   {
     label: 'Remove',
     type: 'remove',
-    template: {
-      id: "",
+    template: joltSpecDocToUiBlock({
       operation: 'remove',
       renderComponent: UiBlockTypes.REMOVE,
-      renderData: {},
       spec: {},
-    },
+    })
   },
-  {
-    label: 'Sort',
-    type: 'sortr',
-    template: {
-      id: "",
-      operation: 'shift',
-      renderData: {},
-      renderComponent: UiBlockTypes.RAW,
-      spec: {}
-    },
-  },
-  {
-    label: 'Rename Column',
-    type: 'renamer',
-    template: {
-      id: "",
-      renderData: {},
-      operation: "rename",
-      spec: {},
-      renderComponent: UiBlockTypes.RAW,
-    },
-  },
+  // {
+  //   label: 'Sort',
+  //   type: 'sortr',
+  //   template: joltSpecDocToUiBlock({
+  //     operation: 'shift',
+  //     renderComponent: UiBlockTypes.RAW,
+  //     spec: {}
+  //   })
+  // },
   {
     label: 'Parsed Ingredients',
     type: 'shift',
-    template: {
-      id: "",
+    template: joltSpecDocToUiBlock({
       operation: 'shift',
       renderComponent: UiBlockTypes.PARSED_INGREDIENTS,
-      renderData: {},
       spec: {
         "@": "",
         "ingredientSection": {
           "ingredients": "new_ingredients_section"
         }
       },
-    }
+    })
   },
 ]
 
@@ -153,24 +125,18 @@ function insertBlock(block: UiBlockButton) {
 
 <style scoped>
 .block-menu {
-  /*flex: 1;*/
   display: flex;
   flex-direction: column;
-  /*background: orangered;*/
-  /*justify-content: space-around;*/
 }
 
 .block-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /*background: pink;*/
   flex: 1;
 }
 
 .block {
-  /*border: 1px solid red;*/
-  /*background: lightblue;*/
   flex: 0 0 80px;
   margin-top: 10px;
   display: flex;

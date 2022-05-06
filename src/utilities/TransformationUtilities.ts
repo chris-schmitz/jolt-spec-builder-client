@@ -46,20 +46,3 @@ export function convertSpecListToBlocks(spec: JoltOperation[]): UIBlockOperation
     // ? why does this not clear out the blocks for an empty list
     return spec.map(operation => joltSpecDocToUiBlock(operation))
 }
-
-//     // ! the above feels more verbose than it needs to be, but I'm going this way because:
-//     // - render component is optional on JoltOperation
-//     // - the object map version of this pattern could possibly return undefined (e.g. transformToUiBlock[specDocument.renderComponent] == undefined)
-//     // * It is still less code than a switch statement and it makes the transformer objects a bit cleaner, but it requires an intermediate module
-//     // * and the code here isn't particularly readable. Really, it's kind of abstract to the point where if you don't know the pattern looking through
-//     // * is kind of confusing.
-// export function joltSpecDocToUiBlock(specDocument: JoltOperation): UIBlockOperation {
-//
-//     if (specDocument.renderComponent) {
-//         const transformer = transformToUiBlock[specDocument.renderComponent]
-//         if (transformer) {
-//             return transformer(specDocument)
-//         }
-//     }
-//     return new UIBlockOperation(specDocument.operation, UiBlockTypes.RAW, specDocument.spec, {})
-// }
