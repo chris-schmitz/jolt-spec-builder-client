@@ -7,23 +7,18 @@
 </template>
 
 <script lang="ts" setup>
-// TODO: add ts language and figure out how to correctly type the computed props
-import {computed, defineProps, defineEmits, reactive, watch} from "vue";
+import {defineProps, defineEmits, reactive, watch} from "vue";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
-import {BlockRenderData, BlockUpdateRequest} from "@/domain/ui-block/UiBlockUtilities";
+import {BlockRenderData} from "@/domain/ui-block/UiBlockUtilities";
 
 const state = reactive({
   renderData: {},
 })
 
 const props = defineProps<{ block: UIBlockOperation, index: number }>()
-const blockckContent = computed(() => JSON.stringify(props.block, null, 2))
 
 const emit = defineEmits(["block-operation-updated"])
-// const emit = defineEmits<{
-//   (e: 'block-operation-updated', value: BlockUpdateRequest): void
-// }>()
 
 
 let operation: string,

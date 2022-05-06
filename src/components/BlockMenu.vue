@@ -27,11 +27,19 @@ interface UiBlockButton {
   template: UIBlockOperation
 }
 
+
+// TODO: consider how this information is stored
+// * right now it's functional to keep it here, but now we have multiple places that the app needs to be aware of each of the UI blocks.
+// * It feels like if we take a big refactor-cleanup sweep through the codebase (which we should), each of these objects should exist in
+// * each of their specific domains, e.g. the Shift UIBlockButton should come from a module export in `src/domain/transformations/shift/...`.
+// * Each transformation could export their UiBlockButton data and we could import them all here explicitly or do some kind of export index
+// * index in `src/domain/transformations/exports.ts` so we could do a dynamic import
 const blockButtons: UiBlockButton[] = [
   {
     label: 'Raw Jolt',
     type: 'raw-jolt',
     template: {
+      id: "",
       operation: "",
       spec: {},
       renderData: {},
@@ -42,18 +50,46 @@ const blockButtons: UiBlockButton[] = [
     label: 'Default',
     type: 'defaultr',
     template: {
+      id: "",
       operation: "default",
       spec: {},
       renderData: {},
-      renderComponent: UiBlockTypes.RAW,
+      renderComponent: UiBlockTypes.DEFAULT,
     },
   },
   {
     label: 'Shift',
     type: 'shiftr',
     template: {
+      id: "",
       operation: 'shift',
       renderComponent: UiBlockTypes.SHIFT,
+      renderData: {
+        passAlong: true
+      },
+      spec: {},
+    },
+  },
+  {
+    label: 'Single Cardinality',
+    type: 'single',
+    template: {
+      id: "",
+      operation: 'shift',
+      renderComponent: UiBlockTypes.SHIFT,
+      renderData: {
+        passAlong: true
+      },
+      spec: {},
+    },
+  },
+  {
+    label: 'Remove',
+    type: 'remove',
+    template: {
+      id: "",
+      operation: 'remove',
+      renderComponent: UiBlockTypes.REMOVE,
       renderData: {},
       spec: {},
     },
@@ -62,6 +98,7 @@ const blockButtons: UiBlockButton[] = [
     label: 'Sort',
     type: 'sortr',
     template: {
+      id: "",
       operation: 'shift',
       renderData: {},
       renderComponent: UiBlockTypes.RAW,
@@ -72,6 +109,7 @@ const blockButtons: UiBlockButton[] = [
     label: 'Rename Column',
     type: 'renamer',
     template: {
+      id: "",
       renderData: {},
       operation: "rename",
       spec: {},
@@ -82,6 +120,7 @@ const blockButtons: UiBlockButton[] = [
     label: 'Parsed Ingredients',
     type: 'shift',
     template: {
+      id: "",
       operation: 'shift',
       renderComponent: UiBlockTypes.PARSED_INGREDIENTS,
       renderData: {},
@@ -106,7 +145,8 @@ const
 
 function insertBlock(block: UiBlockButton) {
   const operation = JSON.parse(JSON.stringify(block.template))
-  store.addBlock({index: store.nextIndex, operation})
+  const index = store.nextIndex
+  store.addBlock({index, operation})
 }
 
 </script>

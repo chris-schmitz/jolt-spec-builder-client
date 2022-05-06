@@ -1,20 +1,11 @@
 <template>
-  <!--  TODO replace with a contenteditable div -->
   <div class="block-wrapper">
-    <h2>Shift</h2>
+    <h2>Default</h2>
     <textarea
-        :value="shiftInstructionsString"
+        :value="specContentString"
         @blur="saveContent"
         :class="{'bad-format': badFormat}"
     ></textarea>
-    <label for="pass-along"
-    >Pass along other data to next operation:
-      <input
-          type="checkbox"
-          id="pass-along"
-          v-model="state.passAlongOtherContent"
-          @change="togglePassAlong"
-      /></label>
   </div>
 </template>
 
@@ -26,17 +17,15 @@ import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 
 const state = reactive({
   specContentString: {},
-  passAlongOtherContent: true,
 })
 let badFormat = ref(false)
 
 const props = defineProps<{ block: UIBlockOperation, index: number }>()
-const shiftInstructionsString = computed(() => JSON.stringify(state.specContentString, null, 2))
+const specContentString = computed(() => JSON.stringify(state.specContentString, null, 2))
 
 
 watch(() => props.block, (newValue: UIBlockOperation) => {
       state.specContentString = newValue.spec
-      state.passAlongOtherContent = newValue.renderData.passAlong as boolean
 
       if (isValidJson(JSON.stringify(state.specContentString))) {
         setBadFormat(false)
@@ -49,11 +38,6 @@ watch(() => props.block, (newValue: UIBlockOperation) => {
 
 function setBadFormat(value: boolean) {
   badFormat.value = value
-}
-
-function togglePassAlong() {
-  const operation = formatOperation(state.specContentString);
-  notifyOfBlockUpdate(operation);
 }
 
 function saveContent(event: InputEvent) {
@@ -79,15 +63,15 @@ function isValidJson(value: string): boolean {
   }
 }
 
-// TODO: easy refactor: formatOperation
+// TODO: consider need
+// ? why are we rebuilding the block shape here??
 function formatOperation(shiftInstructions: object): UIBlockOperation {
+  // props.block but merge in changes
   return {
     id: "",
     operation: 'shift',
-    renderComponent: UiBlockTypes.SHIFT,
-    renderData: {
-      passAlong: state.passAlongOtherContent,
-    },
+    renderComponent: UiBlockTypes.DEFAULT,
+    renderData: {},
     spec: shiftInstructions
   };
 }

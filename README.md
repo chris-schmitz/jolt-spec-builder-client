@@ -17,7 +17,7 @@ edit. <come back and clarify this explanation>
 - [ ] create UI blocks that represent each of the stock jolt operations with tools that make understanding and building those blocks easier
 - [ ] allow for reordering of blocks
 - [ ] allow for disabling of blocks
-- [ ] given an example input structure, quickly run transformations with given UI blocks and immediately show output object
+- [x] given an example input structure, quickly run transformations with given UI blocks and immediately show output object
 - [ ] add tooling and UI hints for jolt specific symbols to give the user a hint of what the symbol would be referring to in the example input
 - [ ] create domain specific transformations as stock blocks
 

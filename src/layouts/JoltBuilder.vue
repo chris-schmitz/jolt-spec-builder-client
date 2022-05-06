@@ -65,6 +65,7 @@ const state = reactive({
 
 .center-panel {
   flex: 1;
+  display: flex;
   /*overflow-y: scroll;*/
   /*background: crimson;*/
 }

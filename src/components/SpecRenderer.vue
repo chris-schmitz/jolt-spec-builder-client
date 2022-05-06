@@ -1,8 +1,8 @@
 <template>
   <div class="renderer-wrapper">
     <component
-        v-for="(block, index) in uiBlocks"
-        v-bind:key="index"
+        v-for="block in store.specBlockList"
+        v-bind:key="block.id"
         :block="block"
         :index="index"
         :is="determineBlockComponent(block)"
@@ -14,12 +14,10 @@
 
 <script lang="ts" setup>
 import {useSpecStore} from '@/store/SpecStore';
-import {computed, onBeforeMount} from "vue";
+import {onBeforeMount} from "vue";
 import {BlockUpdateRequest, convertBlockToSpecList, determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import RawJolt from "@/components/ui-blocks/RawJolt.vue"
-import ShiftOperation from "@/components/ui-blocks/ShiftOperation.vue"
-import {mapState} from "pinia";
+
 
 class TransformationRequest {
   private input: string
@@ -38,8 +36,6 @@ class TransformationRequest {
 }
 
 const store = useSpecStore();
-
-const uiBlocks = computed(() => store.specBlockList)
 
 // TODO: how do we want to organize this?
 // ? now that we're using the composition API we have a lot more freedom re: organizing business logic
@@ -96,6 +92,7 @@ onBeforeMount(updateBlocks)
 <style scoped>
 
 .renderer-wrapper {
+  flex: 1;
   height: 90vh;
   overflow-y: scroll;
 }

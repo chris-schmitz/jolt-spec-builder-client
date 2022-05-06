@@ -1,20 +1,15 @@
 <template>
-  <!--  TODO replace with a contenteditable div -->
   <div class="block-wrapper">
-    <h2>Shift</h2>
-    <textarea
-        :value="shiftInstructionsString"
+    <h2>Single Cardinality Rule</h2>
+    <input
+        :value="specContentString"
         @blur="saveContent"
         :class="{'bad-format': badFormat}"
-    ></textarea>
-    <label for="pass-along"
-    >Pass along other data to next operation:
-      <input
-          type="checkbox"
-          id="pass-along"
-          v-model="state.passAlongOtherContent"
-          @change="togglePassAlong"
-      /></label>
+    >
+    <select v-model="state.cardinalityType">
+      <option value="ONE">Convert to single value</option>
+      <option value="MANY">Convert to a List</option>
+    </select>
   </div>
 </template>
 
@@ -26,17 +21,16 @@ import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 
 const state = reactive({
   specContentString: {},
-  passAlongOtherContent: true,
+  cardinalityType: ""
 })
 let badFormat = ref(false)
 
 const props = defineProps<{ block: UIBlockOperation, index: number }>()
-const shiftInstructionsString = computed(() => JSON.stringify(state.specContentString, null, 2))
+const specContentString = computed(() => JSON.stringify(state.specContentString, null, 2))
 
 
 watch(() => props.block, (newValue: UIBlockOperation) => {
       state.specContentString = newValue.spec
-      state.passAlongOtherContent = newValue.renderData.passAlong as boolean
 
       if (isValidJson(JSON.stringify(state.specContentString))) {
         setBadFormat(false)
@@ -51,13 +45,8 @@ function setBadFormat(value: boolean) {
   badFormat.value = value
 }
 
-function togglePassAlong() {
-  const operation = formatOperation(state.specContentString);
-  notifyOfBlockUpdate(operation);
-}
-
 function saveContent(event: InputEvent) {
-  const content = (event.target as HTMLTextAreaElement).value
+  const content = (event.target as HTMLInputElement).value
 
   if (isValidJson(content)) {
     setBadFormat(false)
@@ -80,15 +69,15 @@ function isValidJson(value: string): boolean {
 }
 
 // TODO: easy refactor: formatOperation
-function formatOperation(shiftInstructions: object): UIBlockOperation {
+function formatOperation(specContent: object): UIBlockOperation {
   return {
     id: "",
-    operation: 'shift',
-    renderComponent: UiBlockTypes.SHIFT,
+    operation: 'cardinality',
+    renderComponent: UiBlockTypes.SINGLE_CARDINALITY,
     renderData: {
-      passAlong: state.passAlongOtherContent,
+      cardinalityType: state.cardinalityType
     },
-    spec: shiftInstructions
+    spec: specContent
   };
 }
 

@@ -26,7 +26,7 @@ onBeforeMount(() => {
 
 <style scoped>
 .wrapper {
-  /*background: lightseagreen;*/
+  background: rebeccapurple;
   display: flex;
   margin-top: 10px;
   flex: 1;
@@ -34,7 +34,6 @@ onBeforeMount(() => {
 
 textarea {
   flex: 1;
-  height: 200px;
 }
 
 .wrapper div {

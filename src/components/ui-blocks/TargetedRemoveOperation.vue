@@ -1,20 +1,22 @@
+<!--
+  * Make this one a dumb targets remove where
+  - the ui block version is a list of inputs using dot notation to specify what to remove
+  - the jolt version is a spec with the individual paths merged
+  ! note that you can't specify duplicate keys, so matching dot notation paths would need to be merge
+  * dot -> object could be "walk each dot notation entry and construct the object, looking for existing keys" kind of like mkdir -p
+  * object -> dot could be recursively dive into an object looking for leaves, once you hit a leaf that recursive pipe becomes a dot notation entry
+  * actually I don't know if recursion would work best or just looping, or recursing with shared state mutations :shrug:, may need to get hacky
+-->
+
+
 <template>
-  <!--  TODO replace with a contenteditable div -->
   <div class="block-wrapper">
-    <h2>Shift</h2>
+    <h2>Default</h2>
     <textarea
-        :value="shiftInstructionsString"
+        :value="specContentString"
         @blur="saveContent"
         :class="{'bad-format': badFormat}"
     ></textarea>
-    <label for="pass-along"
-    >Pass along other data to next operation:
-      <input
-          type="checkbox"
-          id="pass-along"
-          v-model="state.passAlongOtherContent"
-          @change="togglePassAlong"
-      /></label>
   </div>
 </template>
 
@@ -26,17 +28,15 @@ import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 
 const state = reactive({
   specContentString: {},
-  passAlongOtherContent: true,
 })
 let badFormat = ref(false)
 
 const props = defineProps<{ block: UIBlockOperation, index: number }>()
-const shiftInstructionsString = computed(() => JSON.stringify(state.specContentString, null, 2))
+const specContentString = computed(() => JSON.stringify(state.specContentString, null, 2))
 
 
 watch(() => props.block, (newValue: UIBlockOperation) => {
       state.specContentString = newValue.spec
-      state.passAlongOtherContent = newValue.renderData.passAlong as boolean
 
       if (isValidJson(JSON.stringify(state.specContentString))) {
         setBadFormat(false)
@@ -51,17 +51,12 @@ function setBadFormat(value: boolean) {
   badFormat.value = value
 }
 
-function togglePassAlong() {
-  const operation = formatOperation(state.specContentString);
-  notifyOfBlockUpdate(operation);
-}
-
 function saveContent(event: InputEvent) {
   const content = (event.target as HTMLTextAreaElement).value
 
   if (isValidJson(content)) {
     setBadFormat(false)
-    const operation = formatOperation(JSON.parse(content))
+    const operation = formatShiftOperation(JSON.parse(content))
     notifyOfBlockUpdate(operation);
   } else {
     setBadFormat(true)
@@ -79,15 +74,16 @@ function isValidJson(value: string): boolean {
   }
 }
 
-// TODO: easy refactor: formatOperation
-function formatOperation(shiftInstructions: object): UIBlockOperation {
+// TODO: move
+// * move out to the shift tools, but only once things fit together. Really
+// * stuff like intruducing typescript may resovle the need to move it, but even still
+// * it seems like a "group like business logic" move
+function formatShiftOperation(shiftInstructions: object): UIBlockOperation {
   return {
     id: "",
     operation: 'shift',
     renderComponent: UiBlockTypes.SHIFT,
-    renderData: {
-      passAlong: state.passAlongOtherContent,
-    },
+    renderData: {},
     spec: shiftInstructions
   };
 }
