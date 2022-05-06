@@ -1,7 +1,7 @@
 <template>
   <div class="renderer-wrapper">
     <component
-        v-for="block in store.specBlockList"
+        v-for="(block,index) in store.specBlockList"
         v-bind:key="block.id"
         :block="block"
         :index="index"
@@ -15,8 +15,9 @@
 <script lang="ts" setup>
 import {useSpecStore} from '@/store/SpecStore';
 import {onBeforeMount} from "vue";
-import {BlockUpdateRequest, convertBlockToSpecList, determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
+import {BlockUpdateRequest, determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
+import {convertBlockToSpecList} from "@/utilities/TransformationUtilities";
 
 
 class TransformationRequest {

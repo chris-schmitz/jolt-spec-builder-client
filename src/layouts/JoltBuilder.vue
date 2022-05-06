@@ -31,7 +31,7 @@ import OutputPanel from '@/components/OutputPanel.vue';
 import FullSpecInput from '@/components/FullSpecInput.vue';
 import {useSpecStore} from '@/store/SpecStore';
 import {defineComponent, reactive, ref, toRefs} from 'vue'
-import {convertBlockToSpecList} from "@/domain/ui-block/UiBlockUtilities";
+import {convertBlockToSpecList} from "@/utilities/TransformationUtilities";
 
 const store = useSpecStore();
 const state = reactive({

@@ -23,6 +23,8 @@ import {defineProps, computed, watch, defineEmits, reactive, ref} from "vue";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
+import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
+import isValidJson from "@/utilities/JsonValidator";
 
 const state = reactive({
   specContentString: {},
@@ -69,27 +71,15 @@ function saveContent(event: InputEvent) {
 
 }
 
-// TODO: move out to utility file
-function isValidJson(value: string): boolean {
-  try {
-    JSON.parse(value)
-    return true
-  } catch (error) {
-    return false
-  }
-}
 
-// TODO: easy refactor: formatOperation
 function formatOperation(shiftInstructions: object): UIBlockOperation {
-  return {
-    id: "",
-    operation: 'shift',
+  const uiBlock = joltSpecDocToUiBlock({
+    operation: "shift",
     renderComponent: UiBlockTypes.SHIFT,
-    renderData: {
-      passAlong: state.passAlongOtherContent,
-    },
     spec: shiftInstructions
-  };
+  })
+  uiBlock.renderData.passAlong = state.passAlongOtherContent
+  return uiBlock
 }
 
 const emit = defineEmits(['block-operation-updated'])

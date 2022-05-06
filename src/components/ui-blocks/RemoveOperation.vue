@@ -10,10 +10,12 @@
 </template>
 
 <script lang="ts" setup>
-import {defineProps, computed, watch, defineEmits, reactive, ref} from "vue";
+import {computed, defineEmits, defineProps, reactive, ref, watch} from "vue";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
+import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
+import isValidJson from "@/utilities/JsonValidator";
 
 const state = reactive({
   specContentString: {},
@@ -53,25 +55,13 @@ function saveContent(event: InputEvent) {
 
 }
 
-// TODO: move out to utility file
-function isValidJson(value: string): boolean {
-  try {
-    JSON.parse(value)
-    return true
-  } catch (error) {
-    return false
-  }
-}
 
-// TODO: easy refactor: formatOperation
-function formatOperation(shiftInstructions: object): UIBlockOperation {
-  return {
-    id: "",
-    operation: 'shift',
+function formatOperation(spec: object): UIBlockOperation {
+  return joltSpecDocToUiBlock({
+    operation: "remove",
     renderComponent: UiBlockTypes.REMOVE,
-    renderData: {},
-    spec: shiftInstructions
-  };
+    spec
+  })
 }
 
 const emit = defineEmits(['block-operation-updated'])

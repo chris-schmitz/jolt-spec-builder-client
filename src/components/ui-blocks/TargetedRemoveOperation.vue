@@ -25,6 +25,8 @@ import {defineProps, computed, watch, defineEmits, reactive, ref} from "vue";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
+import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
+import isValidJson from "@/utilities/JsonValidator";
 
 const state = reactive({
   specContentString: {},
@@ -56,7 +58,7 @@ function saveContent(event: InputEvent) {
 
   if (isValidJson(content)) {
     setBadFormat(false)
-    const operation = formatShiftOperation(JSON.parse(content))
+    const operation = formatOperation(JSON.parse(content))
     notifyOfBlockUpdate(operation);
   } else {
     setBadFormat(true)
@@ -64,28 +66,13 @@ function saveContent(event: InputEvent) {
 
 }
 
-// TODO: move out to utility file
-function isValidJson(value: string): boolean {
-  try {
-    JSON.parse(value)
-    return true
-  } catch (error) {
-    return false
-  }
-}
 
-// TODO: move
-// * move out to the shift tools, but only once things fit together. Really
-// * stuff like intruducing typescript may resovle the need to move it, but even still
-// * it seems like a "group like business logic" move
-function formatShiftOperation(shiftInstructions: object): UIBlockOperation {
-  return {
-    id: "",
+function formatOperation(spec: object): UIBlockOperation {
+  return joltSpecDocToUiBlock({
     operation: 'shift',
     renderComponent: UiBlockTypes.SHIFT,
-    renderData: {},
-    spec: shiftInstructions
-  };
+    spec
+  })
 }
 
 const emit = defineEmits(['block-operation-updated'])

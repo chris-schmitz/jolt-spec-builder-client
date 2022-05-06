@@ -1,7 +1,7 @@
 import {defineStore} from 'pinia'
-import {BlockUpdateRequest, convertBlockToSpecList, convertSpecListToBlocks} from "@/domain/ui-block/UiBlockUtilities";
+import {BlockUpdateRequest} from "@/domain/ui-block/UiBlockUtilities";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
-import {joltSpecDocToUiBlock} from "@/domain/jolt-spec/Utilities";
+import {convertBlockToSpecList, convertSpecListToBlocks, joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 
 
@@ -35,6 +35,12 @@ export const useSpecStore = defineStore('Spec Store', {
             this.joltSpecList = convertBlockToSpecList(this.specBlockList)
         },
         updateBlock(payload: BlockUpdateRequest) {
+            // ! NOTE
+            // * the use of index here may cause an issue with list rendering when
+            // * we start doing things like reordering the list. we're using a UUID
+            // * for the rendering key now, so it may be a good idea to switch this
+            // * from an indexed splice to a lookup of the index based on uuid and
+            // * then splicing
             this.specBlockList.splice(payload.index, 1, payload.operation)
         },
         addBlock(payload: BlockUpdateRequest) {
