@@ -19,6 +19,11 @@ interface RawBlockRenderData {
     passAlong: boolean
 }
 
+// TODO: consider refactor
+// * think about the object map idea that josh brought up. it may be a good way to remove the switch here and
+// * determine the component to return dynamically
+// TODO: consider move
+// * really this is kind of the domain of the SpecRenderer component, consider moving it back in there
 export function determineBlockComponent(block: JoltOperation) {
     switch (block.renderComponent) {
         case UiBlockTypes.SHIFT:

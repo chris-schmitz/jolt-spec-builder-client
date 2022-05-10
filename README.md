@@ -28,6 +28,8 @@ edit. <come back and clarify this explanation>
 - [ ] pull an example product from the database to use by product id
 - [ ] create side by side comparison layout for input and output
 - [ ] conditionally include blocks based on a configuration object (the idea julie had)
+- [ ] pull the menu buttons out to a list, move them into the domain/operations/... directories, and make their population dynamic so that the button's presence
+  is dependent on the domain operation pieces being there.
 
 ## Project setup
 
