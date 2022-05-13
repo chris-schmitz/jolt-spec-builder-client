@@ -1,20 +1,26 @@
 <template>
   <div class="wrapper">
-    <textarea :value="specListAsString" @change="handleInput"></textarea>
+    <textarea
+        :value="specListAsString"
+        @change="handleInput"
+    ></textarea>
   </div>
 </template>
 
 <script lang="ts" setup>
 import {useSpecStore} from '@/store/SpecStore';
 import {onBeforeMount, computed} from "vue";
+import {runTransformation} from "@/utilities/SpecSubmitter";
 
 const store = useSpecStore()
 
 const specListAsString = computed(() => JSON.stringify(store.joltSpecList, null, 2))
 
+
 function handleInput(event: InputEvent) {
   const specList = JSON.parse((event.target as HTMLTextAreaElement).value)
   store.setJoltSpec(specList);
+  runTransformation()
 }
 
 onBeforeMount(() => {

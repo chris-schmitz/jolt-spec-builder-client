@@ -53,16 +53,6 @@ function dotNotationToObject(path: string, value: any) {
 }
 
 
-// function dotNotationToObject(path: string, carry = {}) {
-//     const split = path.split(".")
-//     if (split.length > 1) {
-//         carry[split.shift()] = {}
-//         return dotNotationToObject(split.join("."), carry)
-//     }
-//     carry[split.shift()] = ""
-//     return carry
-// }
-
 // |: minus one typescript :|
 function objectToDotNotation(spec: object): string | undefined {
     const keys = Object.keys(spec)
@@ -80,7 +70,7 @@ function objectToDotNotation(spec: object): string | undefined {
     return firstKey
 }
 
-function getTargetKeyPath(specDoc: object) {
-    const dotNotation = objectToDotNotation(specDoc)
-    return typeof dotNotation !== "undefined" ? dotNotation : ""
-}
+// function getTargetKeyPath(specDoc: object) {
+//     const dotNotation = objectToDotNotation(specDoc)
+//     return typeof dotNotation !== "undefined" ? dotNotation : ""
+// }

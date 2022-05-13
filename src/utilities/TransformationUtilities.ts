@@ -42,7 +42,7 @@ export function uiBlockToJoltSpecDoc(block: UIBlockOperation) {
     }
 }
 
-export function convertBlockToSpecList(blocksProxies: UIBlockOperation[]) {
+export function convertBlockToSpecList(blocksProxies: UIBlockOperation[]): JoltOperation[] {
     return JSON
         .parse(JSON.stringify(blocksProxies)) // ! note we need this step to convert the vue proxies back to regular js objects
         .map(uiBlockToJoltSpecDoc)

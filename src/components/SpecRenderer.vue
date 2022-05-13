@@ -19,23 +19,8 @@ import {determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {convertBlockToSpecList} from "@/utilities/TransformationUtilities";
 import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
+import {runTransformation, submitSpecAndInput, TransformationRequest} from "@/utilities/SpecSubmitter";
 
-
-class TransformationRequest {
-  private input: string
-  private specList: JoltOperation[]
-
-  constructor(input: string, specList: JoltOperation[]) {
-    this.input = input;
-    this.specList = specList;
-  }
-
-  toString() {
-    const spec = JSON.stringify(this.specList)
-    const input = this.input
-    return JSON.stringify({input, spec})
-  }
-}
 
 const store = useSpecStore();
 
@@ -52,31 +37,11 @@ function updateBlocks() {
   }
 }
 
-
-async function runTransformation() {
-  if (!store.input || !store.specBlockList) {
-    return
-  }
-  const specList = convertBlockToSpecList(store.specBlockList)
-  store.output = await _submitSpecAndInput(new TransformationRequest(store.input, specList))
-}
-
-async function _submitSpecAndInput(request: TransformationRequest) {
-  const response = await fetch('http://localhost:8080/transform', {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
-    },
-    body: request.toString()
-  });
-  return await response.json();
-}
-
 // ^ ==== Block logic ==== ^ //
-function updateSingleBlock(event: BlockUpdateRequest) {
+async function updateSingleBlock(event: BlockUpdateRequest) {
   store.updateBlock(event);
-  runTransformation()
+  const specList = convertBlockToSpecList(store.specBlockList)
+  runTransformation(specList)
 }
 
 // ^ ==== Life cycle hooks ==== ^ //

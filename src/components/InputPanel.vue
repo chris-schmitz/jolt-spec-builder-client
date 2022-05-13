@@ -3,7 +3,7 @@
     <h1>Input Panel</h1>
     <textarea
         :value="props.modelValue"
-        @blur="notifyOfInputUpdate"
+        @change="handleChange"
     />
   </div>
 </template>
@@ -11,10 +11,17 @@
 <script lang="ts" setup>
 import {defineProps} from "vue";
 import {useSpecStore} from "@/store/SpecStore";
+import {runTransformation} from "@/utilities/SpecSubmitter";
 
 const props = defineProps(["modelValue"])
 
 const store = useSpecStore()
+
+function handleChange(event: InputEvent) {
+  notifyOfInputUpdate(event)
+  runTransformation()
+}
+
 
 function notifyOfInputUpdate(event: InputEvent) {
   store.input = (event.target as HTMLTextAreaElement).value
