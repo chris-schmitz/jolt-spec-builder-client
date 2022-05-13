@@ -12,6 +12,7 @@ interface SpecStoreState {
     specBlockList: UIBlockOperation[]
 }
 
+
 export const useSpecStore = defineStore('Spec Store', {
     state(): SpecStoreState {
         return {

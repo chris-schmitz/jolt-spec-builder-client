@@ -16,15 +16,16 @@
 <script lang="ts" setup>
 import {reactive} from "vue";
 import {useSpecStore} from "@/store/SpecStore";
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
-import shiftTemplate from "@/domain/operations/shift/template.js"
-import removeTemplate from "@/domain/operations/remove/template.js"
-import rawTemplate from "@/domain/operations/raw/template.js"
-import defaultTemplate from "@/domain/operations/default/template.js"
-import parsedIngredientTemplate from "@/domain/operations/parsed-ingredients/template.js"
-import singleCardinalityTemplate from "@/domain/operations/single-cardinality/template.js"
+//? convert the js files to ts???
+import shiftTemplate from "@/domain/operations/shift/template"
+import removeTemplate from "@/domain/operations/remove/template"
+import rawTemplate from "@/domain/operations/raw/template"
+import defaultTemplate from "@/domain/operations/default/template"
+import parsedIngredientTemplate from "@/domain/operations/parsed-ingredients/template"
+import singleCardinalityTemplate from "@/domain/operations/single-cardinality/template"
+import coreProductTemplate from "@/domain/li-operations/core-product/template"
 
 const store = useSpecStore()
 
@@ -59,6 +60,10 @@ const blockButtons: UiBlockButton[] = [
     label: 'Parsed Ingredients',
     template: joltSpecDocToUiBlock(parsedIngredientTemplate)
   },
+  {
+    label: "Core Product",
+    template: joltSpecDocToUiBlock(coreProductTemplate)
+  }
 ]
 
 const state = reactive({blocks: blockButtons})

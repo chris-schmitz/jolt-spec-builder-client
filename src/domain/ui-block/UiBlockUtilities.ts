@@ -7,15 +7,10 @@ import DefaultOperation from "@/components/ui-blocks/DefaultOperation.vue";
 import RemoveOperation from "@/components/ui-blocks/RemoveOperation.vue";
 import RawJolt from "@/components/ui-blocks/RawJolt.vue";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
+import SingleCardinalityOperation from "@/components/ui-blocks/SingleCardinalityOperation.vue"
 
-export type BlockRenderData = ShiftBlockRenderData | RawBlockRenderData | Record<string, unknown>
 
-interface ShiftBlockRenderData {
-    passAlong: boolean
-
-}
-
-interface RawBlockRenderData {
+export interface RawBlockRenderData {
     passAlong: boolean
 }
 
@@ -32,6 +27,8 @@ export function determineBlockComponent(block: JoltOperation) {
             return DefaultOperation
         case UiBlockTypes.REMOVE:
             return RemoveOperation
+        case UiBlockTypes.SINGLE_CARDINALITY:
+            return SingleCardinalityOperation
         default:
             return RawJolt
     }

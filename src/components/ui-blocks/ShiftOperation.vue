@@ -25,6 +25,8 @@ import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
 import isValidJson from "@/utilities/JsonValidator";
+import {ShiftBlockRenderData} from "@/domain/operations/shift/Transformer";
+import {ShiftUiBlock} from "@/domain/operations/shift/UiBlock";
 
 const state = reactive({
   specContentString: {},
@@ -36,9 +38,9 @@ const props = defineProps<{ block: UIBlockOperation, index: number }>()
 const shiftInstructionsString = computed(() => JSON.stringify(state.specContentString, null, 2))
 
 
-watch(() => props.block, (newValue: UIBlockOperation) => {
+watch(() => props.block, (newValue: ShiftUiBlock) => {
       state.specContentString = newValue.spec
-      state.passAlongOtherContent = newValue.renderData.passAlong as boolean
+      state.passAlongOtherContent = (newValue.renderData as ShiftBlockRenderData).passAlong as boolean
 
       if (isValidJson(JSON.stringify(state.specContentString))) {
         setBadFormat(false)
@@ -54,7 +56,7 @@ function setBadFormat(value: boolean) {
 }
 
 function togglePassAlong() {
-  const operation = formatOperation(state.specContentString);
+  const operation = rebuildUiBlockData(state.specContentString);
   notifyOfBlockUpdate(operation);
 }
 
@@ -63,7 +65,7 @@ function saveContent(event: InputEvent) {
 
   if (isValidJson(content)) {
     setBadFormat(false)
-    const operation = formatOperation(JSON.parse(content))
+    const operation = rebuildUiBlockData(JSON.parse(content))
     notifyOfBlockUpdate(operation);
   } else {
     setBadFormat(true)
@@ -72,14 +74,8 @@ function saveContent(event: InputEvent) {
 }
 
 
-function formatOperation(shiftInstructions: object): UIBlockOperation {
-  const uiBlock = joltSpecDocToUiBlock({
-    operation: "shift",
-    renderComponent: UiBlockTypes.SHIFT,
-    spec: shiftInstructions
-  })
-  uiBlock.renderData.passAlong = state.passAlongOtherContent
-  return uiBlock
+function rebuildUiBlockData(shiftInstructions: object): ShiftUiBlock {
+  return new ShiftUiBlock(shiftInstructions, {passAlong: state.passAlongOtherContent})
 }
 
 const emit = defineEmits(['block-operation-updated'])

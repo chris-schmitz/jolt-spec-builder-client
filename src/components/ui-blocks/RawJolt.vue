@@ -2,15 +2,18 @@
   <!--  TODO replace with a contenteditable div -->
   <div class="block-wrapper">
     <h2>Raw Operation</h2>
-    <textarea :value="state.renderData" @input="updateBlockContent"></textarea>
+    <textarea
+        :value="state.renderData"
+        @blur="updateBlockContent"
+        @keyup.tab.prevent="() => {console.log('notab')}"
+    ></textarea>
   </div>
 </template>
 
 <script lang="ts" setup>
 import {defineProps, defineEmits, reactive, watch} from "vue";
-import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
+import {BlockRenderData, UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
-import {BlockRenderData} from "@/domain/ui-block/UiBlockUtilities";
 
 const state = reactive({
   renderData: {},

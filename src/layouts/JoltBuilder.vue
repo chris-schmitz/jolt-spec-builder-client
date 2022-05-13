@@ -6,6 +6,7 @@
         <option value="blocks">Blocks</option>
         <option value="full">Full Spec</option>
       </select>
+      <button>Run Transform</button>
     </div>
     <div class="body">
       <div class="left-panel" v-if="state.specView === 'blocks'">
@@ -16,8 +17,8 @@
         <full-spec-input v-if="state.specView === 'full'"></full-spec-input>
       </div>
       <div class="right-panel">
-        <input-panel v-model="store.input"></input-panel>
-        <output-panel v-model="store.output"></output-panel>
+        <input-panel></input-panel>
+        <output-panel></output-panel>
       </div>
     </div>
   </div>
@@ -30,8 +31,7 @@ import InputPanel from '@/components/InputPanel.vue';
 import OutputPanel from '@/components/OutputPanel.vue';
 import FullSpecInput from '@/components/FullSpecInput.vue';
 import {useSpecStore} from '@/store/SpecStore';
-import {defineComponent, reactive, ref, toRefs} from 'vue'
-import {convertBlockToSpecList} from "@/utilities/TransformationUtilities";
+import {reactive} from 'vue'
 
 const store = useSpecStore();
 const state = reactive({

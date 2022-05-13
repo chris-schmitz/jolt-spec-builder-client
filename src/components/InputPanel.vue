@@ -3,15 +3,23 @@
     <h1>Input Panel</h1>
     <textarea
         :value="props.modelValue"
-        @input="(event) => $emit('update:modelValue', event.target.value)"
+        @blur="notifyOfInputUpdate"
     />
   </div>
 </template>
 
 <script lang="ts" setup>
-import {defineProps, defineEmits} from "vue";
+import {defineProps} from "vue";
+import {useSpecStore} from "@/store/SpecStore";
 
 const props = defineProps(["modelValue"])
+
+const store = useSpecStore()
+
+function notifyOfInputUpdate(event: InputEvent) {
+  store.input = (event.target as HTMLTextAreaElement).value
+}
+
 </script>
 
 <style scoped>

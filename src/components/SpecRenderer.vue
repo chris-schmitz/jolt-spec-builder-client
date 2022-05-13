@@ -54,6 +54,9 @@ function updateBlocks() {
 
 
 async function runTransformation() {
+  if (!store.input || !store.specBlockList) {
+    return
+  }
   const specList = convertBlockToSpecList(store.specBlockList)
   store.output = await _submitSpecAndInput(new TransformationRequest(store.input, specList))
 }

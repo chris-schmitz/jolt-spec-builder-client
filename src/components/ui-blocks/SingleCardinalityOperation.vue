@@ -1,44 +1,67 @@
+<!--https://github.com/bazaarvoice/jolt/blob/master/jolt-core/src/main/java/com/bazaarvoice/jolt/CardinalityTransform.java-->
+<!-- Sample Input -->
+<!--
+{
+  "family": {
+    "people": [
+      "Chris",
+      "Ruthie",
+      "Lily",
+      "Ashlin",
+      "Eliot"
+    ]
+  }
+}
+-->
+
+<!--Sample Transformation -->
+<!--
+{
+  "operation": "cardinality",
+  "spec": {
+    "family": {
+      "people": "ONE"
+    }
+  }
+}
+-->
+
 <template>
   <div class="block-wrapper">
     <h2>Single Cardinality Rule</h2>
     <input
-        :value="specContentString"
+        v-model="state.pathToKey"
         @blur="saveContent"
         :class="{'bad-format': badFormat}"
     >
-    <select v-model="state.cardinalityType">
-      <option value="ONE">Convert to single value</option>
-      <option value="MANY">Convert to a List</option>
+    <select v-model="state.cardinalityType" @blur="saveContent">
+      <option value="ONE">Convert list to single value</option>
+      <option value="MANY">Convert single value to List</option>
     </select>
   </div>
 </template>
 
 <script lang="ts" setup>
-import {defineProps, computed, watch, defineEmits, reactive, ref} from "vue";
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import {defineProps, watch, defineEmits, reactive, ref} from "vue";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
-import isValidJson from "@/utilities/JsonValidator";
+import {CardinalityType} from "@/domain/operations/single-cardinality/Transformer";
+import {SingleCardinalityRenderData, SingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/UiBlock";
 
 const state = reactive({
-  specContentString: {},
+  pathToKey: "",
   cardinalityType: ""
 })
 let badFormat = ref(false)
 
 const props = defineProps<{ block: UIBlockOperation, index: number }>()
-const specContentString = computed(() => JSON.stringify(state.specContentString, null, 2))
 
 
-watch(() => props.block, (newValue: UIBlockOperation) => {
-      state.specContentString = newValue.spec
-
-      if (isValidJson(JSON.stringify(state.specContentString))) {
-        setBadFormat(false)
-      } else {
-        setBadFormat(true)
-      }
+// TODO: come back and make an interface per UI block type and then pass it through in all of the watchers
+watch(() => props.block as SingleCardinalityUiBlock, (block: SingleCardinalityUiBlock) => {
+      // * transform block json to dot notation path
+      state.pathToKey = (block.renderData as SingleCardinalityRenderData).targetKeyPath
+      state.cardinalityType = (block.renderData as SingleCardinalityRenderData).cardinalityType
     },
     {immediate: true}
 )
@@ -47,25 +70,38 @@ function setBadFormat(value: boolean) {
   badFormat.value = value
 }
 
-function saveContent(event: InputEvent) {
-  const content = (event.target as HTMLInputElement).value
+function isValidDotNotation(content: string) {
+  // TODO: consider either refactoring or removing
+  // * how do you validate dot notation? Since json and javascript object keys can be any string
+  // * it seems like ANYTHING that's a string can be a valid path, especially considering a key
+  // * at a root level wouldn't look anything like a dot notation path. We know it needs to be a
+  // * string, but we're using typescript so really a type check would be enough, like even the
+  // * typecheck on this validation method would seemingly be enough b/c it would throw an exception
+  // * if we passed it anything BUT a string, but is that really practical? enough? needed at all?
+  // * I mean really it seems like the only way this isn't really good is if we specify no path b/c
+  // * it would mean that the transformation isn't actually needed.
+  return content !== ""
+}
 
-  if (isValidJson(content)) {
+function saveContent(event: InputEvent) {
+  // const content = (event.target as HTMLInputElement).value
+  // * convert dot notation path to json and set cardinality as value
+
+  if (isValidDotNotation(state.pathToKey)) {
     setBadFormat(false)
-    const operation = formatOperation(JSON.parse(content))
-    notifyOfBlockUpdate(operation);
+    notifyOfBlockUpdate(rebuildUiBlockData());
   } else {
     setBadFormat(true)
   }
 
 }
 
-function formatOperation(spec: object): UIBlockOperation {
-  return joltSpecDocToUiBlock({
-    operation: 'cardinality',
-    renderComponent: UiBlockTypes.SINGLE_CARDINALITY,
-    spec
+function rebuildUiBlockData(): SingleCardinalityUiBlock {
+  return new SingleCardinalityUiBlock({}, {
+    targetKeyPath: state.pathToKey,
+    cardinalityType: state.cardinalityType as CardinalityType
   })
+
 }
 
 const emit = defineEmits(['block-operation-updated'])

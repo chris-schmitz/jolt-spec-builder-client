@@ -10,4 +10,5 @@ export enum UiBlockTypes {
     NEST = "nest",
     PARSED_INGREDIENTS = "parsed_ingredients",
     SINGLE_CARDINALITY = "single_cardinality",
+    CORE_PRODUCT = "core_product",
 }

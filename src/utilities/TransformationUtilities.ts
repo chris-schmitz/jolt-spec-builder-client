@@ -1,10 +1,12 @@
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import {toJoltOperation as toShiftJoltOperation, toUiBlock as toShiftUiBlock} from "@/utilities/operations/shift/ShiftTransformer";
+import {toJoltOperation as toShiftJoltOperation, toUiBlock as toShiftUiBlock} from "@/domain/operations/shift/Transformer";
 import {toJoltOperation as toRawJoltOperation, toUiBlock as toRawUiBlock} from "@/utilities/operations/raw/RawTransformer";
 import {toJoltOperation as toRemoveJoltOperation, toUiBlock as toRemoveUiBlock} from "@/utilities/operations/remove/RemoveTransformer";
 import {toJoltOperation as toDefaultJoltOperation, toUiBlock as toDefaultUiBlock} from "@/utilities/operations/default/DefaultTransformer";
+import {toJoltOperation as toSingleCardinalityJoltOperation, toUiBlock as toSingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/Transformer";
+
 
 export function joltSpecDocToUiBlock(specDocument: JoltOperation): UIBlockOperation {
     switch (specDocument.renderComponent || specDocument.operation) {
@@ -12,6 +14,8 @@ export function joltSpecDocToUiBlock(specDocument: JoltOperation): UIBlockOperat
             return toRemoveUiBlock(specDocument)
         case UiBlockTypes.DEFAULT:
             return toDefaultUiBlock(specDocument)
+        case UiBlockTypes.SINGLE_CARDINALITY:
+            return toSingleCardinalityUiBlock(specDocument)
         case UiBlockTypes.SHIFT:
         case UiBlockTypes.PARSED_INGREDIENTS:
             return toShiftUiBlock(specDocument)
@@ -27,6 +31,8 @@ export function uiBlockToJoltSpecDoc(block: UIBlockOperation) {
             return toShiftJoltOperation(block)
         case 'remove':
             return toRemoveJoltOperation(block)
+        case UiBlockTypes.SINGLE_CARDINALITY:
+            return toSingleCardinalityJoltOperation(block)
         case 'default':
             return toDefaultJoltOperation(block)
         case 'sort':
