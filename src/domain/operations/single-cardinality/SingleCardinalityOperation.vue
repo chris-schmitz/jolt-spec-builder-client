@@ -42,7 +42,7 @@
 </template>
 
 <script lang="ts" setup>
-import {defineProps, watch, defineEmits, reactive, ref} from "vue";
+import {defineEmits, defineProps, reactive, ref, watch} from "vue";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {CardinalityType} from "@/domain/operations/single-cardinality/Transformer";
@@ -83,9 +83,7 @@ function isValidDotNotation(content: string) {
   return content !== ""
 }
 
-function saveContent(event: InputEvent) {
-  // const content = (event.target as HTMLInputElement).value
-  // * convert dot notation path to json and set cardinality as value
+function saveContent() {
 
   if (isValidDotNotation(state.pathToKey)) {
     setBadFormat(false)

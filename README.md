@@ -6,6 +6,26 @@ The jolt-builder-client (or jolt spec builder or whatever I land on for a name :
 language behind clearly named UI elements and focusing in on the parts of jolt spec objects that we really need to
 edit. <come back and clarify this explanation>
 
+## Terms
+
+### Jolt Doc Array
+
+The contents of the array that makes up all of the jolt steps.
+
+![jolt doc array](./readme_attachments/jolt-doc-array.png)
+
+### Jolt Document (joltDoc)
+
+The entire contents of a single jolt step.
+
+![jolt doc](./readme_attachments/jolt-doc.png)
+
+### Jolt Spec
+
+The contents of the `spec` property in a jolt doc.
+
+![jolt spec](./readme_attachments/jolt-spec.png)
+
 ## Objectives
 
 ### MVP

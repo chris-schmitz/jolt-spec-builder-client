@@ -1,19 +1,14 @@
-import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation"
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation"
 import jsonPath from "jsonpath"
 import {SingleCardinalityRenderData, SingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/UiBlock";
+
 
 export enum CardinalityType {
     ONE = "ONE",
     MANY = "MANY"
 }
 
-export function toSingleCardinalityUiBlock(targetKeyPath: string, cardinalityType: CardinalityType): SingleCardinalityUiBlock {
-    return new SingleCardinalityUiBlock({}, {targetKeyPath, cardinalityType})
-}
 
-
-// ? does this really belong in with the stores, or is this more of a utility class? does it belong in the domain directory??
 export function toUiBlock(operation: JoltOperation): SingleCardinalityUiBlock {
     const targetKeyPath = objectToDotNotation(operation.spec) || ""
     let cardinality = "ONE"
@@ -69,8 +64,3 @@ function objectToDotNotation(spec: object): string | undefined {
 
     return firstKey
 }
-
-// function getTargetKeyPath(specDoc: object) {
-//     const dotNotation = objectToDotNotation(specDoc)
-//     return typeof dotNotation !== "undefined" ? dotNotation : ""
-// }

@@ -1,6 +1,6 @@
 import {defineStore} from 'pinia'
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
-import {convertBlockToSpecList, convertSpecListToBlocks, joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
+import {convertBlockToSpecList, convertSpecListToBlocks, joltDocToUiBlock} from "@/utilities/TransformationUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
 
@@ -46,7 +46,7 @@ export const useSpecStore = defineStore('Spec Store', {
         },
         addBlock(payload: BlockUpdateRequest) {
             const {index, operation} = payload
-            const block = joltSpecDocToUiBlock(operation)
+            const block = joltDocToUiBlock(operation)
             const targetIndex = index ? index : this.specBlockList.length
             this.specBlockList.splice(targetIndex, 0, block)
         }

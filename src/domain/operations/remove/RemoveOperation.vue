@@ -14,7 +14,7 @@ import {computed, defineEmits, defineProps, reactive, ref, watch} from "vue";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
+import {joltDocToUiBlock} from "@/utilities/TransformationUtilities";
 import isValidJson from "@/utilities/JsonValidator";
 
 const state = reactive({
@@ -57,7 +57,7 @@ function saveContent(event: InputEvent) {
 
 
 function formatOperation(spec: object): UIBlockOperation {
-  return joltSpecDocToUiBlock({
+  return joltDocToUiBlock({
     operation: "remove",
     renderComponent: UiBlockTypes.REMOVE,
     spec

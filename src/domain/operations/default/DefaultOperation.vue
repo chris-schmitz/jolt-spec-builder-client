@@ -1,46 +1,33 @@
 <template>
-  <!--  TODO replace with a contenteditable div -->
   <div class="block-wrapper">
-    <h2>Shift</h2>
+    <h2>Default</h2>
     <textarea
-        :value="shiftInstructionsString"
+        :value="specContentString"
         @blur="saveContent"
         :class="{'bad-format': badFormat}"
     ></textarea>
-    <label for="pass-along"
-    >Pass along other data to next operation:
-      <input
-          type="checkbox"
-          id="pass-along"
-          v-model="state.passAlongOtherContent"
-          @change="togglePassAlong"
-      /></label>
   </div>
 </template>
 
 <script lang="ts" setup>
-import {defineProps, computed, watch, defineEmits, reactive, ref} from "vue";
+import {computed, defineEmits, defineProps, reactive, ref, watch} from "vue";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
+import {joltDocToUiBlock} from "@/utilities/TransformationUtilities";
 import isValidJson from "@/utilities/JsonValidator";
-import {ShiftBlockRenderData} from "@/domain/operations/shift/Transformer";
-import {ShiftUiBlock} from "@/domain/operations/shift/UiBlock";
 
 const state = reactive({
   specContentString: {},
-  passAlongOtherContent: true,
 })
 let badFormat = ref(false)
 
 const props = defineProps<{ block: UIBlockOperation, index: number }>()
-const shiftInstructionsString = computed(() => JSON.stringify(state.specContentString, null, 2))
+const specContentString = computed(() => JSON.stringify(state.specContentString, null, 2))
 
 
-watch(() => props.block, (newValue: ShiftUiBlock) => {
+watch(() => props.block, (newValue: UIBlockOperation) => {
       state.specContentString = newValue.spec
-      state.passAlongOtherContent = (newValue.renderData as ShiftBlockRenderData).passAlong as boolean
 
       if (isValidJson(JSON.stringify(state.specContentString))) {
         setBadFormat(false)
@@ -55,17 +42,12 @@ function setBadFormat(value: boolean) {
   badFormat.value = value
 }
 
-function togglePassAlong() {
-  const operation = rebuildUiBlockData(state.specContentString);
-  notifyOfBlockUpdate(operation);
-}
-
 function saveContent(event: InputEvent) {
   const content = (event.target as HTMLTextAreaElement).value
 
   if (isValidJson(content)) {
     setBadFormat(false)
-    const operation = rebuildUiBlockData(JSON.parse(content))
+    const operation = formatOperation(JSON.parse(content))
     notifyOfBlockUpdate(operation);
   } else {
     setBadFormat(true)
@@ -74,8 +56,12 @@ function saveContent(event: InputEvent) {
 }
 
 
-function rebuildUiBlockData(shiftInstructions: object): ShiftUiBlock {
-  return new ShiftUiBlock(shiftInstructions, {passAlong: state.passAlongOtherContent})
+function formatOperation(spec: object): UIBlockOperation {
+  return joltDocToUiBlock({
+    operation: "default",
+    renderComponent: UiBlockTypes.DEFAULT,
+    spec
+  })
 }
 
 const emit = defineEmits(['block-operation-updated'])

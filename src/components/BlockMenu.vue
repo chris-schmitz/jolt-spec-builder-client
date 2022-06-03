@@ -17,15 +17,14 @@
 import {reactive} from "vue";
 import {useSpecStore} from "@/store/SpecStore";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
-import {joltSpecDocToUiBlock} from "@/utilities/TransformationUtilities";
-//? convert the js files to ts???
-import shiftTemplate from "@/domain/operations/shift/template"
-import removeTemplate from "@/domain/operations/remove/template"
-import rawTemplate from "@/domain/operations/raw/template"
-import defaultTemplate from "@/domain/operations/default/template"
-import parsedIngredientTemplate from "@/domain/operations/parsed-ingredients/template"
-import singleCardinalityTemplate from "@/domain/operations/single-cardinality/template"
-import coreProductTemplate from "@/domain/li-operations/core-product/template"
+import ShiftMenuItem from "@/domain/operations/shift/BlockMenuItem"
+import SingleCardinalityMenuItem from "@/domain/operations/single-cardinality/BlockMenuItem"
+import RemoveMenuItem from "@/domain/operations/remove/BlockMenuItem"
+import RawMenuItem from "@/domain/operations/raw/BlockMenuItem"
+import ParsedIngredientsMenuItem from "@/domain/operations/parsed-ingredients/BlockMenuItem"
+import DefaultMenuItem from "@/domain/operations/default/BlockMenuItem"
+import CoreProductMenuItem from "@/domain/li-operations/core-product/BlockMenuItem"
+
 
 const store = useSpecStore()
 
@@ -36,34 +35,13 @@ interface UiBlockButton {
 
 
 const blockButtons: UiBlockButton[] = [
-  {
-    label: 'Raw Jolt',
-    template: joltSpecDocToUiBlock(rawTemplate),
-  },
-  {
-    label: 'Default',
-    template: joltSpecDocToUiBlock(defaultTemplate)
-  },
-  {
-    label: 'Shift',
-    template: joltSpecDocToUiBlock(shiftTemplate)
-  },
-  {
-    label: 'Single Cardinality',
-    template: joltSpecDocToUiBlock(singleCardinalityTemplate)
-  },
-  {
-    label: 'Remove',
-    template: joltSpecDocToUiBlock(removeTemplate)
-  },
-  {
-    label: 'Parsed Ingredients',
-    template: joltSpecDocToUiBlock(parsedIngredientTemplate)
-  },
-  {
-    label: "Core Product",
-    template: joltSpecDocToUiBlock(coreProductTemplate)
-  }
+  SingleCardinalityMenuItem,
+  ShiftMenuItem,
+  RemoveMenuItem,
+  RawMenuItem,
+  ParsedIngredientsMenuItem,
+  DefaultMenuItem,
+  CoreProductMenuItem
 ]
 
 const state = reactive({blocks: blockButtons})

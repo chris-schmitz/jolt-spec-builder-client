@@ -2,12 +2,12 @@
 // ? does it make sense to leave this logic in here, or would this be better
 // ? placed in a utility file?
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
-import ShiftOperation from "@/components/ui-blocks/ShiftOperation.vue";
-import DefaultOperation from "@/components/ui-blocks/DefaultOperation.vue";
-import RemoveOperation from "@/components/ui-blocks/RemoveOperation.vue";
-import RawJolt from "@/components/ui-blocks/RawJolt.vue";
+import ShiftOperation from "@/domain/operations/shift/ShiftOperation.vue";
+import DefaultOperation from "@/domain/operations/default/DefaultOperation.vue";
+import RemoveOperation from "@/domain/operations/remove/RemoveOperation.vue";
+import RawJolt from "@/domain/operations/raw/RawJolt.vue";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import SingleCardinalityOperation from "@/components/ui-blocks/SingleCardinalityOperation.vue"
+import SingleCardinalityOperation from "@/domain/operations/single-cardinality/SingleCardinalityOperation.vue"
 
 
 export interface RawBlockRenderData {
