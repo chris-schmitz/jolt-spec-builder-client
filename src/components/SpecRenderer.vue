@@ -2,7 +2,7 @@
   <div class="renderer-wrapper">
     <component
         v-for="(block,index) in store.specBlockList"
-        v-bind:key="block.id"
+        :key="block.id"
         :block="block"
         :index="index"
         :is="determineBlockComponent(block)"
@@ -16,10 +16,9 @@
 import {useSpecStore} from '@/store/SpecStore';
 import {onBeforeMount} from "vue";
 import {determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
-import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {convertBlockToSpecList} from "@/utilities/TransformationUtilities";
 import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
-import {runTransformation, submitSpecAndInput, TransformationRequest} from "@/utilities/SpecSubmitter";
+import {specSubmitter} from "@/main"
 
 
 const store = useSpecStore();
@@ -41,7 +40,7 @@ function updateBlocks() {
 async function updateSingleBlock(event: BlockUpdateRequest) {
   store.updateBlock(event);
   const specList = convertBlockToSpecList(store.specBlockList)
-  runTransformation(specList)
+  specSubmitter.runTransformation(specList)
 }
 
 // ^ ==== Life cycle hooks ==== ^ //

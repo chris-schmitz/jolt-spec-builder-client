@@ -30,10 +30,12 @@ import SpecRenderer from '@/components/SpecRenderer.vue';
 import InputPanel from '@/components/InputPanel.vue';
 import OutputPanel from '@/components/OutputPanel.vue';
 import FullSpecInput from '@/components/FullSpecInput.vue';
+
 import {useSpecStore} from '@/store/SpecStore';
 import {reactive} from 'vue'
 
 const store = useSpecStore();
+
 const state = reactive({
   specView: 'blocks',
 })

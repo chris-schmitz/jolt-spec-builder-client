@@ -5,7 +5,7 @@ import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
 
 
-interface SpecStoreState {
+export interface SpecStoreState {
     input: string,
     output: string,
     joltSpecList: JoltOperation[]

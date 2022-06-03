@@ -11,7 +11,7 @@
 <script lang="ts" setup>
 import {defineProps} from "vue";
 import {useSpecStore} from "@/store/SpecStore";
-import {runTransformation} from "@/utilities/SpecSubmitter";
+import {specSubmitter} from "@/main"
 
 const props = defineProps(["modelValue"])
 
@@ -19,7 +19,7 @@ const store = useSpecStore()
 
 function handleChange(event: InputEvent) {
   notifyOfInputUpdate(event)
-  runTransformation()
+  specSubmitter.runTransformation()
 }
 
 

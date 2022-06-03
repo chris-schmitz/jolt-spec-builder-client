@@ -8,9 +8,11 @@
 </template>
 
 <script lang="ts" setup>
+import {specSubmitter} from "@/main";
+
 import {useSpecStore} from '@/store/SpecStore';
 import {onBeforeMount, computed} from "vue";
-import {runTransformation} from "@/utilities/SpecSubmitter";
+
 
 const store = useSpecStore()
 
@@ -20,7 +22,7 @@ const specListAsString = computed(() => JSON.stringify(store.joltSpecList, null,
 function handleInput(event: InputEvent) {
   const specList = JSON.parse((event.target as HTMLTextAreaElement).value)
   store.setJoltSpec(specList);
-  runTransformation()
+  specSubmitter.runTransformation()
 }
 
 onBeforeMount(() => {
