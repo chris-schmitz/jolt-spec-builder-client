@@ -23,7 +23,7 @@ import {computed, defineEmits, defineProps, reactive, ref, watch} from "vue";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import isValidJson from "@/utilities/JsonValidator";
-import {ShiftBlockRenderData, ShiftUiBlock} from "@/domain/operations/shift/UiBlock";
+import {ShiftBlockRenderData, ShiftUiBlock} from "@/domain/operations/shift/ShiftUiBlock";
 
 const state = reactive({
   specContentString: {},

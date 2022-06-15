@@ -1,6 +1,6 @@
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation"
 import jsonPath from "jsonpath"
-import {SingleCardinalityRenderData, SingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/UiBlock";
+import {SingleCardinalityRenderData, SingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/SingleCardinalityUiBlock";
 
 
 export enum CardinalityType {

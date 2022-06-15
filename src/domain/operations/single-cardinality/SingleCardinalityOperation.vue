@@ -46,7 +46,7 @@ import {defineEmits, defineProps, reactive, ref, watch} from "vue";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {CardinalityType} from "@/domain/operations/single-cardinality/Transformer";
-import {SingleCardinalityRenderData, SingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/UiBlock";
+import {SingleCardinalityRenderData, SingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/SingleCardinalityUiBlock";
 
 const state = reactive({
   pathToKey: "",

@@ -1,13 +1,15 @@
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import {ShiftBlockRenderData, ShiftUiBlock} from "@/domain/operations/shift/UiBlock";
+import {ShiftBlockRenderData} from "@/domain/operations/shift/ShiftUiBlock";
+import {ParsedIngredientsUiBlock} from "@/domain/operations/parsed-ingredients/ParsedIngredientsUiBlock";
 
 
 // TODO: consider location
 // ? does this really belong in with the stores, or is this more of a utility class? does it belong in the domain directory??
-export function toUiBlock(operation: JoltOperation): ShiftUiBlock {
+export function toUiBlock(operation: JoltOperation): ParsedIngredientsUiBlock {
     const renderData: ShiftBlockRenderData = {
         passAlong: false
     }
+
     const spec = JSON.parse(JSON.stringify(operation.spec))
     if ('@' in operation.spec || '@1' in operation.spec) {
         renderData.passAlong = true
@@ -18,10 +20,10 @@ export function toUiBlock(operation: JoltOperation): ShiftUiBlock {
     } else {
         renderData.passAlong = false
     }
-    return new ShiftUiBlock(spec, renderData)
+    return new ParsedIngredientsUiBlock(spec, renderData)
 }
 
-export function toJoltOperation(block: ShiftUiBlock) {
+export function toJoltOperation(block: ParsedIngredientsUiBlock) {
     const operation = new JoltOperation(block.operation, block.renderComponent, block.spec)
     if ((block.renderData as ShiftBlockRenderData).passAlong) {
         // @ts-ignore

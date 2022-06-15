@@ -1,5 +1,5 @@
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import {ShiftBlockRenderData, ShiftUiBlock} from "@/domain/operations/shift/UiBlock";
+import {ShiftBlockRenderData, ShiftUiBlock} from "@/domain/operations/shift/ShiftUiBlock";
 
 
 // TODO: consider location

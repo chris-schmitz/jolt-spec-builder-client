@@ -1,15 +1,9 @@
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
+import {RemoveUiBlock} from "@/domain/operations/remove/RemoveUiBlock";
 
 export function toUiBlock(operation: JoltOperation) {
-    return new UIBlockOperation(
-        operation.operation,
-        UiBlockTypes.REMOVE,
-        operation.spec,
-        {}
-    )
-
+    return new RemoveUiBlock(operation.spec, {})
 }
 
 export function toJoltOperation(block: UIBlockOperation) {

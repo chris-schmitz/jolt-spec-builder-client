@@ -6,6 +6,7 @@ import {toJoltOperation as toRawJoltOperation, toUiBlock as toRawUiBlock} from "
 import {toJoltOperation as toRemoveJoltOperation, toUiBlock as toRemoveUiBlock} from "@/domain/operations/remove/Transformer";
 import {toJoltOperation as toDefaultJoltOperation, toUiBlock as toDefaultUiBlock} from "@/domain/operations/default/Transformer";
 import {toJoltOperation as toSingleCardinalityJoltOperation, toUiBlock as toSingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/Transformer";
+import {toJoltOperation as toParsedIngredientsJoltOperation, toUiBlock as toParsedIngredientsUiBlock} from "@/domain/operations/parsed-ingredients/Transformer"
 
 
 export function joltDocToUiBlock(specDocument: JoltOperation): UIBlockOperation {
@@ -16,27 +17,29 @@ export function joltDocToUiBlock(specDocument: JoltOperation): UIBlockOperation 
             return toDefaultUiBlock(specDocument)
         case UiBlockTypes.SINGLE_CARDINALITY:
             return toSingleCardinalityUiBlock(specDocument)
-        case UiBlockTypes.SHIFT:
         case UiBlockTypes.PARSED_INGREDIENTS:
+            return toParsedIngredientsUiBlock(specDocument)
+        case UiBlockTypes.SHIFT:
             return toShiftUiBlock(specDocument)
         default:
             return toRawUiBlock(specDocument)
     }
 }
 
-
 export function uiBlockToJoltDoc(block: UIBlockOperation) {
     switch (block.renderComponent) {
-        case 'shift':
+        case UiBlockTypes.SHIFT:
             return toShiftJoltOperation(block)
-        case 'remove':
+        case UiBlockTypes.REMOVE:
             return toRemoveJoltOperation(block)
         case UiBlockTypes.SINGLE_CARDINALITY:
             return toSingleCardinalityJoltOperation(block)
-        case 'default':
+        case UiBlockTypes.DEFAULT:
             return toDefaultJoltOperation(block)
-        case 'sort':
-        case 'cardinality':
+        case UiBlockTypes.PARSED_INGREDIENTS:
+            return toParsedIngredientsJoltOperation(block)
+        // case 'sort':
+        // case 'cardinality':
         default:
             return toRawJoltOperation(block)
     }
