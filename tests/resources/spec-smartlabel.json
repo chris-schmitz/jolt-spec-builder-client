@@ -1,0 +1,677 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "nutritionSection": {
+        "nfpLabelType": {
+          "NEW_LABEL_2018": {
+            "#NEW_LABEL": "jolt_labelType"
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "nutritionSection": {
+        "nutrientFactPanels": {
+          "0": {
+            "serving": {
+              "servingsPerPack": "jolt_nutritionSection.nutrientPanels[0].servingPerContainer"
+            },
+            "nutrients": {
+              "*": {
+                "headNutrient": {
+                  "headNutrientName": {
+                    "Calories from Saturated Fat|Calories From Sat Fat Percent|Calories From Sugar Percent|Calories From Fat Percent|Sodium per Calorie|Carbohydrate Exchange|Calories From Carbohydrates Percent": null,
+                    "*": {
+                      "@(2,headNutrientName)": {
+                        "Calories": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Calories": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Calories From Fat": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Calories From Fat": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Total Fat": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Fat": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Saturated Fat": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Fat": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Trans Fat": {
+                          "#<i>Trans</i> Fat": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Fat": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Polyunsaturated Fat": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Fat": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Monounsaturated Fat": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Fat": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Cholesterol": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Cholesterol": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Sodium": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Sodium": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Total Carbohydrate": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Carbohydrate": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Dietary Fiber": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Fiber": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Sugars": {
+                          "#Total Sugars": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Carbohydrate": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Added Sugars": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Carbohydrate": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Sugar Alcohol": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Carbohydrate": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Protein": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Protein": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Vitamin D": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Vitamin A": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Vitamin B6": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Vitamin B12": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Pantothenic Acid": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Vitamin C": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Vitamin E": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Vitamin K": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Calcium": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Mineral": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Iron": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Mineral": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Potassium": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Mineral": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Zinc": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Mineral": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Selenium": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Mineral": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Manganese": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Mineral": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Copper": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Mineral": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Thiamin": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Riboflavin": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Niacin": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Folate": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Folic Acid": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Vitamin": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Magnesium": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Mineral": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        },
+                        "Phosphorus": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].name",
+                          "#Mineral": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].group"
+                        }
+                      },
+                      "@(3,operator)": "jolt_nutritionSection.nutrientPanels[0].nutrients[&4].symbol",
+                      "@(3,percentDv)": {
+                        "*.0": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].dvpEndsWithZero"
+                        },
+                        "*": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].value"
+                        }
+                      },
+                      "@(3,perServe)": {
+                        "*.0": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].valueEndsWithZero"
+                        },
+                        "*": {
+                          "@1": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].value"
+                        }
+                      },
+                      "@(3,unitOfMeasure)": "jolt_nutritionSection.nutrientPanels[0].nutrients[&4].uom",
+                      "@(2,bold)": "jolt_nutritionSection.nutrientPanels[0].nutrients[&4].bold",
+                      "@(7,nfpLabelType)": {
+                        "NEW_LABEL_2018": {
+                          "@(4,newLabelOrdering)": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].order"
+                        },
+                        "*": {
+                          "@(4,ordering)": "jolt_nutritionSection.nutrientPanels[0].nutrients[&6].order"
+                        }
+                      },
+                      "@(2,indent)": "jolt_nutritionSection.nutrientPanels[0].nutrients[&4].indent",
+                      "@(2,headNutrientId)": "jolt_nutritionSection.nutrientPanels[0].nutrients[&4].feNutrientId"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "jolt_nutritionSection": {
+        "nutrientPanels": {
+          "*": "=recursivelySquashNulls"
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "jolt_nutritionSection": {
+        "nutrientPanels": {
+          "*": {
+            "nutrients": {
+              "*": {
+                "valueEndsWithZero": "=toInteger",
+                "dvpEndsWithZero": "=toInteger"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "jolt_nutritionSection": {
+        "nutrientPanels": {
+          "*": {
+            "nutrients": {
+              "*": {
+                "valueEndsWithZero": "jolt_nutritionSection.nutrientPanels[0].nutrients[&1].value",
+                "dvpEndsWithZero": "jolt_nutritionSection.nutrientPanels[0].nutrients[&1].dvp"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-default-beta",
+    "spec": {
+      "jolt_nutritionSection": {
+        "nutrientPanels": {
+          "*": {
+            "nutrients": {
+              "*": {
+                "value": "",
+                "dvp": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "jolt_nutritionSection": {
+        "nutrientPanels": {
+          "*": {
+            "nutrients": {
+              "*": {
+                "value": "=toString",
+                "dvp": "=toString"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "imageSection": {
+        "primaryImage": {
+          "imageUrls": {
+            "SMALL": {
+              "url": "jolt_marketingImage.small"
+            },
+            "LARGE": {
+              "url": "jolt_marketingImage.medium"
+            },
+            "MAX_RESOLUTION": {
+              "url": "jolt_marketingImage.high"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "allergens": "jolt_allergens"
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "attributes": "jolt_attributes"
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "claimContainers": "jolt_claimContainers"
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "derivedClaims": "jolt_derivedClaims"
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "enrichments": "jolt_enrichments"
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "ingredientSection": {
+        "ingredients": "jolt_ingredientSection.ingredientDeclaration"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "prepareProduct": {
+        "brand": "jolt_brand"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "prepareProduct": {
+        "feProdId": "jolt_id"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "prepareProduct": {
+        "productTitle": [
+          "jolt_description",
+          "jolt_title"
+        ]
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "prepareProduct": {
+        "productType": "jolt_productType"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "prepareProduct": {
+        "upc": "jolt_upc"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "prepareProduct": {
+        "warnings": "jolt_warnings"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "prepareProduct": {
+        "organization": "jolt_organizationId"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "individualPackaging": {
+        "packageSize1": "jolt_packageSizes.size1",
+        "uom1": "jolt_packageSizes.uom1",
+        "packageSize2": "jolt_packageSizes.size2",
+        "uom2": "jolt_packageSizes.uom2"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "prepareProduct": {
+        "unParsedSize": "jolt_productSize"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "nutritionSection": {
+        "nutrientFactPanels": {
+          "0": {
+            "serving": {
+              "description": "jolt_parsedServingSize.description",
+              "size": "jolt_parsedServingSize.size",
+              "sizeUom": "jolt_parsedServingSize.sizeUom",
+              "size2": "jolt_parsedServingSize.size2",
+              "sizeUom2": "jolt_parsedServingSize.sizeUom2"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-default-beta",
+    "spec": {
+      "jolt_parsedServingSize": {
+        "pretty": "=concat(@(1,description),' ',@(1,size),' ',@(1,sizeUom),' (',@(1,size2),' ',@(1,sizeUom2),')')"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "jolt_parsedServingSize": {
+        "pretty": "jolt_nutritionSection.nutrientPanels[0].servingSize"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "enrichments": {
+        "*": {
+          "enrichmentType": {
+            "BRAND_INFO": {
+              "@(2,enrichment)": {
+                "name": "jolt_companyBrandSection.name",
+                "legacyInfo": {
+                  "distributor": [
+                    "jolt_companyBrandSection.distributor",
+                    "jolt_distributor"
+                  ],
+                  "manufacturer": "jolt_manufacturer",
+                  "email": "jolt_companyBrandSection.email",
+                  "telephone": "jolt_companyBrandSection.consumerHotLine",
+                  "brandAddress": "jolt_companyBrandSection.address",
+                  "brandWebsite": "jolt_companyBrandSection.brandUrl",
+                  "manufacturerWebsite": "jolt_companyBrandSection.manufacturerUrl",
+                  "facebookUrl": {
+                    "@": "jolt_companyBrandSection.contacts[0].value",
+                    "#FACEBOOK_URL": "jolt_companyBrandSection.contacts[0].contactType"
+                  },
+                  "pinterestUrl": {
+                    "@": "jolt_companyBrandSection.contacts[1].value",
+                    "#PINTEREST_URL": "jolt_companyBrandSection.contacts[1].contactType"
+                  },
+                  "twitterUrl": {
+                    "@": "jolt_companyBrandSection.contacts[2].value",
+                    "#TWITTER_URL": "jolt_companyBrandSection.contacts[2].contactType"
+                  },
+                  "instagramUrl": {
+                    "@": "jolt_companyBrandSection.contacts[3].value",
+                    "#INSTAGRAM_URL": "jolt_companyBrandSection.contacts[3].contactType"
+                  },
+                  "privacyPolicyLink": {
+                    "@": [
+                      "jolt_companyBrandSection.contacts[4].value",
+                      "jolt_companyBrandSection.privacyPolicy"
+                    ],
+                    "#PRIVACY_POLICY_LINK": "jolt_companyBrandSection.contacts[4].contactType",
+                    "#false": "jolt_companyBrandSection.contacts[4].isHidden"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "onboardingProductInfo": {
+        "uniqueExternalIdentifiers": {
+          "*": {
+            "externalClientIdentifier": {
+              "clientName": {
+                "LABEL INSIGHT": {
+                  "@(2,identifierType)": {
+                    "MANUFACTURER_ID": {
+                      "@(7,uniqueExternalIdentifiers[&5])": "jolt_ExternalClientIdentifier[]"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "jolt_ExternalClientIdentifier": {
+        "*": {
+          "externalClientIdentifier": {
+            "@(1,value)": "jolt_ProductIdentifiers"
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "@1": "",
+      "variantIdOrUpc": "jolt_variantIdOrUpc"
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "jolt_companyBrandSection": {
+        "contacts": {
+          "*": {
+            "isHidden": "=toBoolean"
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "jolt_labelType": "labelType",
+      "jolt_manufacturer": "manufacturer",
+      "jolt_distributor": "distributor",
+      "jolt_nutritionSection": "nutritionSection",
+      "jolt_marketingImage": "marketingImage",
+      "jolt_allergens": "allergens",
+      "jolt_attributes": "attributes",
+      "jolt_claimContainers": "claimContainers",
+      "jolt_derivedClaims": "derivedClaims",
+      "jolt_enrichments": "enrichments",
+      "jolt_brand": "brand",
+      "jolt_id": "id",
+      "jolt_description": "description",
+      "jolt_title": "title",
+      "jolt_productType": "productType",
+      "jolt_upc": "upc",
+      "jolt_warnings": "warnings",
+      "jolt_organizationId": "organizationId",
+      "jolt_ingredientSection": "ingredientSection",
+      "jolt_productSize": "productSize",
+      "jolt_companyBrandSection": "companyBrandSection",
+      "jolt_ProductIdentifiers": "productIdentifiers",
+      "jolt_variantIdOrUpc": "variantIdOrUpc"
+    }
+  },
+  {
+    "operation": "default",
+    "spec": {
+      "manufacturer": "",
+      "organizationId": "",
+      "distributor": "",
+      "advisorySection": {
+        "advisories": []
+      },
+      "productSize": "",
+      "nutritionSection": {
+        "calorieContents": [],
+        "nutrientDisclaimer": null,
+        "nutrientFactPanelCaloriesPerGram": "UNKNOWN",
+        "nutrientFactPanelFooter": "UNKNOWN",
+        "nutrientFactsPanelDisclaimers": [],
+        "nutrientPanels": [],
+        "nutrientSymbols": [],
+        "nutritionClaims": []
+      },
+      "otherSection": {
+        "certifications": [],
+        "claims": {},
+        "generalInformations": [],
+        "gmoDisclosures": [],
+        "healthSafeties": [],
+        "productInstructions": [],
+        "sustainability": []
+      },
+      "companyBrandSection": {
+        "name": "",
+        "distributor": "",
+        "address": "",
+        "email": "",
+        "consumerHotLine": "",
+        "contactHours": "",
+        "manufacturerUrl": "",
+        "brandUrl": "",
+        "contactUrl": "",
+        "privacyPolicy": "",
+        "enableFacebook": false,
+        "enableTwitter": false,
+        "enablePinterest": false,
+        "enableInstagram": false,
+        "additionalUrls": []
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "*": "=recursivelySquashNulls"
+    }
+  }
+]

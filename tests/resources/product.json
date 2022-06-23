@@ -1,0 +1,5777 @@
+{
+  "prepareProduct": {
+    "feProdId": 9906895,
+    "upc": "00073390010393",
+    "manufacturer": "Perfetti van Melle USA Inc.",
+    "brand": "Mentos",
+    "subbrand": null,
+    "flavor": null,
+    "productTitle": "Mentos Pure Fresh Sugar-Free Chewing Gum with Xylitol, Spearmint, 80 Piece Paperboard Bottle",
+    "unParsedSize": null,
+    "storage": "Frozen",
+    "petFoodType": null,
+    "audience": null,
+    "source": 3,
+    "ingredients": "XYLITOL, SORBITOL, CHEWING GUM BASE, MANNITOL, GLYCERIN, MALTITOL SYRUP, MALTODEXTRIN, LESS THAN 2% OF: ARTIFICIAL FLAVORS, RICE STARCH, ASPARTAME, ACESULFAME K, COCONUT OIL, SODIUM CARBOXYMETHYLCELLULOSE, SUCROSE FATTY ACID ESTERS, LECITHIN (SOY), GREEN TEA EXTRACT, CARNAUBA WAX, SUCRALOSE, XANTHAN GUM, BHT TO MAINTAIN FRESHNESS, BLUE 1 LAKE, BLUE 1. ",
+    "manufacturerClaims": null,
+    "warnings": "",
+    "marketingClaims": null,
+    "marketingClaimsMturk": null,
+    "labelInfo": null,
+    "indications": null,
+    "drugInteractions": null,
+    "instructions": null,
+    "otherInfo": "US",
+    "aisle": "FROZEN FOOD",
+    "shelf": "Ice Cream & Frozen Yogurt",
+    "foodCategory": "Ice Cream - Ice Pops & Juice Bars",
+    "frontOfPackageClaims": null,
+    "status": "100",
+    "dateEntered": "2022-01-27T21:25:00.000+00:00",
+    "userEntered": "nifi@labelinsight.com",
+    "noIngredients": 0,
+    "noSize": 0,
+    "productImageType": null,
+    "realizationStatuses": [
+      210,
+      220,
+      230,
+      240,
+      250,
+      260,
+      270,
+      280,
+      290,
+      300,
+      310,
+      320,
+      330,
+      340,
+      210,
+      220,
+      230,
+      240,
+      250,
+      260,
+      270,
+      280,
+      290,
+      300,
+      310,
+      320,
+      330,
+      340,
+      210,
+      220,
+      230,
+      240,
+      250,
+      260,
+      270,
+      280,
+      290,
+      300,
+      310,
+      320,
+      330,
+      340
+    ],
+    "productType": "Food",
+    "ndbId": null,
+    "plu": null,
+    "organization": "8025",
+    "organizationGroup": "Mentos",
+    "submissionSource": "One World Sync Submission",
+    "recognizedForClaims": true,
+    "recognizedForIngredients": true
+  },
+  "ingredientContainers": [],
+  "ingredientDecks": [],
+  "claimsByType": {},
+  "attributes": [
+    "GMA_ALMOND_FREE_COMBINATION",
+    "PASSES_SATURATED_FAT_DISCLOSURE",
+    "GMA_WALNUT_FREE_COMBINATION",
+    "aha_sodium_140_relevancy",
+    "AHA_STANDARD_TRANS_FAT",
+    "GMA_CASHEW_FREE_COMBINATION",
+    "DOES_NOT_HAVE_PREPARATION_INSTRUCTIONS",
+    "AHA_STANDARD_ALL_CATEGORY_DROOLS",
+    "TARGET_PET_NATURAL_INELIGIBLE_ICON_TEST",
+    "GMA_EUGENOL_FREE_COMBINATION",
+    "GMA_CORN_FREE_COMBINATION",
+    "NUTRIENT_NAME_SUGAR",
+    "LOW_SODIUM_DASH",
+    "HAS_SERVING_SIZE_UOM",
+    "GMA_QUEENSLAND_NUT_FREE_COMBINATION",
+    "AHA_STANDARD_SODIUM",
+    "NLS_WTA_FDA_SATURATED_FAT_FREE_2018",
+    "WHEAT_FREE_WARNING_FILTER_BASE",
+    "WLMT_NONCOMEDOGENIC_ING",
+    "MONDELEZ_CALORIE_THRESHOLD_TOTAL",
+    "SPECIALTY_DIETS_AGGREGATE",
+    "KETO_NEGATIVE",
+    "NLS_WTA_FDA_LOW_CALORIE_2018",
+    "GMA_GERANIOL_FREE_COMBINATION",
+    "CORN_FREE_WARNING_FILTER_BASE",
+    "ZERO_ING_COMBINATION",
+    "HW_SPECIALTY_DIETS_AGGREGATE",
+    "FDA_REGULATED_PRODUCT_FOOD_ONLY",
+    "LOW_SAT_FAT",
+    "schnucks_ice_cream_relevancy",
+    "HW_FDA_AHA_NUTRITION_AGGREGATE",
+    "FOODS_TO_LIMIT_SODIUM",
+    "DIABETES_FF_CARB_0_TEMP",
+    "afs_ice_cream_frozen_yogurt_ranking_relevancy",
+    "NUTRIENT_UOM_SODIUM",
+    "PALEO_NEGATIVE",
+    "NLS_WTA_LOW_SODIUM_DIET",
+    "MILK_FREE_WARNING_FILTER_BASE",
+    "CONTAINS_NO_BIOTIN",
+    "GMA_EVERNIA_PRUNASTRI_FREE_COMBINATION",
+    "PEANUT_FREE_WARNING_FILTER_BASE",
+    "ADDITIONAL_NUTRIENT_DENSE_REQUIREMENTS",
+    "AHA_STANDARD_CERT_DNM",
+    "TARGET_GLUTEN_FREE_FAIL_WI_TEST",
+    "TARGET_NUTRITIOUS_2_NUTRIENTS",
+    "ALL_PRODUCTS",
+    "HEB_KETO_INDIVIDUAL",
+    "ORGANIC_POPSICLES_CAT_CONCEPT",
+    "FDA_REGULATED_PRODUCT",
+    "LESS_THAN_FIVE_ING_COMBINATION",
+    "TARGET_NF_RESPONSIBLE_INELIGIBLE_ICON_TEST",
+    "LOW_SAT_FAT_COMBINATION",
+    "TARGET_PET_MIN_REQUIREMENTS_FAIL_TEST",
+    "GMA_HYDROXYCITRONELLAL_FREE_COMBINATION",
+    "LOW_CALORIE_2018",
+    "SHELF_TAG_FDA_LOW_SODIUM",
+    "TARGET_NUTRITIOUS_2_SODIUM",
+    "ALLERGEN_WARNING_FILTER",
+    "SHELF_TAG_FDA_SODIUM_FREE",
+    "DIABETES_FRIENDLY",
+    "SODIUM_CONSCIOUS_DIET_COMBINATION",
+    "TARGET_WHOLE_GRAIN_FAIL_WI_TEST",
+    "NUTRIENT_NAME_FAT",
+    "conagra_net_carb_dessert_relevancy",
+    "product_type_all_food_relevancy",
+    "TARGET_NF_PHTHALATE_FREE_INELIGIBLE_ICON_TEST",
+    "GMA_BENZYL_ALCOHOL_FREE_COMBINATION",
+    "bj_ice_cream_frozen_yogurt_ranking_relevancy",
+    "CHOLESTEROL_FREE",
+    "05_SUGAR_FREE",
+    "DAIRY_FREE_WARNING_FILTER_BASE",
+    "TARGET_NF_BIO_BASED_INELIGIBLE_ICON_TEST",
+    "OCTINOXATE_FREE_ING",
+    "PROPYL_PARABEN_FREE_COMBINATION",
+    "fe_food_relevancy",
+    "SAT_FAT_FREE",
+    "SCHNUCKS_MINIMUM_REQUIREMENTS",
+    "5_CALORIE_FREE",
+    "GMA_COCOA_FREE_COMBINATION",
+    "NLS_WTA_FDA_LOW_CALORIE",
+    "SULFITE_FREE_WARNING_FILTER_BASE",
+    "WRONG_DISCLOSURE_FILTER",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL_SODIUM",
+    "NO_EGG_WARNING_FILTER_BASE",
+    "KG_PHA_LEVEL_2_SATURATED_FAT",
+    "CARB_SMART_NUTRIENTS",
+    "NLS_WTA_LESS_THAN_TEN_ING",
+    "5_SODIUM_FREE",
+    "HEB_0_5_NET_CARBS",
+    "TRICLOCARBAN_FREE_ING",
+    "HIGHERORDERATTRIBUTES",
+    "KG_PHA_SUGAR_DISCLOSURE_FILTER",
+    "TARGET_NF_SULFATE_FREE_INELIGIBLE_ICON_TEST",
+    "NLS_WTA_FDA_SUGAR_FREE",
+    "SESAME_FREE_WARNING_FILTER_BASE",
+    "GMA_ALPHA-ISOMETHYL_IONONE_FREE_COMBINATION",
+    "not_minimally_processed_relevancy",
+    "TARGET_NUTRITIOUS_2_TOTAL_FAT",
+    "FIVE_LESS_INGREDIENTS_BASE",
+    "LOW_CALORIE",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL_CHOLESTEROL",
+    "strengthens_immunity_none_relevancy",
+    "NUTRIENT_NAME_CALORIES",
+    "TARGET_DASH_DIET",
+    "NLS_WTA_ZERO_ING",
+    "FAT_CONSCIOUS_DIET_COMBINATION",
+    "TARGET_KETO_NEGATIVE",
+    "GMA_RYE_FREE_COMBINATION",
+    "CHOLESTEROL_FREE_COMBINATION",
+    "GMA_COUMARIN_FREE_COMBINATION",
+    "RALEYS_MIN_PROCESSED_FROZEN",
+    "TARGET_FAIR_TRADE_FAIL_WI_TEST",
+    "CONTAINS_NO_FOLIC_ACID",
+    "NLS_WTA_LOW_CALORIE_DIET",
+    "SPARTANNASH_ANTIBIOTIC_FREE",
+    "CONAGRA_NET_CARB_10_GRAMS",
+    "TRICLOSAN_FREE_ING",
+    "CALORIE_SMART",
+    "FROZEN_COMBINATION",
+    "rouses_artificial_sweetener_exclusion_relevancy",
+    "KG_PHA_LEVEL_2_SODIUM",
+    "CALORIE_CONSCIOUS_DIET_COMBINATION",
+    "NLS_WTA_FDA_SUGAR_FREE_2018",
+    "GMA_HHYDROXYISOHEXYL_3_CYCLOHEXANE_CARB_FREE_COMBINATION",
+    "GMA_EVERNIA_FURFURACEA_FREE_COMBINATION",
+    "PLANT_BASED_MEAT_POS",
+    "keto_diet_relevancy",
+    "GMA_ANISE_ALCOHOL_FREE_COMBINATION",
+    "LI_SUGAR_DISCLOSURE_FILTER",
+    "TARGET_RESPONSIBLE_FAIL_WI_TEST",
+    "SAT_FAT_FREE_COMBINATION",
+    "FAT_FREE",
+    "heart_check_not_certifiable_relevancy",
+    "ANY_NUTRIENT_OVER_0",
+    "NLS_WTA_LESS_THAN_FIVE_ING",
+    "NO_SOY_WARNINGS_FILTER_BASE",
+    "NLS_WTA_MED_SUP_FREE_FROM_GELATIN",
+    "li_cough_support_disqualifying_relevancy",
+    "whole_30_diet_unacceptable_relevancy",
+    "AHA_STANDARD_SAT_FAT",
+    "TARGET_NUTRITIOUS_FAIL_WI_TEST",
+    "SHELLFISH_FREE_WARNING_FILTER_BASE",
+    "CONTAINS_NO_VITAMIN_A_RETINOL_ACTIVITY_EQUIVALENT",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL_SAT_FAT",
+    "CONTAINS_NO_VITAMIN_B12",
+    "HYDROQUINONE_FREE_ING",
+    "100_CALORIES_LESS_DROOLS",
+    "0MG_SODIUM_PER_SERVE",
+    "GMA_PEAS_FREE_COMBINATION",
+    "LOW_SODIUM_DIET_COMBINATION",
+    "GLUTEN_FREE_WARNING_FILTER_BASE",
+    "1_TO_50_CALORIES_PER_SERVING",
+    "NUTRIENT_DENSE_INGREDIENT_REQUIREMENTS",
+    "MEAT_CAT_VEGAN_CLAIM",
+    "SUGAR_FREE_COMBINATION",
+    "1G_TO_15G_CARBOHYDRATE_PER_SERVING",
+    "DIABETES_FRIENDLY_COMBINATION",
+    "GMA_HEXYL_CINNAMAL_FREE_COMBINATION",
+    "TARGET_NF_BIODEGRADEABLE_INELIGIBLE_ICON_TEST",
+    "CHILD_PHA_RELEVANCY_BASE",
+    "target_keto_diet_relevancy",
+    "walmart_easy_to_eat_relevancy",
+    "NLS_WTA_PECTIN_FREE",
+    "CONTAINS_NO_VITAMIN_K",
+    "GMA_BUTYLPHENYL_METHYLPROP_FREE_COMBINATION",
+    "LOW_FAT_DIET_COMBINATION",
+    "LOW_FAT_DASH",
+    "NUTRIENT_NAME_PROTEIN",
+    "FOODS_TO_LIMIT_PLUS_SAT_FAT",
+    "NLS_WTA_MED_SUP_FREE_FROM_GLYCERINE",
+    "TARGET_NF_NON_TOXIC_INELIGIBLE_ICON_TEST",
+    "GMA_CITRAL_FREE_COMBINATION",
+    "CHOLESTEROL_CONSCIOUS_DIET_COMBINATION",
+    "GMA_CARROT_FREE_COMBINATION",
+    "NUTRIENT_UOM_CALORIES",
+    "DASH_DIET",
+    "atkins_carbs_relevancy",
+    "FOODS_TO_LIMIT_PLUS_SODIUM",
+    "HEART_HEALTHY_NOT_SMALL_RACC",
+    "NO_VEGAN_WARNING_FILTER_BASE",
+    "CARB_RANGE_0_5_COMBINATION",
+    "SUGAR_CONSCIOUS_DIET_COMBINATION",
+    "NLS_WTA_DIABETES_FRIENDLY_ABBOTT",
+    "TARGET_PET_ORGANIC_INELIGIBLE_ICON_TEST",
+    "NLS_WTA_FDA_LOW_FAT_2018",
+    "GMA_CITRONELLOL_FREE_COMBINATION",
+    "NO_LACTOSE_WARNING_FILTER_BASE",
+    "NLS_WTA_LOW_FAT_DIET_2018",
+    "CONTAINS_NO_VITAMIN_B1_(THIAMIN)",
+    "CONTAINS_NO_VITAMIN_B2_(RIBOFLAVIN)",
+    "CONTAINS_NO_VITAMIN_B3_(NIACIN)",
+    "CARB_SMART",
+    "NLS_WTA_FDA_LOW_CHOLESTEROL",
+    "HACK_TARGET_HFCS_FREE",
+    "CONTAINS_NO_VITAMIN_E",
+    "CONTAINS_NO_VITAMIN_C",
+    "CONTAINS_NO_VITAMIN_D",
+    "GMA_FARNESOL_FREE_COMBINATION",
+    "TREE_NUT_FREE_WARNING_FILTER_BASE",
+    "FDA_DISCLOSURE_FILTER_CHOLESTEROL",
+    "CONTAINS_NO_VITAMIN_A",
+    "GMA_BARLEY_FREE_COMBINATION",
+    "NUTRIENT_NAME_TOTAL_CARBOHYDRATE",
+    "HAC_ice_cream_frozen_yogurt_ranking_relevancy",
+    "GMA_CINNAMYL_ALCOHOL_FREE_COMBINATION",
+    "AFS_ADDED_SUGARS",
+    "TARGET_SIMPLE_INGREDIENTS_FAIL_WI_TEST",
+    "TARGET_NF_CRUELTY_FREE_INELIGIBLE_ICON_TEST",
+    "PALEO_DIET_STRICT_NEGATIVE",
+    "FISH_FREE_WARNING_FILTER_BASE",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL_TOTAL_FAT",
+    "FDA_DISCLOSURE_FILTER",
+    "COCONUT_FREE_WARNING_FILTER_BASE",
+    "LOW_FAT_COMBINATION",
+    "sugary_foods_relevancy",
+    "not_paleo_relevancy",
+    "RALEYS_AHA_SUGAR_FILTER",
+    "TARGET_VEGAN_FAIL_WI_TEST",
+    "CARB_EXCHANGE_LEVEL_1",
+    "nls_wta_carbs_relevancy",
+    "GMA_CELERY_FREE_COMBINATION",
+    "GMA_METHYL_2-OCTYNOATE_FREE_COMBINATION",
+    "100_CALORIES_LESS",
+    "TARGET_PLANT_BASED_FAIL_WI_TEST",
+    "cs_ice_cream_froyo_relevancy",
+    "EDIBLE_PRODUCT_TYPE",
+    "GMA_ALPHA_ISOMETHYL_IONONE_FREE_COMBINATION",
+    "GMA_MUSTARD_FREE_COMBINATION",
+    "GMA_METHYL_2_OCTYNOATE_FREE_COMBINATION",
+    "PASSES_TOTAL_FAT_DISCLOSURE",
+    "NUTRIENT_UOM_FAT",
+    "ALCOHOL_FREE_ALL",
+    "NLS_WTA_LOW_SODIUM_DIET_2018",
+    "NUTRIENT_UOM_SUGAR",
+    "NUTRIENT_UOM_PROTEIN",
+    "ALUMINUM_FREE_ING",
+    "LOW_CHOLESTEROL_COMBINATION",
+    "NO_ADDED_SUGAR_COMBINATION",
+    "OXYBENZONE_FREE_ING",
+    "CONTAINS_NO_BETA_CAROTENE",
+    "SUGAR_FREE",
+    "LOW_CALORIE_COMBINATION",
+    "TARGET_PET_NON_GMO_INELIGIBLE_ICON_TEST",
+    "rouses_eat_right_frozen_relevancy",
+    "DASH_POSITIVE",
+    "MONDELEZ_BASE_NUTRIENT_REQUIREMENTS",
+    "LOW_SODIUM",
+    "NLS_WTA_FDA_FAT_FREE_2018_2018",
+    "HW_DETRIMENTAL_NUTRIENTS_AGGREGATE",
+    "WEGMAN_WELLNESS_LOW_CALORIE",
+    "CONTAINS_NO_VITAMIN_D3",
+    "TARGET_NF_VEGAN_INELIGIBLE_ICON_TEST",
+    "WEGMAN_WELLNESS_FAT_FREE",
+    "AHA_STANDARD_BENEFICIAL_NUTRIENTS_DNM",
+    "TARGET_CLEAN_ESSENTIALS_BEAUTY_FORMULATED_CATEGORY",
+    "SUGAR_CONSCIOUS_NUTRIENT_REQUIREMENTS",
+    "AHA_STANDARD_CHOLESTEROL",
+    "200_CALORIES_LESS_PER_SERVING",
+    "NLS_WTA_FDA_LOW_CHOLESTEROL_2018",
+    "WEGMAN_WELLNESS_LOW_SODIUM",
+    "HYVEE_LOW_CALORIE",
+    "TARGET_ORGANIC_FAIL_WI_TEST",
+    "AHA_STANDARD_ALL_CATEGORY",
+    "CONTAINS_NO_VITAMINS",
+    "rouses_sweet_dep_relevancy",
+    "harris_teeter_ice_cream_relevancy",
+    "CONTAINS_NO_VITAMIN_D2_AND_D3",
+    "GMA_BENZYL_CINNAMATE_FREE_COMBINATION",
+    "WHOLE_30_DIET_NEGATIVE",
+    "ecomm_ice_cream_relevancy",
+    "plant_based_protein_soy_relevancy",
+    "mediterranean_exclusions_relevancy",
+    "NUTRIENT_UOM_TOTAL_CARBOHYDRATE",
+    "TARGET_NF_PARABEN_FREE_INELIGIBLE_ICON_TEST",
+    "ALOE_FREE_DERIVED_LI",
+    "AHA_STANDARD_TOTAL_FAT_DROOLS",
+    "FOODS_TO_LIMIT_SUGAR",
+    "food_type_ii_relevancy",
+    "PECTIN_FREE_COMBINATION",
+    "AHA_HEART_HEALTHY_STANDARD_DNM_DROOLS",
+    "FDAMA_FATS_AND_HEART_DISEASE_CLAIM_DNM",
+    "GMA_BENZYL_BENZOATE_FREE_COMBINATION",
+    "SODIUM_FREE_COMBINATION",
+    "WEGMAN_WELLNESS_LOW_FAT",
+    "05_FAT_FREE",
+    "INDIVIDUAL_PRODUCTS",
+    "SN_LIVING_WELL_MEAT_POSITIVE_QUALIFIERS",
+    "KG_NUTRIENT_DENSE_CALORIES",
+    "SPARTANNASH_HORMONE_FREE",
+    "heb_ice_cream_frozen_yogurt_ranking_relevancy",
+    "RETINYL_PALMITATE_FREE_ING",
+    "TARGET_MIN_REQUIREMENT_ESSENTIALS_FAIL_TEST",
+    "0G_TOTAL_FAT_PER_SERVE",
+    "NLS_WTA_FDA_LOW_SODIUM_2018",
+    "NLS_WTA_FDA_LOW_SODIUM",
+    "TARGET_PET_NO_ARTIFICIAL_FLAV_COL_PRES_INELIGIBLE_ICON_TEST",
+    "CONTAINS_NO_FOLATE",
+    "TARGET_DASH_POSITIVE",
+    "TARGET_NF_NONGMO_INELIGIBLE_ICON_TEST",
+    "TARGET_NF_GLUTEN_FREE_INELIGIBLE_ICON_TEST",
+    "INGESTIBLE_CLAIM",
+    "NIELSEN_FROZEN",
+    "AHA_CRRC_2",
+    "100_CALORIES_OR_LESS_COMBINATION",
+    "GMA_HAZELNUT_FREE_COMBINATION",
+    "LOW_CHOLESTEROL",
+    "SODIUM_FREE_2018",
+    "PASSES_SODIUM_DISCLOSURE",
+    "200_CALORIES_LESS_PER_RACC",
+    "GMA_CINNAMAL_FREE_COMBINATION",
+    "GMA_LUPIN_FREE_COMBINATION",
+    "TARGET_NF_PLANT_BASED_INELIGIBLE_ICON_TEST",
+    "TARGET_NF_FRAGRANCE_FREE_INELIGIBLE_ICON_TEST",
+    "TARGET_PET_MEAT_1_ING_INELIGIBLE_ICON_TEST",
+    "CARB_RANGE_0_5",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL",
+    "PASSES_CHOLESTEROL_DISCLOSURE",
+    "NLS_WTA_LOW_FAT_DIET",
+    "FOODS_TO_LIMIT_SAT_FAT",
+    "1_TO_50_CALORIES_PER_SERVE",
+    "CONAGRA_NET_CARB",
+    "ROUSES_EAT_RIGHT_SODIUM_REQS",
+    "RITE_AID_NO_SHELF_TAG",
+    "LOW_FAT_2018",
+    "LESS_THAN_TEN_ING_COMBINATION",
+    "NLS_WTA_FDA_SODIUM_FREE_2018",
+    "PRODUCT_TYPE_FOOD",
+    "TARGET_PET_GRAIN_FREE_INELIGIBLE_ICON_TEST",
+    "LOW_SODIUM_COMBINATION",
+    "NLS_WTA_FDA_TRANS_FAT_FREE_2018",
+    "LOW_SUGAR_DIET_COMBINATION",
+    "GMA_BRAZIL_NUT_FREE_COMBINATION",
+    "GREAT_FOR_CLASSROOMS",
+    "NLS_WTA_FDA_CHOLESTEROL_FREE",
+    "NLS_WTA_LOW_CALORIE_DIET_2018",
+    "TARGET_NON_GMO_FAIL_WI_TEST",
+    "NLS_WTA_FDA_SODIUM_FREE",
+    "LOW_FAT",
+    "MONDELEZ_CALORIES_NO_SERVING_UOM_G_ML",
+    "0G_PROTEIN_PER_SERVING",
+    "FDA_AHA_NUTRITION_AGGREGATE",
+    "TARGET_SIMPLE_INGREDIENTS_CRITERIA_INELIGIBLE_WI_TEST",
+    "GMA_AMYL_CINNAMAL_FREE_COMBINATION",
+    "200_CALORIES_LESS",
+    "GMA_HHYDROXYISOHEXYL_3-CYCLOHEXANE_CARB_FREE_COMBINATION",
+    "AHA_STANDARD_SODIUM_DROOLS",
+    "RALEYS_MIN_PROCESSED_INGREDIENTS",
+    "FOODS_TO_LIMIT_TOTAL_FAT",
+    "AHA_CRRC_ADDED_SUGAR",
+    "NLS_WTA_FDA_SATURATED_FAT_FREE",
+    "TARGET_PET_NO_ANIMAL_BYPRODUCTS_INELIGIBLE_ICON_TEST",
+    "NLS_WTA_CLEAN_LABEL_ZERO",
+    "PARAFFIN_FREE_ING",
+    "LOW_CALORIE_DIET_COMBINATION",
+    "gfh_ice_cream_frozen_yogurt_ranking_relevancy",
+    "GMA_PECAN_NUT_FREE_COMBINATION",
+    "GMA_BENZYL_SALICYLATE_FREE_COMBINATION",
+    "NUTRIENT_NAME_SODIUM",
+    "GMA_MACADAMIA_NUT_FREE_COMBINATION",
+    "NLS_WTA_FDA_FAT_FREE",
+    "individual",
+    "ecomm_website_ice_cream_relevancy",
+    "CONTAINS_NO_VITAMIN_B6",
+    "KG_PHA_LEVEL_2_ADDED_SUGAR",
+    "EASY_TO_EAT_RELEVANCY",
+    "13G_FAT_OR_LESS",
+    "AHA_STANDARD_BENEFICIAL_NUTRIENTS_DNM_DROOLS",
+    "ROLLUP",
+    "HW_FOOD_AS_MEDICINE_AGGREGATE",
+    "TRANS_FAT_FREE",
+    "LI_CLEAN_LABEL_0",
+    "NLS_WTA_FDA_LOW_FAT",
+    "LOW_SODIUM_2018",
+    "MINT_FLAVOR_CLAIM",
+    "awg_rankings_ice_pops_juice_bars_relevancy",
+    "NLS_WTA_FDA_TRANS_FAT_FREE",
+    "AHA_STANDARD_TOTAL_FAT",
+    "not_small_racc_relevancy",
+    "SODIUM_FREE",
+    "AHA_STANDARD_CERT_DNM_DROOLS",
+    "SPARTANNASH_PESTICIDE_FREE",
+    "FAT_FREE_COMBINATION",
+    "TARGET_NF_ORGANIC_INELIGIBLE_ICON_TEST",
+    "GMA_PISTACHIO_FREE_COMBINATION",
+    "FOOD_AS_MEDICINE_AGGREGATE",
+    "NLS_WTA_LOW_SUGAR_DIET",
+    "NLS_WTA_LOW_CARB_DIET",
+    "spartannash_ice_cream_frozen_yogurt_desserts_relevancy",
+    "NLS_WTA_FDA_CHOLESTEROL_FREE_2018"
+  ],
+  "activeIngredientSection": {
+    "activeIngredientPanels": [
+      {
+        "activeIngredients": []
+      }
+    ],
+    "primaryActiveIngredientPanel": {
+      "activeIngredients": []
+    }
+  },
+  "lastUpdatedDate": null,
+  "retailers": [],
+  "claims": [],
+  "categoryLogs": [],
+  "logoSection": {
+    "productLogos": []
+  },
+  "collectionSource": "Retailer",
+  "contactInformation": {
+    "addresses": [],
+    "phoneNumbers": [],
+    "websites": [],
+    "emails": [],
+    "distributedBy": null,
+    "facebook": null,
+    "twitter": null,
+    "instagram": null,
+    "pinterest": null,
+    "importedBy": null
+  },
+  "cookingInstructions": {
+    "noCookingInstructions": true,
+    "warnings": [],
+    "instructionSets": []
+  },
+  "nutritionSection": {
+    "noNutrients": false,
+    "noServings": false,
+    "nfpLabelType": "OLD_LABEL",
+    "nfpFooter": "NOT_APPLICABLE",
+    "nfpCaloriesPerGram": "NOT_APPLICABLE",
+    "nutrientFactPanels": [
+      {
+        "id": 1,
+        "name": "Per Serving",
+        "serving": {
+          "description": "1 Piece",
+          "size": "1",
+          "sizeUom": "Pieces",
+          "size2": null,
+          "sizeUom2": null,
+          "servingsPerPack": "Exact 80"
+        },
+        "nutrients": [
+          {
+            "nutrientName": "Calories",
+            "operator": "<",
+            "perServe": 5.0,
+            "percentDv": null,
+            "percentDvOperator": null,
+            "unitOfMeasure": "Cal",
+            "nutrientId": 1,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": null,
+            "perRacc": {
+              "raccValue": 5.0,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": 5.0,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 1,
+              "headNutrientName": "Calories",
+              "indexName": "Calories",
+              "defaultUom": "Cal",
+              "nutrientType": 0,
+              "ordering": 1,
+              "newLabelOrdering": 1,
+              "indent": 0,
+              "isBold": true,
+              "bold": true
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Total Fat",
+            "operator": "=",
+            "perServe": 0.0,
+            "percentDv": 0.0,
+            "percentDvOperator": null,
+            "unitOfMeasure": "g",
+            "nutrientId": 5,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": {
+              "per100Value": 0.0,
+              "per100Dvp": null
+            },
+            "perRacc": {
+              "raccValue": 0.0,
+              "raccDvp": 0.0
+            },
+            "perRacc2018": {
+              "raccValue": 0.0,
+              "raccDvp": 0.0
+            },
+            "headNutrient": {
+              "headNutrientId": 5,
+              "headNutrientName": "Total Fat",
+              "indexName": "Total Fat",
+              "defaultUom": "g",
+              "nutrientType": 0,
+              "ordering": 3,
+              "newLabelOrdering": 3,
+              "indent": 0,
+              "isBold": true,
+              "bold": true
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Sodium",
+            "operator": "=",
+            "perServe": 0.0,
+            "percentDv": 0.0,
+            "percentDvOperator": null,
+            "unitOfMeasure": "mg",
+            "nutrientId": 17,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": {
+              "per100Value": 0.0,
+              "per100Dvp": null
+            },
+            "perRacc": {
+              "raccValue": 0.0,
+              "raccDvp": 0.0
+            },
+            "perRacc2018": {
+              "raccValue": 0.0,
+              "raccDvp": 0.0
+            },
+            "headNutrient": {
+              "headNutrientId": 17,
+              "headNutrientName": "Sodium",
+              "indexName": "Sodium",
+              "defaultUom": "mg",
+              "nutrientType": 0,
+              "ordering": 9,
+              "newLabelOrdering": 9,
+              "indent": 0,
+              "isBold": true,
+              "bold": true
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Total Carbohydrate",
+            "operator": "=",
+            "perServe": 1.0,
+            "percentDv": 1.0,
+            "percentDvOperator": null,
+            "unitOfMeasure": "g",
+            "nutrientId": 19,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": {
+              "per100Value": 20.0,
+              "per100Dvp": null
+            },
+            "perRacc": {
+              "raccValue": 1.0,
+              "raccDvp": 1.0
+            },
+            "perRacc2018": {
+              "raccValue": 1.0,
+              "raccDvp": 1.0
+            },
+            "headNutrient": {
+              "headNutrientId": 19,
+              "headNutrientName": "Total Carbohydrate",
+              "indexName": "Total Carbohydrate",
+              "defaultUom": "g",
+              "nutrientType": 0,
+              "ordering": 11,
+              "newLabelOrdering": 11,
+              "indent": 0,
+              "isBold": true,
+              "bold": true
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Sugars",
+            "operator": "=",
+            "perServe": 0.0,
+            "percentDv": null,
+            "percentDvOperator": null,
+            "unitOfMeasure": "g",
+            "nutrientId": 25,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": {
+              "per100Value": 0.0,
+              "per100Dvp": null
+            },
+            "perRacc": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 25,
+              "headNutrientName": "Sugars",
+              "indexName": "Sugars",
+              "defaultUom": "g",
+              "nutrientType": 0,
+              "ordering": 15,
+              "newLabelOrdering": 15,
+              "indent": 1,
+              "isBold": false,
+              "bold": false
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Protein",
+            "operator": "=",
+            "perServe": 0.0,
+            "percentDv": null,
+            "percentDvOperator": null,
+            "unitOfMeasure": "g",
+            "nutrientId": 29,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": {
+              "per100Value": 0.0,
+              "per100Dvp": null
+            },
+            "perRacc": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 29,
+              "headNutrientName": "Protein",
+              "indexName": "Protein",
+              "defaultUom": "g",
+              "nutrientType": 0,
+              "ordering": 18,
+              "newLabelOrdering": 18,
+              "indent": 0,
+              "isBold": true,
+              "bold": true
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Sugar Alcohol",
+            "operator": "=",
+            "perServe": 1.0,
+            "percentDv": null,
+            "percentDvOperator": null,
+            "unitOfMeasure": "g",
+            "nutrientId": 135,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": {
+              "per100Value": 20.0,
+              "per100Dvp": null
+            },
+            "perRacc": {
+              "raccValue": 1.0,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": 1.0,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 135,
+              "headNutrientName": "Sugar Alcohol",
+              "indexName": "Sugar Alcohol",
+              "defaultUom": "mg",
+              "nutrientType": 1,
+              "ordering": 16,
+              "newLabelOrdering": 17,
+              "indent": 1,
+              "isBold": false,
+              "bold": false
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Calories From Sat Fat Percent",
+            "operator": "=",
+            "perServe": 0.0,
+            "percentDv": null,
+            "percentDvOperator": "=",
+            "unitOfMeasure": "%",
+            "nutrientId": 2940,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": null,
+            "perRacc": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 2940,
+              "headNutrientName": "Calories From Sat Fat Percent",
+              "indexName": "Calories From Sat Fat Percent",
+              "defaultUom": "none",
+              "nutrientType": 1,
+              "ordering": 0,
+              "newLabelOrdering": 2,
+              "indent": 0,
+              "isBold": false,
+              "bold": false
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Calories From Sugar Percent",
+            "operator": "=",
+            "perServe": 0.0,
+            "percentDv": null,
+            "percentDvOperator": "=",
+            "unitOfMeasure": "%",
+            "nutrientId": 3790,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": null,
+            "perRacc": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 3790,
+              "headNutrientName": "Calories From Sugar Percent",
+              "indexName": "Calories From Sugar Percent",
+              "defaultUom": "none",
+              "nutrientType": 1,
+              "ordering": 0,
+              "newLabelOrdering": 0,
+              "indent": 0,
+              "isBold": false,
+              "bold": false
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Calories From Fat Percent",
+            "operator": "=",
+            "perServe": 0.0,
+            "percentDv": null,
+            "percentDvOperator": "=",
+            "unitOfMeasure": "%",
+            "nutrientId": 4700,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": null,
+            "perRacc": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 4700,
+              "headNutrientName": "Calories From Fat Percent",
+              "indexName": "Calories From Fat Percent",
+              "defaultUom": "none",
+              "nutrientType": 1,
+              "ordering": 0,
+              "newLabelOrdering": 0,
+              "indent": 0,
+              "isBold": false,
+              "bold": false
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Sodium per Calorie",
+            "operator": "=",
+            "perServe": 0.0,
+            "percentDv": null,
+            "percentDvOperator": "=",
+            "unitOfMeasure": "%",
+            "nutrientId": 13062,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": null,
+            "perRacc": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": 0.0,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 13062,
+              "headNutrientName": "Sodium per Calorie",
+              "indexName": "Sodium per Calorie",
+              "defaultUom": "mg",
+              "nutrientType": 1,
+              "ordering": 0,
+              "newLabelOrdering": 0,
+              "indent": 0,
+              "isBold": false,
+              "bold": false
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Carbohydrate Exchange",
+            "operator": "=",
+            "perServe": 0.07,
+            "percentDv": null,
+            "percentDvOperator": "=",
+            "unitOfMeasure": "%",
+            "nutrientId": 24399,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": null,
+            "perRacc": {
+              "raccValue": null,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": null,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 24399,
+              "headNutrientName": "Carbohydrate Exchange",
+              "indexName": null,
+              "defaultUom": "mg",
+              "nutrientType": 1,
+              "ordering": 0,
+              "newLabelOrdering": 0,
+              "indent": 0,
+              "isBold": false,
+              "bold": false
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          },
+          {
+            "nutrientName": "Calories From Carbohydrates Percent",
+            "operator": "=",
+            "perServe": 80.0,
+            "percentDv": null,
+            "percentDvOperator": "=",
+            "unitOfMeasure": "%",
+            "nutrientId": 33294,
+            "per100g": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100ml": {
+              "per100Value": null,
+              "per100Dvp": null
+            },
+            "per100Calories": null,
+            "perRacc": {
+              "raccValue": 80.0,
+              "raccDvp": null
+            },
+            "perRacc2018": {
+              "raccValue": 80.0,
+              "raccDvp": null
+            },
+            "headNutrient": {
+              "headNutrientId": 33294,
+              "headNutrientName": "Calories From Carbohydrates Percent",
+              "indexName": "Calories From Carbohydrates Percent",
+              "defaultUom": "none",
+              "nutrientType": 1,
+              "ordering": 0,
+              "newLabelOrdering": 0,
+              "indent": 0,
+              "isBold": false,
+              "bold": false
+            },
+            "nutrientRange": {
+              "perServeOperatorMin": null,
+              "perServeValueMin": null,
+              "perServeUomMin": null,
+              "perServeOperatorMax": null,
+              "perServeValueMax": null,
+              "perServeUomMax": null
+            },
+            "odiOrderLevel": null,
+            "recognized": true,
+            "per100": {
+              "per100Value": null,
+              "per100Dvp": null
+            }
+          }
+        ]
+      }
+    ],
+    "nutrientDisclaimer": null,
+    "nutrientSymbols": [],
+    "calorieContents": [],
+    "aafcoNutritionStatement": null,
+    "calculatedCalorieContent": false,
+    "primaryNutrientFactPanel": {
+      "id": 1,
+      "name": "Per Serving",
+      "serving": {
+        "description": "1 Piece",
+        "size": "1",
+        "sizeUom": "Pieces",
+        "size2": null,
+        "sizeUom2": null,
+        "servingsPerPack": "Exact 80"
+      },
+      "nutrients": [
+        {
+          "nutrientName": "Calories",
+          "operator": "<",
+          "perServe": 5.0,
+          "percentDv": null,
+          "percentDvOperator": null,
+          "unitOfMeasure": "Cal",
+          "nutrientId": 1,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": null,
+          "perRacc": {
+            "raccValue": 5.0,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": 5.0,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 1,
+            "headNutrientName": "Calories",
+            "indexName": "Calories",
+            "defaultUom": "Cal",
+            "nutrientType": 0,
+            "ordering": 1,
+            "newLabelOrdering": 1,
+            "indent": 0,
+            "isBold": true,
+            "bold": true
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Total Fat",
+          "operator": "=",
+          "perServe": 0.0,
+          "percentDv": 0.0,
+          "percentDvOperator": null,
+          "unitOfMeasure": "g",
+          "nutrientId": 5,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": {
+            "per100Value": 0.0,
+            "per100Dvp": null
+          },
+          "perRacc": {
+            "raccValue": 0.0,
+            "raccDvp": 0.0
+          },
+          "perRacc2018": {
+            "raccValue": 0.0,
+            "raccDvp": 0.0
+          },
+          "headNutrient": {
+            "headNutrientId": 5,
+            "headNutrientName": "Total Fat",
+            "indexName": "Total Fat",
+            "defaultUom": "g",
+            "nutrientType": 0,
+            "ordering": 3,
+            "newLabelOrdering": 3,
+            "indent": 0,
+            "isBold": true,
+            "bold": true
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Sodium",
+          "operator": "=",
+          "perServe": 0.0,
+          "percentDv": 0.0,
+          "percentDvOperator": null,
+          "unitOfMeasure": "mg",
+          "nutrientId": 17,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": {
+            "per100Value": 0.0,
+            "per100Dvp": null
+          },
+          "perRacc": {
+            "raccValue": 0.0,
+            "raccDvp": 0.0
+          },
+          "perRacc2018": {
+            "raccValue": 0.0,
+            "raccDvp": 0.0
+          },
+          "headNutrient": {
+            "headNutrientId": 17,
+            "headNutrientName": "Sodium",
+            "indexName": "Sodium",
+            "defaultUom": "mg",
+            "nutrientType": 0,
+            "ordering": 9,
+            "newLabelOrdering": 9,
+            "indent": 0,
+            "isBold": true,
+            "bold": true
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Total Carbohydrate",
+          "operator": "=",
+          "perServe": 1.0,
+          "percentDv": 1.0,
+          "percentDvOperator": null,
+          "unitOfMeasure": "g",
+          "nutrientId": 19,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": {
+            "per100Value": 20.0,
+            "per100Dvp": null
+          },
+          "perRacc": {
+            "raccValue": 1.0,
+            "raccDvp": 1.0
+          },
+          "perRacc2018": {
+            "raccValue": 1.0,
+            "raccDvp": 1.0
+          },
+          "headNutrient": {
+            "headNutrientId": 19,
+            "headNutrientName": "Total Carbohydrate",
+            "indexName": "Total Carbohydrate",
+            "defaultUom": "g",
+            "nutrientType": 0,
+            "ordering": 11,
+            "newLabelOrdering": 11,
+            "indent": 0,
+            "isBold": true,
+            "bold": true
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Sugars",
+          "operator": "=",
+          "perServe": 0.0,
+          "percentDv": null,
+          "percentDvOperator": null,
+          "unitOfMeasure": "g",
+          "nutrientId": 25,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": {
+            "per100Value": 0.0,
+            "per100Dvp": null
+          },
+          "perRacc": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 25,
+            "headNutrientName": "Sugars",
+            "indexName": "Sugars",
+            "defaultUom": "g",
+            "nutrientType": 0,
+            "ordering": 15,
+            "newLabelOrdering": 15,
+            "indent": 1,
+            "isBold": false,
+            "bold": false
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Protein",
+          "operator": "=",
+          "perServe": 0.0,
+          "percentDv": null,
+          "percentDvOperator": null,
+          "unitOfMeasure": "g",
+          "nutrientId": 29,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": {
+            "per100Value": 0.0,
+            "per100Dvp": null
+          },
+          "perRacc": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 29,
+            "headNutrientName": "Protein",
+            "indexName": "Protein",
+            "defaultUom": "g",
+            "nutrientType": 0,
+            "ordering": 18,
+            "newLabelOrdering": 18,
+            "indent": 0,
+            "isBold": true,
+            "bold": true
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Sugar Alcohol",
+          "operator": "=",
+          "perServe": 1.0,
+          "percentDv": null,
+          "percentDvOperator": null,
+          "unitOfMeasure": "g",
+          "nutrientId": 135,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": {
+            "per100Value": 20.0,
+            "per100Dvp": null
+          },
+          "perRacc": {
+            "raccValue": 1.0,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": 1.0,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 135,
+            "headNutrientName": "Sugar Alcohol",
+            "indexName": "Sugar Alcohol",
+            "defaultUom": "mg",
+            "nutrientType": 1,
+            "ordering": 16,
+            "newLabelOrdering": 17,
+            "indent": 1,
+            "isBold": false,
+            "bold": false
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Calories From Sat Fat Percent",
+          "operator": "=",
+          "perServe": 0.0,
+          "percentDv": null,
+          "percentDvOperator": "=",
+          "unitOfMeasure": "%",
+          "nutrientId": 2940,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": null,
+          "perRacc": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 2940,
+            "headNutrientName": "Calories From Sat Fat Percent",
+            "indexName": "Calories From Sat Fat Percent",
+            "defaultUom": "none",
+            "nutrientType": 1,
+            "ordering": 0,
+            "newLabelOrdering": 2,
+            "indent": 0,
+            "isBold": false,
+            "bold": false
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Calories From Sugar Percent",
+          "operator": "=",
+          "perServe": 0.0,
+          "percentDv": null,
+          "percentDvOperator": "=",
+          "unitOfMeasure": "%",
+          "nutrientId": 3790,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": null,
+          "perRacc": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 3790,
+            "headNutrientName": "Calories From Sugar Percent",
+            "indexName": "Calories From Sugar Percent",
+            "defaultUom": "none",
+            "nutrientType": 1,
+            "ordering": 0,
+            "newLabelOrdering": 0,
+            "indent": 0,
+            "isBold": false,
+            "bold": false
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Calories From Fat Percent",
+          "operator": "=",
+          "perServe": 0.0,
+          "percentDv": null,
+          "percentDvOperator": "=",
+          "unitOfMeasure": "%",
+          "nutrientId": 4700,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": null,
+          "perRacc": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 4700,
+            "headNutrientName": "Calories From Fat Percent",
+            "indexName": "Calories From Fat Percent",
+            "defaultUom": "none",
+            "nutrientType": 1,
+            "ordering": 0,
+            "newLabelOrdering": 0,
+            "indent": 0,
+            "isBold": false,
+            "bold": false
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Sodium per Calorie",
+          "operator": "=",
+          "perServe": 0.0,
+          "percentDv": null,
+          "percentDvOperator": "=",
+          "unitOfMeasure": "%",
+          "nutrientId": 13062,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": null,
+          "perRacc": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": 0.0,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 13062,
+            "headNutrientName": "Sodium per Calorie",
+            "indexName": "Sodium per Calorie",
+            "defaultUom": "mg",
+            "nutrientType": 1,
+            "ordering": 0,
+            "newLabelOrdering": 0,
+            "indent": 0,
+            "isBold": false,
+            "bold": false
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Carbohydrate Exchange",
+          "operator": "=",
+          "perServe": 0.07,
+          "percentDv": null,
+          "percentDvOperator": "=",
+          "unitOfMeasure": "%",
+          "nutrientId": 24399,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": null,
+          "perRacc": {
+            "raccValue": null,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": null,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 24399,
+            "headNutrientName": "Carbohydrate Exchange",
+            "indexName": null,
+            "defaultUom": "mg",
+            "nutrientType": 1,
+            "ordering": 0,
+            "newLabelOrdering": 0,
+            "indent": 0,
+            "isBold": false,
+            "bold": false
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        },
+        {
+          "nutrientName": "Calories From Carbohydrates Percent",
+          "operator": "=",
+          "perServe": 80.0,
+          "percentDv": null,
+          "percentDvOperator": "=",
+          "unitOfMeasure": "%",
+          "nutrientId": 33294,
+          "per100g": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100ml": {
+            "per100Value": null,
+            "per100Dvp": null
+          },
+          "per100Calories": null,
+          "perRacc": {
+            "raccValue": 80.0,
+            "raccDvp": null
+          },
+          "perRacc2018": {
+            "raccValue": 80.0,
+            "raccDvp": null
+          },
+          "headNutrient": {
+            "headNutrientId": 33294,
+            "headNutrientName": "Calories From Carbohydrates Percent",
+            "indexName": "Calories From Carbohydrates Percent",
+            "defaultUom": "none",
+            "nutrientType": 1,
+            "ordering": 0,
+            "newLabelOrdering": 0,
+            "indent": 0,
+            "isBold": false,
+            "bold": false
+          },
+          "nutrientRange": {
+            "perServeOperatorMin": null,
+            "perServeValueMin": null,
+            "perServeUomMin": null,
+            "perServeOperatorMax": null,
+            "perServeValueMax": null,
+            "perServeUomMax": null
+          },
+          "odiOrderLevel": null,
+          "recognized": true,
+          "per100": {
+            "per100Value": null,
+            "per100Dvp": null
+          }
+        }
+      ]
+    }
+  },
+  "factsUpFront": {
+    "factsUpFrontAmount": {
+      "operator": null,
+      "amount": null
+    },
+    "factsUpFrontList": [],
+    "noFactsUpFront": true
+  },
+  "alcoholFields": null,
+  "individualPackaging": {
+    "packageSize1": "5.644",
+    "uom1": "oz",
+    "packageSize2": null,
+    "uom2": null,
+    "packageSize3": null,
+    "uom3": null,
+    "specialClosure": null,
+    "packaging": "Other",
+    "mixUnitOfMeasureNetWeight": null
+  },
+  "multiPackaging": {
+    "packageSize1": null,
+    "uom1": null,
+    "packageSize2": null,
+    "uom2": null,
+    "packageSize3": null,
+    "uom3": null,
+    "numberPerPack": null,
+    "outerPackaging": null,
+    "mixUnitOfMeasureNetWeight": null,
+    "numberPerPackDescriptor": null
+  },
+  "variantId": "00073390010393",
+  "variantIdOrUpc": "00073390010393",
+  "brand": {
+    "brand": "Mentos",
+    "headBrand": "Mentos",
+    "organizationInfo": {
+      "organizationGroupId": 1534,
+      "organizationGroupName": "Mentos",
+      "organizationId": 8025,
+      "organizationName": null,
+      "brandOwner": null,
+      "brandOwnerId": null
+    },
+    "recognized": true
+  },
+  "ingredientSection": {
+    "noIngredients": false,
+    "ingredients": "XYLITOL, SORBITOL, CHEWING GUM BASE, MANNITOL, GLYCERIN, MALTITOL SYRUP, MALTODEXTRIN, LESS THAN 2% OF: ARTIFICIAL FLAVORS, RICE STARCH, ASPARTAME, ACESULFAME K, COCONUT OIL, SODIUM CARBOXYMETHYLCELLULOSE, SUCROSE FATTY ACID ESTERS, LECITHIN (SOY), GREEN TEA EXTRACT, CARNAUBA WAX, SUCRALOSE, XANTHAN GUM, BHT TO MAINTAIN FRESHNESS, BLUE 1 LAKE, BLUE 1. ",
+    "ingredientSymbols": []
+  },
+  "petFoodFields": {
+    "petFoodType": null,
+    "stage": null,
+    "breedSize": null
+  },
+  "oldestDateRealized": "2021-12-16T00:59:33.000+00:00",
+  "productCodes": [
+    {
+      "productCodeType": "UPC_A",
+      "productCode": "073390010393"
+    },
+    {
+      "productCodeType": "ON_PACK",
+      "productCode": "00073390010393"
+    },
+    {
+      "productCodeType": "NO_CHECK_DIGIT",
+      "productCode": "007339001039"
+    },
+    {
+      "productCodeType": "GTIN_14",
+      "productCode": "00073390010393"
+    }
+  ],
+  "onboardingProductInfo": {
+    "destinations": [
+      "smartlabel"
+    ],
+    "uniqueExternalIdentifiers": [
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "CITY"
+        },
+        "value": "ERLANGER"
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "GSRN"
+        },
+        "value": "101234500012646375"
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "ZIPCODE"
+        },
+        "value": "41018-0190"
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "ENTITYGLN"
+        },
+        "value": "0073390000004"
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "STATECODE"
+        },
+        "value": "KY"
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "UPCPREFIX"
+        },
+        "value": "073390"
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "COMPANYNAME"
+        },
+        "value": "Perfetti Van Melle USA Inc."
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "ADDRESSLINE1"
+        },
+        "value": "PO BOX 18190"
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "DATEMODIFIED"
+        },
+        "value": "{\"day\": 18, \"year\": 2014, \"month\": 10}"
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "PREFIXSTATUS"
+        },
+        "value": "ACTIVE"
+      },
+      {
+        "externalClientIdentifier": {
+          "clientName": "GS1",
+          "identifierType": "PREFIXSTRING"
+        },
+        "value": "0073390"
+      }
+    ],
+    "startDate": null,
+    "endDate": null,
+    "nielsenImageSource": null,
+    "marketplaceIds": [],
+    "lists": [
+      {
+        "organizationId": 8025,
+        "listId": 18,
+        "listName": "SmartLabel Product List",
+        "listType": "SMARTLABEL_ELIGIBLE"
+      }
+    ],
+    "marketplaceMetadata": {}
+  },
+  "derivedAllergens": [
+    {
+      "allergenName": "Crustacean",
+      "containmentCode": "30"
+    },
+    {
+      "allergenName": "Egg",
+      "containmentCode": "30"
+    },
+    {
+      "allergenName": "Fish",
+      "containmentCode": "30"
+    },
+    {
+      "allergenName": "Milk",
+      "containmentCode": "30"
+    },
+    {
+      "allergenName": "Tree Nuts",
+      "containmentCode": "30"
+    },
+    {
+      "allergenName": "Peanut",
+      "containmentCode": "30"
+    },
+    {
+      "allergenName": "Sesame seed",
+      "containmentCode": "30"
+    },
+    {
+      "allergenName": "Soybean",
+      "containmentCode": "CONTAINS"
+    },
+    {
+      "allergenName": "Wheat",
+      "containmentCode": "30"
+    }
+  ],
+  "allergens": [
+    {
+      "name": "Egg",
+      "displayName": null,
+      "displayOrder": 2,
+      "presence": null,
+      "culpritIngredients": [],
+      "description": null,
+      "allergenSubspecies": []
+    },
+    {
+      "name": "Peanuts",
+      "displayName": null,
+      "displayOrder": 5,
+      "presence": null,
+      "culpritIngredients": [],
+      "description": null,
+      "allergenSubspecies": []
+    },
+    {
+      "name": "Shellfish",
+      "displayName": null,
+      "displayOrder": 1,
+      "presence": null,
+      "culpritIngredients": [],
+      "description": null,
+      "allergenSubspecies": []
+    },
+    {
+      "name": "Fish",
+      "displayName": null,
+      "displayOrder": 3,
+      "presence": null,
+      "culpritIngredients": [],
+      "description": null,
+      "allergenSubspecies": []
+    },
+    {
+      "name": "Tree Nuts",
+      "displayName": null,
+      "displayOrder": 7,
+      "presence": null,
+      "culpritIngredients": [],
+      "description": null,
+      "allergenSubspecies": []
+    },
+    {
+      "name": "Soy",
+      "displayName": null,
+      "displayOrder": 6,
+      "presence": "CONTAINS",
+      "culpritIngredients": [],
+      "description": null,
+      "allergenSubspecies": []
+    },
+    {
+      "name": "Wheat",
+      "displayName": null,
+      "displayOrder": 8,
+      "presence": null,
+      "culpritIngredients": [],
+      "description": null,
+      "allergenSubspecies": []
+    },
+    {
+      "name": "Milk",
+      "displayName": null,
+      "displayOrder": 4,
+      "presence": null,
+      "culpritIngredients": [],
+      "description": null,
+      "allergenSubspecies": []
+    },
+    {
+      "name": "Sesame",
+      "displayName": null,
+      "displayOrder": 9,
+      "presence": null,
+      "culpritIngredients": [],
+      "description": null,
+      "allergenSubspecies": []
+    }
+  ],
+  "regionCode": "US",
+  "panelTypes": [],
+  "blends": [],
+  "blendCompositionIngredients": [],
+  "odiOrders": [],
+  "imageSection": {
+    "primaryImage": null,
+    "images": []
+  },
+  "productVersion": null,
+  "gmoPresence": null,
+  "enrichments": [],
+  "isInternal": false,
+  "factPanelImageMetadata": {
+    "svgUrl": null
+  },
+  "passingFeCriteriaChecksAndIsAtTheTopOfTheIndexHierarchy": false,
+  "nonConfidentialAndIsAtTheTopOfTheGenericIndexHierarchy": true,
+  "claimContainers": [
+    {
+      "claim": "US",
+      "claimType": "OTHER_INFORMATION",
+      "productClaimProperties": [
+        {
+          "claim": "US",
+          "claimId": 176210,
+          "level": 199,
+          "headClaimId": 803,
+          "claimType": "OTHER_INFORMATION",
+          "headClaimGroups": []
+        }
+      ],
+      "unrecognized": false
+    },
+    {
+      "claim": "Mentos",
+      "claimType": "BRAND",
+      "productClaimProperties": [
+        {
+          "claim": "MENTOS",
+          "claimId": 34205,
+          "level": 0,
+          "headClaimId": 1030,
+          "claimType": "BRAND",
+          "headClaimGroups": []
+        }
+      ],
+      "unrecognized": false
+    },
+    {
+      "claim": "Mentos Pure Fresh Sugar-Free Chewing Gum with Xylitol, Spearmint, 80 Piece Paperboard Bottle",
+      "claimType": "ROP",
+      "productClaimProperties": [],
+      "unrecognized": true
+    }
+  ],
+  "relationship": {
+    "parentProduct": null,
+    "childProducts": null
+  },
+  "status": null,
+  "racc": {
+    "aisle": "FROZEN FOOD",
+    "shelf": "Ice Cream & Frozen Yogurt",
+    "foodCategory": "Ice Cream - Ice Pops & Juice Bars",
+    "displayRacc": "85",
+    "displayRaccUom": "g",
+    "racc": "85",
+    "raccUom": "g",
+    "useRacc": "85",
+    "useRaccUom": "g"
+  },
+  "racc2018": {
+    "aisle": "FROZEN FOOD",
+    "shelf": "Ice Cream & Frozen Yogurt",
+    "foodCategory": "Ice Cream - Ice Pops & Juice Bars",
+    "displayRacc": "0.667",
+    "displayRaccUom": "cup",
+    "racc": "85",
+    "raccUom": "g",
+    "useRacc": "85",
+    "useRaccUom": "g"
+  },
+  "eightDigitIngredientFoodCodes": [],
+  "eightDigitProductFoodCodes": [],
+  "fiveDigitFoodCodes": [],
+  "sevenDigitFoodCodes": [],
+  "ingredientOrderObjects": [],
+  "ingredientDeckOrderObjects": {},
+  "productAdditiveProperties": [
+    {
+      "propertyName": "Emulsifiers",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Stabilizers",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Flour Treating Agent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Preservatives",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Anti-Caking Agents",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Humectants",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Gelling Agents",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Sweeteners",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Antioxidants",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Colors",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Raising Agents",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Bulking Agents",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Vegetable Gum",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Flavor Enhancer",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Thickeners",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Anti-Foaming Agent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Acidity Regulator",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Food Acids",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Glazing Agent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Leavening Agent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mineral Salt",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Propellant",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Firming Agent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Sequestrant",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Enzyme",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Trans Fat",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Added Sugar",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Saturated Fat",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Unsaturated Fat",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Natural Flavoring Agent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Artificial Flavoring Agent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Natural Preservative",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Artificial Preservative",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Natural Color",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Artificial Color",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Added Sugar (Juice)",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Artificial Sweetener",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Non-Caloric Sweetener",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Natural Sweetener",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Added Sugar PCC",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Parabens",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Phthalates",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Solvent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Emollient",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Exfoliant",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Flammable",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Film Former",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Surfactant",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Conditioning Agent ",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Sunscreen Agent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Antiperspirant Agent",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Natural Fragrance",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Aspartame",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Caffeine",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Sulphur Dioxide",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Titanium Dioxide",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Sulfate",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Adsorbant",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Petrochemicals",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Decolorizer",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Hexane",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Abrasive",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Active Ingredient",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Target - Synthetic Flavor",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Target - Synthetic Color",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Target - Synthetic Preservative",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Target - Synthetic Sweetener",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Artificially Sourced Color",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Naturally Sourced Color",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Artificially Sourced Preservative",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Naturally Sourced Preservative",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Non-Food Naturally Sourced Color",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Naturally Sourced Flavor",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Artificially Sourced Flavor",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Artificial Fragrance",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fragrance",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    }
+  ],
+  "productAllergenProperties": [
+    {
+      "propertyName": "Cereals",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Shellfish",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Egg",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Milk",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Peanuts",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Sulfites",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nuts",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Soybean",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Sesame Seeds",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Gluten",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Lactose",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Wheat",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Corn",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Coconut",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Yeast",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Almond",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Beech Nut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Brazil Nut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Butternut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Cashew",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Chestnut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Chinquapin",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Ginko Nut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Hazelnut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Hickory Nut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Lychee Nut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Macadamia Nut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Pecan",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Pili Nut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Pine Nut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Pistachio",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Shea Nut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tree Nut - Walnut",
+      "parentAllergen": "Tree Nuts",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Crustacean - Barnacle",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Crustacean - Crab",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Crustacean - Crayfish",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Crustacean - Krill",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Crustacean - Lobster",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Crustacean - Shrimp",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Abalone",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Clam",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Cockle",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Conch",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Cuttlefish",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Mussel",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Octopus",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Oyster",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Scallop",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Sea Snail",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Squid",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc - Whelk",
+      "parentAllergen": "Shellfish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Celery",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Lupin",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mustard",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Amberjack",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Anchovy",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Barracuda",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Barramundi",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Basa",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Bigeye ",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Blue Whiting",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Bonefish",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Bonito",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Bream",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Brotula",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Bumper",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Carp",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Catfish",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Chilean Sea Bass",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Cobia",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Cod",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Cusk",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Eel",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Flounder",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Grouper",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Grunt",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Haddock",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Hake",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Halibut",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Herring",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Lumpfish",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Mackerel",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Mahi-Mahi",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Menhaden ",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Perch",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Pike",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Pollock",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Redfish",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Rockfish",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Salmon",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Sand Lance",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Sardine",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Scad",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Sea Bass",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Shark",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Smelt",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Sole",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Sturgeon",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Swai",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Swordfish",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Tilapia",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Trout",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Tuna",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Turbot",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Walleye",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Whitefish",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fish - Whiting",
+      "parentAllergen": "Fish",
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Mollusc",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    }
+  ],
+  "productOtherProperties": [
+    {
+      "propertyName": "Sodium Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Nitrates",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Nitrites",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fruit Juice Concentrates",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Vegetable Juice Concentrates",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal By Products",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Corn Syrup Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Partially Hydrogenated Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "MSG Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Corn Syrup Ingredients FF",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "MSG Ingredients FF",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Ingredients FF",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Unacceptable Whole Foods",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Unacceptable Simple Truth",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Cruciferous Vegetable",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Nothing Artificial FF",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Nightshades",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Sugar Alcohols",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Grain Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Joint Health",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Eye Health",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Brain Health",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Skin Health",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Proprietary",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Unbleached",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Panera No No",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Expeller Pressed",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Organic",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Non GMO",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Decaffeinated",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Ass",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Boar",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Buffalo",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Camel",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Chicken",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Cow",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Deer",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Duck",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Duckling",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Fish",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Goat",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Goose",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Hare",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Horse",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Invertebrate",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Lamb",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Land Snail",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Moose",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Ostrich",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Other",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Partridge",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Pheasant",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Pigeon",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Pork",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Quail",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Rabbit",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Reindeer",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Sheep",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Shellfish",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Turkey",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "To Promote Color Retention",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "To Help Protect Flavor",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "To Retard Spoilage",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "A Mold Inhibitor",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Low FODMAP",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "High FODMAP",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Contains Pod Fruit",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Contains Coriander",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Starchy Vegetables",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Unrefined",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Cold Pressed",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "First Cold Pressed",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pure",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Virgin",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Extra Virgin",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "High Oleic",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Grade AA",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Hydrogenated",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fractionated",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Whole Grain",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Cochineal or Carmines",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fruit",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Vegetable",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Dairy",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Protein",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fortified",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Palm Oil",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Carrageenan",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Gelatin",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Nuts and Seeds",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PC Unacceptable Whole Foods",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Alligator",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Eel",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Elk",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Emu",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Insect",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Kangaroo",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Llama",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Whitefish",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Wild Salmon",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Animal Source - Bison",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Meat",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Glycerine Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Beef",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Chicken",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Turkey",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Alligator",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Duck",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Wild Salmon",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Venison",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Bison",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Boar",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pork",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Whitefish",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Rabbit",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Quail",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Ostrich",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Kangaroo",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Insect",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Emu",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Eel",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Elk",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Goat",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "iron oxides",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Washington State CHCC List",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "California Prop 65",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "FD&C Color",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "D&C Colors",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pesticide",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Insecticide",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Legumes",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pulses",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Beans",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Aluminum Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Bleached Flours",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Tuber Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Coal Tar Derivative ",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pet Food Broth",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pet Food Organ Meats",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pet Food Whole Meat Source",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pet Food Meat Meals",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pet Food By Products",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pet Food High Plant Protein",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Pet Food Low Plant Protein",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Unspecified Animal Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Whole Oats",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Yogurt",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Whole Beans",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Honey Sliced ",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Olive Oil",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Avocado Oil",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Protein",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Cholesterol Health",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Cough Suppressant",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Fruits & Vegetables",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Milk & Yogurt",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Plant Based Milk & Yogurt",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Meat",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Nut & Seeds",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Oils",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Whole Grains",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Juice",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Eggs",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Seafood",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Legumes",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Vegetarian Meats",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Dairy",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "PHA Protein Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Heinen's Healthy Fats",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Fruit and Vegetable Juice",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Low Fat Dairy",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Non Fat Dairy",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Negligible Ingredients",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Multigrain",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Potassium Rich",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Phosphorus Rich",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Iron Rich",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Inflammation Health",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "Water",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "J&J Dimethicone",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    },
+    {
+      "propertyName": "J&J Unacceptable PC ",
+      "parentAllergen": null,
+      "productPropertyData": [],
+      "propertyValue": 0,
+      "propertyIngredientsYellow": [],
+      "propertyIngredientsRed": []
+    }
+  ],
+  "sameAsIngredientMap": {},
+  "blackListedProduct": true,
+  "pentonAttributes": [],
+  "pentonQuestions": {
+    "companyId": 0,
+    "exhibitingAs": null,
+    "showLevel": "",
+    "booth": "",
+    "launchDate": "",
+    "price": "",
+    "firstShowLevel": "",
+    "geographicLocation": "",
+    "distributionChannel": "",
+    "expoName": "",
+    "expoDate": null
+  },
+  "aldiSupplierInfo": null,
+  "ingredientCount": 0,
+  "sugarFilter": {
+    "sugarColor": "yellow",
+    "aisle": "FROZEN FOOD",
+    "shelf": "Ice Cream & Frozen Yogurt",
+    "foodCategory": "Ice Cream - Ice Pops & Juice Bars",
+    "sugarValue": "10",
+    "sugarUom": "g",
+    "notOrange": true
+  },
+  "showLevel": null,
+  "marketLevel": 2,
+  "sugarPercentage": {
+    "sugarPercentage": 0.0
+  },
+  "variantIdHierarchyOrder": [
+    9906895,
+    10641965
+  ],
+  "primaryUpcHierarchyOrder": [
+    9906895,
+    10641965
+  ],
+  "labelSyncConfig": {
+    "oneWorldSync": true,
+    "useParsedIngredients": false,
+    "useRomanceClaims": true,
+    "useDerivedAllergens": true,
+    "parseOnlyIfNoDerivedIngredients": false,
+    "bioEngineeredConfig": null,
+    "useOnlyRawClaimText": false
+  },
+  "derivedIngredients": [],
+  "derivedClaims": [
+    {
+      "name": "Other Claims",
+      "attributeType": "1WS_ROMANCE_COPY",
+      "description": "Have a fresh day with Mentos Pure Fresh chewing gum! This 80 piece bottle of Mentos Pure Fresh, Spearmint flavored chewing gum comes in category’s first recyclable paperboard format! In response to consumer requests for less plastic packaging, Perfetti Van Melle is bringing to market its universally loved Mentos Pure Fresh gum in 90% paperboard bottles. Each bottle contains sugar-free, Spearmint flavored gum that gives you a blast of fresh flavor that lasts chew after chew. Sugar-free for a guilt-free flavor sensation!",
+      "packageText": null,
+      "image": null,
+      "website": null,
+      "gmaMapping": "CLAIMS",
+      "mandatory": false,
+      "advisoryGroup": null
+    },
+    {
+      "name": "Features & Benefits",
+      "attributeType": "1WS_FEATURES_AND_BENEFITS",
+      "description": "<ul style=\"margin-left:2rem\"><li>CONTENT: 80 piece bottle of Mentos Pure Fresh sugar-free chewing gum</li><li>FLAVOR:  Long lasting Spearmint </li><li>SUSTAINABILITY: Bottle made from 90% paperboard and recyclable with clear recycle symbol & instructions on pack​</li><li>FREE OF:  Sugar</li><li>XYLITOL:  Number one ingredient is xylitol, which may help reduce the risk of tooth decay </li><li>BOTTLE:  Great for the car, desk, and pantry​</li></ul>",
+      "packageText": null,
+      "image": null,
+      "website": null,
+      "gmaMapping": "CLAIMS",
+      "mandatory": false,
+      "advisoryGroup": null
+    },
+    {
+      "name": "Country of Origin",
+      "attributeType": "COUNTRY_OF_ORIGIN_STATEMENT_CLAIM",
+      "description": "ITALY",
+      "packageText": null,
+      "image": null,
+      "website": null,
+      "gmaMapping": "CLAIMS",
+      "mandatory": false,
+      "advisoryGroup": null
+    },
+    {
+      "name": "Preparation Instructions - Ready to Eat",
+      "attributeType": "READY_TO_EAT_CLAIM",
+      "description": "Open and eat\n",
+      "packageText": null,
+      "image": null,
+      "website": null,
+      "gmaMapping": "PRODUCT_INSTRUCTIONS",
+      "mandatory": false,
+      "advisoryGroup": null
+    },
+    {
+      "name": "Storage Instructions",
+      "attributeType": "GMA_STORAGE_INSTRUCTIONS_CLAIM",
+      "description": "STORE IN A COOL DRY PLACE",
+      "packageText": null,
+      "image": null,
+      "website": null,
+      "gmaMapping": "PRODUCT_INSTRUCTIONS",
+      "mandatory": false,
+      "advisoryGroup": null
+    }
+  ],
+  "indexType": "smartlabel",
+  "imagesInnoDayModel": null,
+  "electronicFields": null,
+  "dataType": "INDEXED",
+  "ewgList": [],
+  "currentlyLive": false,
+  "attributesInclusionAsList": [
+    "GMA_ALMOND_FREE_COMBINATION",
+    "PASSES_SATURATED_FAT_DISCLOSURE",
+    "GMA_WALNUT_FREE_COMBINATION",
+    "aha_sodium_140_relevancy",
+    "AHA_STANDARD_TRANS_FAT",
+    "GMA_CASHEW_FREE_COMBINATION",
+    "DOES_NOT_HAVE_PREPARATION_INSTRUCTIONS",
+    "AHA_STANDARD_ALL_CATEGORY_DROOLS",
+    "TARGET_PET_NATURAL_INELIGIBLE_ICON_TEST",
+    "GMA_EUGENOL_FREE_COMBINATION",
+    "GMA_CORN_FREE_COMBINATION",
+    "NUTRIENT_NAME_SUGAR",
+    "LOW_SODIUM_DASH",
+    "HAS_SERVING_SIZE_UOM",
+    "GMA_QUEENSLAND_NUT_FREE_COMBINATION",
+    "AHA_STANDARD_SODIUM",
+    "NLS_WTA_FDA_SATURATED_FAT_FREE_2018",
+    "WHEAT_FREE_WARNING_FILTER_BASE",
+    "WLMT_NONCOMEDOGENIC_ING",
+    "MONDELEZ_CALORIE_THRESHOLD_TOTAL",
+    "SPECIALTY_DIETS_AGGREGATE",
+    "KETO_NEGATIVE",
+    "NLS_WTA_FDA_LOW_CALORIE_2018",
+    "GMA_GERANIOL_FREE_COMBINATION",
+    "CORN_FREE_WARNING_FILTER_BASE",
+    "ZERO_ING_COMBINATION",
+    "HW_SPECIALTY_DIETS_AGGREGATE",
+    "FDA_REGULATED_PRODUCT_FOOD_ONLY",
+    "LOW_SAT_FAT",
+    "schnucks_ice_cream_relevancy",
+    "HW_FDA_AHA_NUTRITION_AGGREGATE",
+    "FOODS_TO_LIMIT_SODIUM",
+    "DIABETES_FF_CARB_0_TEMP",
+    "afs_ice_cream_frozen_yogurt_ranking_relevancy",
+    "NUTRIENT_UOM_SODIUM",
+    "PALEO_NEGATIVE",
+    "NLS_WTA_LOW_SODIUM_DIET",
+    "MILK_FREE_WARNING_FILTER_BASE",
+    "CONTAINS_NO_BIOTIN",
+    "GMA_EVERNIA_PRUNASTRI_FREE_COMBINATION",
+    "PEANUT_FREE_WARNING_FILTER_BASE",
+    "ADDITIONAL_NUTRIENT_DENSE_REQUIREMENTS",
+    "AHA_STANDARD_CERT_DNM",
+    "TARGET_GLUTEN_FREE_FAIL_WI_TEST",
+    "TARGET_NUTRITIOUS_2_NUTRIENTS",
+    "ALL_PRODUCTS",
+    "HEB_KETO_INDIVIDUAL",
+    "ORGANIC_POPSICLES_CAT_CONCEPT",
+    "FDA_REGULATED_PRODUCT",
+    "LESS_THAN_FIVE_ING_COMBINATION",
+    "TARGET_NF_RESPONSIBLE_INELIGIBLE_ICON_TEST",
+    "LOW_SAT_FAT_COMBINATION",
+    "TARGET_PET_MIN_REQUIREMENTS_FAIL_TEST",
+    "GMA_HYDROXYCITRONELLAL_FREE_COMBINATION",
+    "LOW_CALORIE_2018",
+    "SHELF_TAG_FDA_LOW_SODIUM",
+    "TARGET_NUTRITIOUS_2_SODIUM",
+    "ALLERGEN_WARNING_FILTER",
+    "SHELF_TAG_FDA_SODIUM_FREE",
+    "DIABETES_FRIENDLY",
+    "SODIUM_CONSCIOUS_DIET_COMBINATION",
+    "TARGET_WHOLE_GRAIN_FAIL_WI_TEST",
+    "NUTRIENT_NAME_FAT",
+    "conagra_net_carb_dessert_relevancy",
+    "product_type_all_food_relevancy",
+    "TARGET_NF_PHTHALATE_FREE_INELIGIBLE_ICON_TEST",
+    "GMA_BENZYL_ALCOHOL_FREE_COMBINATION",
+    "bj_ice_cream_frozen_yogurt_ranking_relevancy",
+    "CHOLESTEROL_FREE",
+    "05_SUGAR_FREE",
+    "DAIRY_FREE_WARNING_FILTER_BASE",
+    "TARGET_NF_BIO_BASED_INELIGIBLE_ICON_TEST",
+    "OCTINOXATE_FREE_ING",
+    "PROPYL_PARABEN_FREE_COMBINATION",
+    "fe_food_relevancy",
+    "SAT_FAT_FREE",
+    "SCHNUCKS_MINIMUM_REQUIREMENTS",
+    "5_CALORIE_FREE",
+    "GMA_COCOA_FREE_COMBINATION",
+    "NLS_WTA_FDA_LOW_CALORIE",
+    "SULFITE_FREE_WARNING_FILTER_BASE",
+    "WRONG_DISCLOSURE_FILTER",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL_SODIUM",
+    "NO_EGG_WARNING_FILTER_BASE",
+    "KG_PHA_LEVEL_2_SATURATED_FAT",
+    "CARB_SMART_NUTRIENTS",
+    "NLS_WTA_LESS_THAN_TEN_ING",
+    "5_SODIUM_FREE",
+    "HEB_0_5_NET_CARBS",
+    "TRICLOCARBAN_FREE_ING",
+    "HIGHERORDERATTRIBUTES",
+    "KG_PHA_SUGAR_DISCLOSURE_FILTER",
+    "TARGET_NF_SULFATE_FREE_INELIGIBLE_ICON_TEST",
+    "NLS_WTA_FDA_SUGAR_FREE",
+    "SESAME_FREE_WARNING_FILTER_BASE",
+    "GMA_ALPHA-ISOMETHYL_IONONE_FREE_COMBINATION",
+    "not_minimally_processed_relevancy",
+    "TARGET_NUTRITIOUS_2_TOTAL_FAT",
+    "FIVE_LESS_INGREDIENTS_BASE",
+    "LOW_CALORIE",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL_CHOLESTEROL",
+    "strengthens_immunity_none_relevancy",
+    "NUTRIENT_NAME_CALORIES",
+    "TARGET_DASH_DIET",
+    "NLS_WTA_ZERO_ING",
+    "FAT_CONSCIOUS_DIET_COMBINATION",
+    "TARGET_KETO_NEGATIVE",
+    "GMA_RYE_FREE_COMBINATION",
+    "CHOLESTEROL_FREE_COMBINATION",
+    "GMA_COUMARIN_FREE_COMBINATION",
+    "RALEYS_MIN_PROCESSED_FROZEN",
+    "TARGET_FAIR_TRADE_FAIL_WI_TEST",
+    "CONTAINS_NO_FOLIC_ACID",
+    "NLS_WTA_LOW_CALORIE_DIET",
+    "SPARTANNASH_ANTIBIOTIC_FREE",
+    "CONAGRA_NET_CARB_10_GRAMS",
+    "TRICLOSAN_FREE_ING",
+    "CALORIE_SMART",
+    "FROZEN_COMBINATION",
+    "rouses_artificial_sweetener_exclusion_relevancy",
+    "KG_PHA_LEVEL_2_SODIUM",
+    "CALORIE_CONSCIOUS_DIET_COMBINATION",
+    "NLS_WTA_FDA_SUGAR_FREE_2018",
+    "GMA_HHYDROXYISOHEXYL_3_CYCLOHEXANE_CARB_FREE_COMBINATION",
+    "GMA_EVERNIA_FURFURACEA_FREE_COMBINATION",
+    "PLANT_BASED_MEAT_POS",
+    "keto_diet_relevancy",
+    "GMA_ANISE_ALCOHOL_FREE_COMBINATION",
+    "LI_SUGAR_DISCLOSURE_FILTER",
+    "TARGET_RESPONSIBLE_FAIL_WI_TEST",
+    "SAT_FAT_FREE_COMBINATION",
+    "FAT_FREE",
+    "heart_check_not_certifiable_relevancy",
+    "ANY_NUTRIENT_OVER_0",
+    "NLS_WTA_LESS_THAN_FIVE_ING",
+    "NO_SOY_WARNINGS_FILTER_BASE",
+    "NLS_WTA_MED_SUP_FREE_FROM_GELATIN",
+    "li_cough_support_disqualifying_relevancy",
+    "whole_30_diet_unacceptable_relevancy",
+    "AHA_STANDARD_SAT_FAT",
+    "TARGET_NUTRITIOUS_FAIL_WI_TEST",
+    "SHELLFISH_FREE_WARNING_FILTER_BASE",
+    "CONTAINS_NO_VITAMIN_A_RETINOL_ACTIVITY_EQUIVALENT",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL_SAT_FAT",
+    "CONTAINS_NO_VITAMIN_B12",
+    "HYDROQUINONE_FREE_ING",
+    "100_CALORIES_LESS_DROOLS",
+    "0MG_SODIUM_PER_SERVE",
+    "GMA_PEAS_FREE_COMBINATION",
+    "LOW_SODIUM_DIET_COMBINATION",
+    "GLUTEN_FREE_WARNING_FILTER_BASE",
+    "1_TO_50_CALORIES_PER_SERVING",
+    "NUTRIENT_DENSE_INGREDIENT_REQUIREMENTS",
+    "MEAT_CAT_VEGAN_CLAIM",
+    "SUGAR_FREE_COMBINATION",
+    "1G_TO_15G_CARBOHYDRATE_PER_SERVING",
+    "DIABETES_FRIENDLY_COMBINATION",
+    "GMA_HEXYL_CINNAMAL_FREE_COMBINATION",
+    "TARGET_NF_BIODEGRADEABLE_INELIGIBLE_ICON_TEST",
+    "CHILD_PHA_RELEVANCY_BASE",
+    "target_keto_diet_relevancy",
+    "walmart_easy_to_eat_relevancy",
+    "NLS_WTA_PECTIN_FREE",
+    "CONTAINS_NO_VITAMIN_K",
+    "GMA_BUTYLPHENYL_METHYLPROP_FREE_COMBINATION",
+    "LOW_FAT_DIET_COMBINATION",
+    "LOW_FAT_DASH",
+    "NUTRIENT_NAME_PROTEIN",
+    "FOODS_TO_LIMIT_PLUS_SAT_FAT",
+    "NLS_WTA_MED_SUP_FREE_FROM_GLYCERINE",
+    "TARGET_NF_NON_TOXIC_INELIGIBLE_ICON_TEST",
+    "GMA_CITRAL_FREE_COMBINATION",
+    "CHOLESTEROL_CONSCIOUS_DIET_COMBINATION",
+    "GMA_CARROT_FREE_COMBINATION",
+    "NUTRIENT_UOM_CALORIES",
+    "DASH_DIET",
+    "atkins_carbs_relevancy",
+    "FOODS_TO_LIMIT_PLUS_SODIUM",
+    "HEART_HEALTHY_NOT_SMALL_RACC",
+    "NO_VEGAN_WARNING_FILTER_BASE",
+    "CARB_RANGE_0_5_COMBINATION",
+    "SUGAR_CONSCIOUS_DIET_COMBINATION",
+    "NLS_WTA_DIABETES_FRIENDLY_ABBOTT",
+    "TARGET_PET_ORGANIC_INELIGIBLE_ICON_TEST",
+    "NLS_WTA_FDA_LOW_FAT_2018",
+    "GMA_CITRONELLOL_FREE_COMBINATION",
+    "NO_LACTOSE_WARNING_FILTER_BASE",
+    "NLS_WTA_LOW_FAT_DIET_2018",
+    "CONTAINS_NO_VITAMIN_B1_(THIAMIN)",
+    "CONTAINS_NO_VITAMIN_B2_(RIBOFLAVIN)",
+    "CONTAINS_NO_VITAMIN_B3_(NIACIN)",
+    "CARB_SMART",
+    "NLS_WTA_FDA_LOW_CHOLESTEROL",
+    "HACK_TARGET_HFCS_FREE",
+    "CONTAINS_NO_VITAMIN_E",
+    "CONTAINS_NO_VITAMIN_C",
+    "CONTAINS_NO_VITAMIN_D",
+    "GMA_FARNESOL_FREE_COMBINATION",
+    "TREE_NUT_FREE_WARNING_FILTER_BASE",
+    "FDA_DISCLOSURE_FILTER_CHOLESTEROL",
+    "CONTAINS_NO_VITAMIN_A",
+    "GMA_BARLEY_FREE_COMBINATION",
+    "NUTRIENT_NAME_TOTAL_CARBOHYDRATE",
+    "HAC_ice_cream_frozen_yogurt_ranking_relevancy",
+    "GMA_CINNAMYL_ALCOHOL_FREE_COMBINATION",
+    "AFS_ADDED_SUGARS",
+    "TARGET_SIMPLE_INGREDIENTS_FAIL_WI_TEST",
+    "TARGET_NF_CRUELTY_FREE_INELIGIBLE_ICON_TEST",
+    "PALEO_DIET_STRICT_NEGATIVE",
+    "FISH_FREE_WARNING_FILTER_BASE",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL_TOTAL_FAT",
+    "FDA_DISCLOSURE_FILTER",
+    "COCONUT_FREE_WARNING_FILTER_BASE",
+    "LOW_FAT_COMBINATION",
+    "sugary_foods_relevancy",
+    "not_paleo_relevancy",
+    "RALEYS_AHA_SUGAR_FILTER",
+    "TARGET_VEGAN_FAIL_WI_TEST",
+    "CARB_EXCHANGE_LEVEL_1",
+    "nls_wta_carbs_relevancy",
+    "GMA_CELERY_FREE_COMBINATION",
+    "GMA_METHYL_2-OCTYNOATE_FREE_COMBINATION",
+    "100_CALORIES_LESS",
+    "TARGET_PLANT_BASED_FAIL_WI_TEST",
+    "cs_ice_cream_froyo_relevancy",
+    "EDIBLE_PRODUCT_TYPE",
+    "GMA_ALPHA_ISOMETHYL_IONONE_FREE_COMBINATION",
+    "GMA_MUSTARD_FREE_COMBINATION",
+    "GMA_METHYL_2_OCTYNOATE_FREE_COMBINATION",
+    "PASSES_TOTAL_FAT_DISCLOSURE",
+    "NUTRIENT_UOM_FAT",
+    "ALCOHOL_FREE_ALL",
+    "NLS_WTA_LOW_SODIUM_DIET_2018",
+    "NUTRIENT_UOM_SUGAR",
+    "NUTRIENT_UOM_PROTEIN",
+    "ALUMINUM_FREE_ING",
+    "LOW_CHOLESTEROL_COMBINATION",
+    "NO_ADDED_SUGAR_COMBINATION",
+    "OXYBENZONE_FREE_ING",
+    "CONTAINS_NO_BETA_CAROTENE",
+    "SUGAR_FREE",
+    "LOW_CALORIE_COMBINATION",
+    "TARGET_PET_NON_GMO_INELIGIBLE_ICON_TEST",
+    "rouses_eat_right_frozen_relevancy",
+    "DASH_POSITIVE",
+    "MONDELEZ_BASE_NUTRIENT_REQUIREMENTS",
+    "LOW_SODIUM",
+    "NLS_WTA_FDA_FAT_FREE_2018_2018",
+    "HW_DETRIMENTAL_NUTRIENTS_AGGREGATE",
+    "WEGMAN_WELLNESS_LOW_CALORIE",
+    "CONTAINS_NO_VITAMIN_D3",
+    "TARGET_NF_VEGAN_INELIGIBLE_ICON_TEST",
+    "WEGMAN_WELLNESS_FAT_FREE",
+    "AHA_STANDARD_BENEFICIAL_NUTRIENTS_DNM",
+    "TARGET_CLEAN_ESSENTIALS_BEAUTY_FORMULATED_CATEGORY",
+    "SUGAR_CONSCIOUS_NUTRIENT_REQUIREMENTS",
+    "AHA_STANDARD_CHOLESTEROL",
+    "200_CALORIES_LESS_PER_SERVING",
+    "NLS_WTA_FDA_LOW_CHOLESTEROL_2018",
+    "WEGMAN_WELLNESS_LOW_SODIUM",
+    "HYVEE_LOW_CALORIE",
+    "TARGET_ORGANIC_FAIL_WI_TEST",
+    "AHA_STANDARD_ALL_CATEGORY",
+    "CONTAINS_NO_VITAMINS",
+    "rouses_sweet_dep_relevancy",
+    "harris_teeter_ice_cream_relevancy",
+    "CONTAINS_NO_VITAMIN_D2_AND_D3",
+    "GMA_BENZYL_CINNAMATE_FREE_COMBINATION",
+    "WHOLE_30_DIET_NEGATIVE",
+    "ecomm_ice_cream_relevancy",
+    "plant_based_protein_soy_relevancy",
+    "mediterranean_exclusions_relevancy",
+    "NUTRIENT_UOM_TOTAL_CARBOHYDRATE",
+    "TARGET_NF_PARABEN_FREE_INELIGIBLE_ICON_TEST",
+    "ALOE_FREE_DERIVED_LI",
+    "AHA_STANDARD_TOTAL_FAT_DROOLS",
+    "FOODS_TO_LIMIT_SUGAR",
+    "food_type_ii_relevancy",
+    "PECTIN_FREE_COMBINATION",
+    "AHA_HEART_HEALTHY_STANDARD_DNM_DROOLS",
+    "FDAMA_FATS_AND_HEART_DISEASE_CLAIM_DNM",
+    "GMA_BENZYL_BENZOATE_FREE_COMBINATION",
+    "SODIUM_FREE_COMBINATION",
+    "WEGMAN_WELLNESS_LOW_FAT",
+    "05_FAT_FREE",
+    "INDIVIDUAL_PRODUCTS",
+    "SN_LIVING_WELL_MEAT_POSITIVE_QUALIFIERS",
+    "KG_NUTRIENT_DENSE_CALORIES",
+    "SPARTANNASH_HORMONE_FREE",
+    "heb_ice_cream_frozen_yogurt_ranking_relevancy",
+    "RETINYL_PALMITATE_FREE_ING",
+    "TARGET_MIN_REQUIREMENT_ESSENTIALS_FAIL_TEST",
+    "0G_TOTAL_FAT_PER_SERVE",
+    "NLS_WTA_FDA_LOW_SODIUM_2018",
+    "NLS_WTA_FDA_LOW_SODIUM",
+    "TARGET_PET_NO_ARTIFICIAL_FLAV_COL_PRES_INELIGIBLE_ICON_TEST",
+    "CONTAINS_NO_FOLATE",
+    "TARGET_DASH_POSITIVE",
+    "TARGET_NF_NONGMO_INELIGIBLE_ICON_TEST",
+    "TARGET_NF_GLUTEN_FREE_INELIGIBLE_ICON_TEST",
+    "INGESTIBLE_CLAIM",
+    "NIELSEN_FROZEN",
+    "AHA_CRRC_2",
+    "100_CALORIES_OR_LESS_COMBINATION",
+    "GMA_HAZELNUT_FREE_COMBINATION",
+    "LOW_CHOLESTEROL",
+    "SODIUM_FREE_2018",
+    "PASSES_SODIUM_DISCLOSURE",
+    "200_CALORIES_LESS_PER_RACC",
+    "GMA_CINNAMAL_FREE_COMBINATION",
+    "GMA_LUPIN_FREE_COMBINATION",
+    "TARGET_NF_PLANT_BASED_INELIGIBLE_ICON_TEST",
+    "TARGET_NF_FRAGRANCE_FREE_INELIGIBLE_ICON_TEST",
+    "TARGET_PET_MEAT_1_ING_INELIGIBLE_ICON_TEST",
+    "CARB_RANGE_0_5",
+    "FDA_DISCLOSURE_FILTER_INDIVIDUAL",
+    "PASSES_CHOLESTEROL_DISCLOSURE",
+    "NLS_WTA_LOW_FAT_DIET",
+    "FOODS_TO_LIMIT_SAT_FAT",
+    "1_TO_50_CALORIES_PER_SERVE",
+    "CONAGRA_NET_CARB",
+    "ROUSES_EAT_RIGHT_SODIUM_REQS",
+    "RITE_AID_NO_SHELF_TAG",
+    "LOW_FAT_2018",
+    "LESS_THAN_TEN_ING_COMBINATION",
+    "NLS_WTA_FDA_SODIUM_FREE_2018",
+    "PRODUCT_TYPE_FOOD",
+    "TARGET_PET_GRAIN_FREE_INELIGIBLE_ICON_TEST",
+    "LOW_SODIUM_COMBINATION",
+    "NLS_WTA_FDA_TRANS_FAT_FREE_2018",
+    "LOW_SUGAR_DIET_COMBINATION",
+    "GMA_BRAZIL_NUT_FREE_COMBINATION",
+    "GREAT_FOR_CLASSROOMS",
+    "NLS_WTA_FDA_CHOLESTEROL_FREE",
+    "NLS_WTA_LOW_CALORIE_DIET_2018",
+    "TARGET_NON_GMO_FAIL_WI_TEST",
+    "NLS_WTA_FDA_SODIUM_FREE",
+    "LOW_FAT",
+    "MONDELEZ_CALORIES_NO_SERVING_UOM_G_ML",
+    "0G_PROTEIN_PER_SERVING",
+    "FDA_AHA_NUTRITION_AGGREGATE",
+    "TARGET_SIMPLE_INGREDIENTS_CRITERIA_INELIGIBLE_WI_TEST",
+    "GMA_AMYL_CINNAMAL_FREE_COMBINATION",
+    "200_CALORIES_LESS",
+    "GMA_HHYDROXYISOHEXYL_3-CYCLOHEXANE_CARB_FREE_COMBINATION",
+    "AHA_STANDARD_SODIUM_DROOLS",
+    "RALEYS_MIN_PROCESSED_INGREDIENTS",
+    "FOODS_TO_LIMIT_TOTAL_FAT",
+    "AHA_CRRC_ADDED_SUGAR",
+    "NLS_WTA_FDA_SATURATED_FAT_FREE",
+    "TARGET_PET_NO_ANIMAL_BYPRODUCTS_INELIGIBLE_ICON_TEST",
+    "NLS_WTA_CLEAN_LABEL_ZERO",
+    "PARAFFIN_FREE_ING",
+    "LOW_CALORIE_DIET_COMBINATION",
+    "gfh_ice_cream_frozen_yogurt_ranking_relevancy",
+    "GMA_PECAN_NUT_FREE_COMBINATION",
+    "GMA_BENZYL_SALICYLATE_FREE_COMBINATION",
+    "NUTRIENT_NAME_SODIUM",
+    "GMA_MACADAMIA_NUT_FREE_COMBINATION",
+    "NLS_WTA_FDA_FAT_FREE",
+    "individual",
+    "ecomm_website_ice_cream_relevancy",
+    "CONTAINS_NO_VITAMIN_B6",
+    "KG_PHA_LEVEL_2_ADDED_SUGAR",
+    "EASY_TO_EAT_RELEVANCY",
+    "13G_FAT_OR_LESS",
+    "AHA_STANDARD_BENEFICIAL_NUTRIENTS_DNM_DROOLS",
+    "ROLLUP",
+    "HW_FOOD_AS_MEDICINE_AGGREGATE",
+    "TRANS_FAT_FREE",
+    "LI_CLEAN_LABEL_0",
+    "NLS_WTA_FDA_LOW_FAT",
+    "LOW_SODIUM_2018",
+    "MINT_FLAVOR_CLAIM",
+    "awg_rankings_ice_pops_juice_bars_relevancy",
+    "NLS_WTA_FDA_TRANS_FAT_FREE",
+    "AHA_STANDARD_TOTAL_FAT",
+    "not_small_racc_relevancy",
+    "SODIUM_FREE",
+    "AHA_STANDARD_CERT_DNM_DROOLS",
+    "SPARTANNASH_PESTICIDE_FREE",
+    "FAT_FREE_COMBINATION",
+    "TARGET_NF_ORGANIC_INELIGIBLE_ICON_TEST",
+    "GMA_PISTACHIO_FREE_COMBINATION",
+    "FOOD_AS_MEDICINE_AGGREGATE",
+    "NLS_WTA_LOW_SUGAR_DIET",
+    "NLS_WTA_LOW_CARB_DIET",
+    "spartannash_ice_cream_frozen_yogurt_desserts_relevancy",
+    "NLS_WTA_FDA_CHOLESTEROL_FREE_2018"
+  ],
+  "primaryUpc": true
+}
