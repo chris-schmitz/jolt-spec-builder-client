@@ -1,4 +1,4 @@
-import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
+import {AllBlocksGetThisRenderData, UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {toJoltOperation as toShiftJoltOperation, toUiBlock as toShiftUiBlock} from "@/domain/operations/shift/Transformer";
@@ -48,6 +48,7 @@ export function uiBlockToJoltDoc(block: UIBlockOperation) {
 export function convertBlockToSpecList(blocksProxies: UIBlockOperation[]): JoltOperation[] {
     return JSON
         .parse(JSON.stringify(blocksProxies)) // ! note we need this step to convert the vue proxies back to regular js objects
+        .filter((block: UIBlockOperation) => !(block.renderData as AllBlocksGetThisRenderData).disabled)
         .map(uiBlockToJoltDoc)
 }
 

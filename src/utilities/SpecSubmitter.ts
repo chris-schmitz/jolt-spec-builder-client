@@ -2,10 +2,6 @@ import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {SpecStoreState, useSpecStore} from "@/store/SpecStore";
 import {Store} from "pinia";
 
-console.log("spec submitter ")
-
-// const store = useSpecStore()
-
 export class TransformationRequest {
     private input: string
     private specList: JoltOperation[]
@@ -30,20 +26,28 @@ export class TransformationRequest {
 
 export default class SpecSubmitter {
     private store: SpecStoreState
+    private joltDocArray: JoltOperation[] = []
 
     constructor() {
         this.store = useSpecStore()
     }
 
     public async runTransformation(specList: JoltOperation[] = []) {
-        if (!this.store.input) return
-        if (specList.length === 0 && this.store.joltSpecList.length === 0) return
+        this.setJoltDocArray(specList)
 
-        const list = specList.length > 0 ? specList : this.store.joltSpecList
+        if (this.canSubmitTransformation()) {
+            // TODO: consider
+            // ? should we set the this.store here directly or just pass back output?
+            this.store.output = await SpecSubmitter.submitSpecAndInput(TransformationRequest.make(this.store.input, this.getJoltDocArray()))
+        }
 
-        // TODO: consider
-        // ? should we set the this.store here directly or just pass back output?
-        this.store.output = await SpecSubmitter.submitSpecAndInput(TransformationRequest.make(this.store.input, list))
+    }
+
+    private canSubmitTransformation() {
+        if (!this.store.input) return false
+        if (this.getJoltDocArray().length == 0) return false
+
+        return true
     }
 
     private static async submitSpecAndInput(request: TransformationRequest) {
@@ -56,5 +60,19 @@ export default class SpecSubmitter {
             body: request.toString()
         });
         return await response.json();
+    }
+
+    private setJoltDocArray(specList: JoltOperation[]) {
+        this.joltDocArray = specList
+    }
+
+    private getJoltDocArray(): JoltOperation[] {
+        if (this.joltDocArray.length > 0) {
+            return this.joltDocArray
+        }
+        if (this.store.joltSpecList.length > 0) {
+            return this.store.joltSpecList
+        }
+        return []
     }
 }

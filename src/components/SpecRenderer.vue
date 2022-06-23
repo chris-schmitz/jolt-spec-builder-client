@@ -1,14 +1,23 @@
 <template>
   <div class="renderer-wrapper">
-    <component
+    <div
         v-for="(block,index) in store.specBlockList"
         :key="block.id"
-        :block="block"
-        :index="index"
-        :is="determineBlockComponent(block)"
-        @block-operation-updated="updateSingleBlock"
     >
-    </component>
+      <button
+          @click="store.disableBlock(block)"
+      >
+        Disable
+      </button>
+      <component
+          :block="block"
+          :index="index"
+          :is="determineBlockComponent(block)"
+          @block-operation-updated="updateSingleBlock"
+          :class="blockIsDisabled(block)"
+      >
+      </component>
+    </div>
   </div>
 </template>
 
@@ -19,9 +28,18 @@ import {determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
 import {convertBlockToSpecList} from "@/utilities/TransformationUtilities";
 import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
 import {specSubmitter} from "@/main"
+import {AllBlocksGetThisRenderData, UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 
 
 const store = useSpecStore();
+
+const blockIsDisabled = (block: UIBlockOperation) => {
+  return {
+    'disabled-block':
+    (block.renderData as AllBlocksGetThisRenderData).disabled
+  }
+}
+
 
 // TODO: how do we want to organize this?
 // ? now that we're using the composition API we have a lot more freedom re: organizing business logic
@@ -75,4 +93,9 @@ onBeforeMount(updateBlocks)
 .spec-block * {
   flex: 1;
 }
+
+.disabled-block {
+  background: gray;
+}
+
 </style>

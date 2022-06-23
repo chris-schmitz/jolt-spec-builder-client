@@ -1,5 +1,5 @@
 import {defineStore} from 'pinia'
-import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
+import {AllBlocksGetThisRenderData, UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {convertBlockToSpecList, convertSpecListToBlocks, joltDocToUiBlock} from "@/utilities/TransformationUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
@@ -49,6 +49,12 @@ export const useSpecStore = defineStore('Spec Store', {
             const block = joltDocToUiBlock(operation)
             const targetIndex = index ? index : this.specBlockList.length
             this.specBlockList.splice(targetIndex, 0, block)
+        },
+        disableBlock(block: UIBlockOperation, currentState: boolean) {
+            const targetBlock = this.specBlockList.find(b => b.id === block.id);
+            if (targetBlock) {
+                (targetBlock.renderData as AllBlocksGetThisRenderData).disabled = !(targetBlock.renderData as AllBlocksGetThisRenderData).disabled
+            }
         }
     },
 })

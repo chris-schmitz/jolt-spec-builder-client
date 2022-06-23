@@ -6,7 +6,7 @@
         <option value="blocks">Blocks</option>
         <option value="full">Full Spec</option>
       </select>
-      <button>Run Transform</button>
+      <button @click="runTransformation">Run Transform</button>
     </div>
     <div class="body">
       <div class="left-panel" v-if="state.specView === 'blocks'">
@@ -33,12 +33,17 @@ import FullSpecInput from '@/components/FullSpecInput.vue';
 
 import {useSpecStore} from '@/store/SpecStore';
 import {reactive} from 'vue'
+import {specSubmitter} from "@/main";
 
 const store = useSpecStore();
 
 const state = reactive({
   specView: 'blocks',
 })
+
+function runTransformation() {
+  specSubmitter.runTransformation()
+}
 </script>
 
 <style scoped>

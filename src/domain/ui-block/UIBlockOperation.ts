@@ -5,10 +5,15 @@ import {v4 as uuidv4} from 'uuid';
 import {SingleCardinalityRenderData} from "@/domain/operations/single-cardinality/SingleCardinalityUiBlock";
 import {ShiftBlockRenderData} from "@/domain/operations/shift/ShiftUiBlock";
 
+export interface AllBlocksGetThisRenderData {
+    disabled: boolean
+}
+
 export type BlockRenderData =
     SingleCardinalityRenderData
     | ShiftBlockRenderData
     | RawBlockRenderData
+    | AllBlocksGetThisRenderData
     | Record<string, any>
 
 export class UIBlockOperation implements JoltOperation {
