@@ -1,6 +1,7 @@
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {SpecStoreState, useSpecStore} from "@/store/SpecStore";
 import {Store} from "pinia";
+import JSON5 from "json5";
 
 export class TransformationRequest {
     private input: string
@@ -14,13 +15,13 @@ export class TransformationRequest {
     }
 
     static make(input: string, specList: JoltOperation[]) {
-        return new TransformationRequest(input, JSON.parse(JSON.stringify(specList)))
+        return new TransformationRequest(input, JSON5.parse(JSON5.stringify(specList)))
     }
 
     toString() {
-        const spec = JSON.stringify(this.specList)
+        const spec = JSON5.stringify(this.specList)
         const input = this.input
-        return JSON.stringify({input, spec})
+        return JSON5.stringify({input, spec})
     }
 }
 

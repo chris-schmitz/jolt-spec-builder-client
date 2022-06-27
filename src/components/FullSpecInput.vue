@@ -8,19 +8,19 @@
 </template>
 
 <script lang="ts" setup>
+import JSON5 from "json5";
 import {specSubmitter} from "@/main";
-
 import {useSpecStore} from '@/store/SpecStore';
-import {onBeforeMount, computed} from "vue";
+import {computed, onBeforeMount} from "vue";
 
 
 const store = useSpecStore()
 
-const specListAsString = computed(() => JSON.stringify(store.joltSpecList, null, 2))
+const specListAsString = computed(() => JSON5.stringify(store.joltSpecList, null, 2))
 
 
 function handleInput(event: InputEvent) {
-  const specList = JSON.parse((event.target as HTMLTextAreaElement).value)
+  const specList = JSON5.parse((event.target as HTMLTextAreaElement).value)
   store.setJoltSpec(specList);
   specSubmitter.runTransformation()
 }

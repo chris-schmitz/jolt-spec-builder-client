@@ -1,5 +1,6 @@
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {ShiftBlockRenderData, ShiftUiBlock} from "@/domain/operations/shift/ShiftUiBlock";
+import JSON5 from "json5";
 
 
 // TODO: consider location
@@ -8,7 +9,7 @@ export function toUiBlock(operation: JoltOperation): ShiftUiBlock {
     const renderData: ShiftBlockRenderData = {
         passAlong: false
     }
-    const spec = JSON.parse(JSON.stringify(operation.spec))
+    const spec = JSON5.parse(JSON5.stringify(operation.spec))
     if ('@' in operation.spec || '@1' in operation.spec) {
         renderData.passAlong = true
         // @ts-ignore

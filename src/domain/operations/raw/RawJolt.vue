@@ -11,9 +11,10 @@
 </template>
 
 <script lang="ts" setup>
-import {defineProps, defineEmits, reactive, watch} from "vue";
+import {defineEmits, defineProps, reactive, watch} from "vue";
 import {BlockRenderData, UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import JSON5 from "json5";
 
 const state = reactive({
   renderData: {},
@@ -30,13 +31,13 @@ let operation: string,
     renderData: BlockRenderData
 
 function formatForRender(block: UIBlockOperation) {
-  const bblock = JSON.parse(JSON.stringify(block));
+  const bblock = JSON5.parse(JSON5.stringify(block));
   ({operation, spec, renderComponent, renderData} = bblock)
-  return JSON.stringify({operation, spec}, null, 2)
+  return JSON5.stringify({operation, spec}, null, 2)
 }
 
 function formatForStorage(blockString: string): UIBlockOperation {
-  const block = JSON.parse(blockString)
+  const block = JSON5.parse(blockString)
   block.renderComponent = renderComponent
   block.renderData = renderData
   return block

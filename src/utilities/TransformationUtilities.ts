@@ -7,6 +7,7 @@ import {toJoltOperation as toRemoveJoltOperation, toUiBlock as toRemoveUiBlock} 
 import {toJoltOperation as toDefaultJoltOperation, toUiBlock as toDefaultUiBlock} from "@/domain/operations/default/Transformer";
 import {toJoltOperation as toSingleCardinalityJoltOperation, toUiBlock as toSingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/Transformer";
 import {toJoltOperation as toParsedIngredientsJoltOperation, toUiBlock as toParsedIngredientsUiBlock} from "@/domain/operations/parsed-ingredients/Transformer"
+import JSON5 from "json5";
 
 
 export function joltDocToUiBlock(specDocument: JoltOperation): UIBlockOperation {
@@ -46,8 +47,8 @@ export function uiBlockToJoltDoc(block: UIBlockOperation) {
 }
 
 export function convertBlockToSpecList(blocksProxies: UIBlockOperation[]): JoltOperation[] {
-    return JSON
-        .parse(JSON.stringify(blocksProxies)) // ! note we need this step to convert the vue proxies back to regular js objects
+    return JSON5
+        .parse(JSON5.stringify(blocksProxies)) // ! note we need this step to convert the vue proxies back to regular js objects
         .filter((block: UIBlockOperation) => !(block.renderData as AllBlocksGetThisRenderData).disabled)
         .map(uiBlockToJoltDoc)
 }

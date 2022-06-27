@@ -279,23 +279,23 @@
       }
     }
   },
-  {
-    "operation": "modify-overwrite-beta",
-    "spec": {
-      "jolt_nutritionSection": {
-        "nutrientPanels": {
-          "*": {
-            "nutrients": {
-              "*": {
-                "value": "=toString",
-                "dvp": "=toString"
-              }
-            }
-          }
-        }
-      }
-    }
-  },
+  //  {
+  //    "operation": "modify-overwrite-beta",
+  //    "spec": {
+  //      "jolt_nutritionSection": {
+  //        "nutrientPanels": {
+  //          "*": {
+  //            "nutrients": {
+  //              "*": {
+  //                "value": "=toString",
+  //                "dvp": "=toString"
+  //              }
+  //            }
+  //          }
+  //        }
+  //      }
+  //    }
+  //  },
   {
     "operation": "shift",
     "spec": {

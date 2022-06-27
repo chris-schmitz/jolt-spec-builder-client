@@ -2,12 +2,13 @@
   <div class="output-panel-container">
     <h1>Output Panel</h1>
     <textarea
-        :value="JSON.stringify(store.output, null, 2)"
+        :value="JSON5.stringify(store.output, null, 2)"
     />
   </div>
 </template>
 
 <script lang="ts" setup>
+import JSON5 from "json5";
 import {defineProps} from "vue";
 import {useSpecStore} from "@/store/SpecStore";
 

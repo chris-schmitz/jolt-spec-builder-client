@@ -16,6 +16,7 @@ import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {joltDocToUiBlock} from "@/utilities/TransformationUtilities";
 import isValidJson from "@/utilities/JsonValidator";
+import JSON5 from "json5";
 
 const state = reactive({
   specContentString: {},
@@ -23,13 +24,13 @@ const state = reactive({
 let badFormat = ref(false)
 
 const props = defineProps<{ block: UIBlockOperation, index: number }>()
-const specContentString = computed(() => JSON.stringify(state.specContentString, null, 2))
+const specContentString = computed(() => JSON5.stringify(state.specContentString, null, 2))
 
 
 watch(() => props.block, (newValue: UIBlockOperation) => {
       state.specContentString = newValue.spec
 
-      if (isValidJson(JSON.stringify(state.specContentString))) {
+      if (isValidJson(JSON5.stringify(state.specContentString))) {
         setBadFormat(false)
       } else {
         setBadFormat(true)
@@ -47,7 +48,7 @@ function saveContent(event: InputEvent) {
 
   if (isValidJson(content)) {
     setBadFormat(false)
-    const operation = formatOperation(JSON.parse(content))
+    const operation = formatOperation(JSON5.parse(content))
     notifyOfBlockUpdate(operation);
   } else {
     setBadFormat(true)

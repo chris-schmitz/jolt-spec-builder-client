@@ -14,6 +14,7 @@
 </template>
 
 <script lang="ts" setup>
+import JSON5 from "json5"
 import {reactive} from "vue";
 import {useSpecStore} from "@/store/SpecStore";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
@@ -47,7 +48,7 @@ const blockButtons: UiBlockButton[] = [
 const state = reactive({blocks: blockButtons})
 
 function insertBlock(block: UiBlockButton) {
-  const operation = JSON.parse(JSON.stringify(block.template))
+  const operation = JSON5.parse(JSON5.stringify(block.template))
   const index = store.nextIndex
   store.addBlock({index, operation})
 }
