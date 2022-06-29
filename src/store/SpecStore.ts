@@ -50,11 +50,15 @@ export const useSpecStore = defineStore('Spec Store', {
             const targetIndex = index ? index : this.specBlockList.length
             this.specBlockList.splice(targetIndex, 0, block)
         },
-        disableBlock(block: UIBlockOperation, currentState: boolean) {
+        disableBlock(block: UIBlockOperation) {
             const targetBlock = this.specBlockList.find(b => b.id === block.id);
             if (targetBlock) {
                 (targetBlock.renderData as AllBlocksGetThisRenderData).disabled = !(targetBlock.renderData as AllBlocksGetThisRenderData).disabled
             }
+        },
+        deleteBlock(block: UIBlockOperation) {
+            const index = this.specBlockList.indexOf(block)
+            this.specBlockList.splice(index, 1)
         }
     },
 })

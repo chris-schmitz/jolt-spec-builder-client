@@ -3,18 +3,22 @@
     <div
         v-for="(block,index) in store.specBlockList"
         :key="block.id"
+        class="block"
+        :class="blockIsDisabled(block)"
     >
-      <button
-          @click="toggleDisableForBlock(block)"
-      >
-        Disable
-      </button>
+      <div class="button-group">
+        <button class="disable-button" @click="toggleDisableForBlock(block)">
+          Disable
+        </button>
+        <button class="delete-button" @click="deleteBlock(block)">
+          Delete
+        </button>
+      </div>
       <component
           :block="block"
           :index="index"
           :is="determineBlockComponent(block)"
           @block-operation-updated="updateSingleBlock"
-          :class="blockIsDisabled(block)"
       >
       </component>
     </div>
@@ -55,8 +59,14 @@ const blockIsDisabled = (block: UIBlockOperation) => {
   }
 }
 
-function toggleDisableForBlock(block) {
+function toggleDisableForBlock(block: UIBlockOperation) {
   store.disableBlock(block)
+  const specList = convertBlockToSpecList(store.specBlockList)
+  specSubmitter.runTransformation(specList)
+}
+
+function deleteBlock(block: UIBlockOperation) {
+  store.deleteBlock(block)
   const specList = convertBlockToSpecList(store.specBlockList)
   specSubmitter.runTransformation(specList)
 }
@@ -90,18 +100,39 @@ onBeforeMount(updateBlocks)
   overflow-y: scroll;
 }
 
-.spec-block {
-  background: lightseagreen;
+.block {
+  /*background: lightseagreen;*/
   display: flex;
-  margin-top: 10px;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
 }
 
-.spec-block * {
-  flex: 1;
-}
+/*.spec-block * {*/
+/*  flex: 1;*/
+/*}*/
 
 .disabled-block {
   background: gray;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-group button {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.disable-button {
+  background: darkgray;
+}
+
+.delete-button {
+  background: red;
 }
 
 </style>

@@ -13,7 +13,7 @@
         <block-menu></block-menu>
       </div>
       <div class="center-panel">
-        <spec-renderer v-if="state.specView === 'blocks'"></spec-renderer>
+        <block-renderer v-if="state.specView === 'blocks'"></block-renderer>
         <full-spec-input v-if="state.specView === 'full'"></full-spec-input>
       </div>
       <div class="right-panel">
@@ -26,7 +26,7 @@
 
 <script lang="ts" setup>
 import BlockMenu from '@/components/BlockMenu.vue';
-import SpecRenderer from '@/components/SpecRenderer.vue';
+import BlockRenderer from '@/components/BlockRenderer.vue';
 import InputPanel from '@/components/InputPanel.vue';
 import OutputPanel from '@/components/OutputPanel.vue';
 import FullSpecInput from '@/components/FullSpecInput.vue';
