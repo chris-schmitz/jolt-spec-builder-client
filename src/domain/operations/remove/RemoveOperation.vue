@@ -48,7 +48,7 @@ function saveContent(event: InputEvent) {
 
   if (isValidJson(content)) {
     setBadFormat(false)
-    const operation = formatOperation(JSON5.parse(content))
+    const operation = formatOperation(JSON.parse(content))
     notifyOfBlockUpdate(operation);
   } else {
     setBadFormat(true)

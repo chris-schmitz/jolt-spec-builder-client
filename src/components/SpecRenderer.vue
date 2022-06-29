@@ -5,7 +5,7 @@
         :key="block.id"
     >
       <button
-          @click="store.disableBlock(block)"
+          @click="toggleDisableForBlock(block)"
       >
         Disable
       </button>
@@ -33,13 +33,6 @@ import {AllBlocksGetThisRenderData, UIBlockOperation} from "@/domain/ui-block/UI
 
 const store = useSpecStore();
 
-const blockIsDisabled = (block: UIBlockOperation) => {
-  return {
-    'disabled-block':
-    (block.renderData as AllBlocksGetThisRenderData).disabled
-  }
-}
-
 
 // TODO: how do we want to organize this?
 // ? now that we're using the composition API we have a lot more freedom re: organizing business logic
@@ -55,6 +48,19 @@ function updateBlocks() {
 }
 
 // ^ ==== Block logic ==== ^ //
+const blockIsDisabled = (block: UIBlockOperation) => {
+  return {
+    'disabled-block':
+    (block.renderData as AllBlocksGetThisRenderData).disabled
+  }
+}
+
+function toggleDisableForBlock(block) {
+  store.disableBlock(block)
+  const specList = convertBlockToSpecList(store.specBlockList)
+  specSubmitter.runTransformation(specList)
+}
+
 async function updateSingleBlock(event: BlockUpdateRequest) {
   store.updateBlock(event);
   const specList = convertBlockToSpecList(store.specBlockList)
