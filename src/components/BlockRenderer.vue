@@ -1,7 +1,7 @@
 <template>
   <div class="renderer-wrapper">
     <div
-        v-for="(block,index) in store.specBlockList"
+        v-for="(block,index) in store.uiBlockOperationList"
         :key="block.id"
         class="block"
         :class="blockIsDisabled(block)"
@@ -26,58 +26,15 @@
 </template>
 
 <script lang="ts" setup>
-import {useSpecStore} from '@/store/SpecStore';
 import {onBeforeMount} from "vue";
 import {determineBlockComponent} from "@/domain/ui-block/UiBlockUtilities";
-import {convertBlockToSpecList} from "@/utilities/TransformationUtilities";
-import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
-import {specSubmitter} from "@/main"
-import {AllBlocksGetThisRenderData, UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
+import {getBlockRenderTools} from "@/components/BlockRenderer";
+import {useSpecStore} from "@/store/SpecStore";
 
+const store = useSpecStore()
 
-const store = useSpecStore();
+const {deleteBlock, blockIsDisabled, updateBlocks, updateSingleBlock} = getBlockRenderTools()
 
-
-// TODO: how do we want to organize this?
-// ? now that we're using the composition API we have a lot more freedom re: organizing business logic
-// ? which is great, but how do we want to do it?  What's clean and readable? right now let's just roughly
-// ? group it in file while converting to composition API from option API, but after that, consider how it
-// ? should be organized and what can be extracted from the file
-
-// ^ ==== Store Operations ==== ^ //
-function updateBlocks() {
-  if (store.joltSpecList.length > 0) {
-    store.updateBlocksFromJoltSpec()
-  }
-}
-
-// ^ ==== Block logic ==== ^ //
-const blockIsDisabled = (block: UIBlockOperation) => {
-  return {
-    'disabled-block':
-    (block.renderData as AllBlocksGetThisRenderData).disabled
-  }
-}
-
-function toggleDisableForBlock(block: UIBlockOperation) {
-  store.disableBlock(block)
-  const specList = convertBlockToSpecList(store.specBlockList)
-  specSubmitter.runTransformation(specList)
-}
-
-function deleteBlock(block: UIBlockOperation) {
-  store.deleteBlock(block)
-  const specList = convertBlockToSpecList(store.specBlockList)
-  specSubmitter.runTransformation(specList)
-}
-
-async function updateSingleBlock(event: BlockUpdateRequest) {
-  store.updateBlock(event);
-  const specList = convertBlockToSpecList(store.specBlockList)
-  specSubmitter.runTransformation(specList)
-}
-
-// ^ ==== Life cycle hooks ==== ^ //
 onBeforeMount(updateBlocks)
 </script>
 

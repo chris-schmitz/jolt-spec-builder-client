@@ -8,24 +8,24 @@
 </template>
 
 <script lang="ts" setup>
-import {specSubmitter} from "@/main";
 import {useSpecStore} from '@/store/SpecStore';
 import {computed, onBeforeMount} from "vue";
+import SpecSubmitter from "@/utilities/SpecSubmitter";
 
 
 const store = useSpecStore()
+const specSubmitter = SpecSubmitter.getInstance()
+const specListAsString = computed(() => JSON.stringify(store.joltOperationList, null, 2))
 
-const specListAsString = computed(() => JSON.stringify(store.joltSpecList, null, 2))
 
-
-function handleInput(event: InputEvent) {
+async function handleInput(event: InputEvent) {
   const specList = JSON.parse((event.target as HTMLTextAreaElement).value)
   store.setJoltSpec(specList);
-  specSubmitter.runTransformation()
+  await specSubmitter.runTransformationOnJoltOperationList()
 }
 
 onBeforeMount(() => {
-  if (store.specBlockList.length > 0) {
+  if (store.uiBlockOperationList.length > 0) {
     store.updateJoltSpecFromBlocks();
   }
 })

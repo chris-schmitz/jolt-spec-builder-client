@@ -33,16 +33,20 @@ import FullSpecInput from '@/components/FullSpecInput.vue';
 
 import {useSpecStore} from '@/store/SpecStore';
 import {reactive} from 'vue'
-import {specSubmitter} from "@/main";
+import SpecSubmitter from "@/utilities/SpecSubmitter";
 
 const store = useSpecStore();
-
+const specSubmitter = SpecSubmitter.getInstance()
 const state = reactive({
   specView: 'blocks',
 })
 
 function runTransformation() {
-  specSubmitter.runTransformation()
+  if (state.specView === "blocks") {
+    specSubmitter.runTransformationOnUiBlockOperationList()
+  } else {
+    specSubmitter.runTransformationOnJoltOperationList()
+  }
 }
 </script>
 

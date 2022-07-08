@@ -8,8 +8,8 @@ import {BlockUpdateRequest} from "@/domain/ui-block/BlockUpdateRequest";
 export interface SpecStoreState {
     input: string,
     output: string,
-    joltSpecList: JoltOperation[]
-    specBlockList: UIBlockOperation[]
+    joltOperationList: JoltOperation[]
+    uiBlockOperationList: UIBlockOperation[]
 }
 
 
@@ -18,22 +18,22 @@ export const useSpecStore = defineStore('Spec Store', {
         return {
             input: "",
             output: "",
-            joltSpecList: [],
-            specBlockList: [],
+            joltOperationList: [],
+            uiBlockOperationList: [],
         }
     },
     getters: {
-        nextIndex: (state: SpecStoreState) => state.specBlockList.length,
+        nextIndex: (state: SpecStoreState) => state.uiBlockOperationList.length,
     },
     actions: {
         setJoltSpec(spec: JoltOperation[]) {
-            this.joltSpecList = spec
+            this.joltOperationList = spec
         },
         updateBlocksFromJoltSpec() {
-            this.specBlockList = convertSpecListToBlocks(this.joltSpecList)
+            this.uiBlockOperationList = convertSpecListToBlocks(this.joltOperationList)
         },
         updateJoltSpecFromBlocks() {
-            this.joltSpecList = convertBlockToSpecList(this.specBlockList)
+            this.joltOperationList = convertBlockToSpecList(this.uiBlockOperationList)
         },
         updateBlock(payload: BlockUpdateRequest) {
             // ! NOTE
@@ -42,23 +42,23 @@ export const useSpecStore = defineStore('Spec Store', {
             // * for the rendering key now, so it may be a good idea to switch this
             // * from an indexed splice to a lookup of the index based on uuid and
             // * then splicing
-            this.specBlockList.splice(payload.index, 1, payload.operation)
+            this.uiBlockOperationList.splice(payload.index, 1, payload.operation)
         },
         addBlock(payload: BlockUpdateRequest) {
             const {index, operation} = payload
             const block = joltDocToUiBlock(operation)
-            const targetIndex = index ? index : this.specBlockList.length
-            this.specBlockList.splice(targetIndex, 0, block)
+            const targetIndex = index ? index : this.uiBlockOperationList.length
+            this.uiBlockOperationList.splice(targetIndex, 0, block)
         },
         disableBlock(block: UIBlockOperation) {
-            const targetBlock = this.specBlockList.find(b => b.id === block.id);
+            const targetBlock = this.uiBlockOperationList.find(b => b.id === block.id);
             if (targetBlock) {
                 (targetBlock.renderData as AllBlocksGetThisRenderData).disabled = !(targetBlock.renderData as AllBlocksGetThisRenderData).disabled
             }
         },
         deleteBlock(block: UIBlockOperation) {
-            const index = this.specBlockList.indexOf(block)
-            this.specBlockList.splice(index, 1)
+            const index = this.uiBlockOperationList.indexOf(block)
+            this.uiBlockOperationList.splice(index, 1)
         }
     },
 })

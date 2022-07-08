@@ -11,15 +11,15 @@
 <script lang="ts" setup>
 import {defineProps} from "vue";
 import {useSpecStore} from "@/store/SpecStore";
-import {specSubmitter} from "@/main"
+import SpecSubmitter from "@/utilities/SpecSubmitter";
 
 const props = defineProps(["modelValue"])
-
+const specSubmitter = SpecSubmitter.getInstance()
 const store = useSpecStore()
 
-function handleChange(event: InputEvent) {
+async function handleChange(event: InputEvent) {
   notifyOfInputUpdate(event)
-  specSubmitter.runTransformation()
+  await specSubmitter.runTransformationOnJoltOperationList()
 }
 
 

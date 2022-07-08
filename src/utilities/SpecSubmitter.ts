@@ -1,6 +1,7 @@
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {SpecStoreState, useSpecStore} from "@/store/SpecStore";
 import {Store} from "pinia";
+import {convertBlockToSpecList} from "@/utilities/TransformationUtilities";
 
 export class TransformationRequest {
     private input: string
@@ -24,15 +25,35 @@ export class TransformationRequest {
     }
 }
 
+
 export default class SpecSubmitter {
     private store: SpecStoreState
     private joltDocArray: JoltOperation[] = []
+    private static instance?: SpecSubmitter
 
     constructor() {
         this.store = useSpecStore()
     }
 
-    public async runTransformation(specList: JoltOperation[] = []) {
+    public static getInstance() {
+        if (this.instance) {
+            return this.instance
+        }
+        this.instance = new SpecSubmitter()
+        return this.instance
+    }
+
+    public async runTransformationOnUiBlockOperationList() {
+        const specList = convertBlockToSpecList(this.store.uiBlockOperationList)
+        await this.runTransformation(specList)
+    }
+
+    public async runTransformationOnJoltOperationList() {
+        await this.runTransformation(this.store.joltOperationList)
+
+    }
+
+    private async runTransformation(specList: JoltOperation[] = []) {
         this.setJoltDocArray(specList)
 
         if (this.canSubmitTransformation()) {
@@ -70,8 +91,8 @@ export default class SpecSubmitter {
         if (this.joltDocArray.length > 0) {
             return this.joltDocArray
         }
-        if (this.store.joltSpecList.length > 0) {
-            return this.store.joltSpecList
+        if (this.store.joltOperationList.length > 0) {
+            return this.store.joltOperationList
         }
         return []
     }
