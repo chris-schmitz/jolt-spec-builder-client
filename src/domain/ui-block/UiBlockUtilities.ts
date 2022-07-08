@@ -5,6 +5,7 @@ import RemoveOperation from "@/domain/operations/remove/RemoveOperation.vue";
 import RawJolt from "@/domain/operations/raw/RawJolt.vue";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import SingleCardinalityOperation from "@/domain/operations/single-cardinality/SingleCardinalityOperation.vue"
+import {uiComponent} from "@/domain/operations/smartlabel-nutrition/SmartLabelNutritionUiBlock";
 
 
 export interface RawBlockRenderData {
@@ -21,6 +22,8 @@ export function determineBlockComponent(block: JoltOperation) {
             return RemoveOperation
         case UiBlockTypes.SINGLE_CARDINALITY:
             return SingleCardinalityOperation
+        case UiBlockTypes.SMARTLABEL_NUTRITION:
+            return uiComponent
         default:
             return RawJolt
     }

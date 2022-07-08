@@ -8,7 +8,7 @@ export enum UiBlockTypes {
     RENAME = "rename",
     UNNEST = "unnest",
     NEST = "nest",
-    PARSED_INGREDIENTS = "parsed_ingredients",
+    SMARTLABEL_NUTRITION = "smartlabel_nutrition",
     SINGLE_CARDINALITY = "single_cardinality",
-    CORE_PRODUCT = "core_product",
+    CORE_PRODUCT = "core_product"
 }

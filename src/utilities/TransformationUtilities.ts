@@ -6,7 +6,10 @@ import {toJoltOperation as toRawJoltOperation, toUiBlock as toRawUiBlock} from "
 import {toJoltOperation as toRemoveJoltOperation, toUiBlock as toRemoveUiBlock} from "@/domain/operations/remove/Transformer";
 import {toJoltOperation as toDefaultJoltOperation, toUiBlock as toDefaultUiBlock} from "@/domain/operations/default/Transformer";
 import {toJoltOperation as toSingleCardinalityJoltOperation, toUiBlock as toSingleCardinalityUiBlock} from "@/domain/operations/single-cardinality/Transformer";
-import {toJoltOperation as toParsedIngredientsJoltOperation, toUiBlock as toParsedIngredientsUiBlock} from "@/domain/operations/parsed-ingredients/Transformer"
+import {
+    toJoltOperation as toSmartLabelNutritionJoltOperation,
+    toUiBlock as toSmartLabelNutritionUiBlock
+} from "@/domain/operations/smartlabel-nutrition/Transformer"
 
 
 export function joltDocToUiBlock(specDocument: JoltOperation): UIBlockOperation {
@@ -17,8 +20,8 @@ export function joltDocToUiBlock(specDocument: JoltOperation): UIBlockOperation 
             return toDefaultUiBlock(specDocument)
         case UiBlockTypes.SINGLE_CARDINALITY:
             return toSingleCardinalityUiBlock(specDocument)
-        case UiBlockTypes.PARSED_INGREDIENTS:
-            return toParsedIngredientsUiBlock(specDocument)
+        case UiBlockTypes.SMARTLABEL_NUTRITION:
+            return toSmartLabelNutritionUiBlock(specDocument)
         case UiBlockTypes.SHIFT:
             return toShiftUiBlock(specDocument)
         default:
@@ -36,8 +39,8 @@ export function uiBlockToJoltDoc(block: UIBlockOperation) {
             return toSingleCardinalityJoltOperation(block)
         case UiBlockTypes.DEFAULT:
             return toDefaultJoltOperation(block)
-        case UiBlockTypes.PARSED_INGREDIENTS:
-            return toParsedIngredientsJoltOperation(block)
+        case UiBlockTypes.SMARTLABEL_NUTRITION:
+            return toSmartLabelNutritionJoltOperation(block)
         // case 'sort':
         // case 'cardinality':
         default:

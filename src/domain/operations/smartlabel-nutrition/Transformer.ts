@@ -1,10 +1,9 @@
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import {ShiftBlockRenderData} from "@/domain/operations/shift/ShiftUiBlock";
-import {ParsedIngredientsUiBlock} from "@/domain/operations/parsed-ingredients/ParsedIngredientsUiBlock";
+import {SmartLabelNutritionRenderData, SmartLabelNutritionUiBlock} from "@/domain/operations/smartlabel-nutrition/SmartLabelNutritionUiBlock";
 
 
-export function toUiBlock(operation: JoltOperation): ParsedIngredientsUiBlock {
-    const renderData: ShiftBlockRenderData = {
+export function toUiBlock(operation: JoltOperation): SmartLabelNutritionUiBlock {
+    const renderData: SmartLabelNutritionRenderData = {
         passAlong: false
     }
 
@@ -18,12 +17,12 @@ export function toUiBlock(operation: JoltOperation): ParsedIngredientsUiBlock {
     } else {
         renderData.passAlong = false
     }
-    return new ParsedIngredientsUiBlock(spec, renderData)
+    return new SmartLabelNutritionUiBlock(spec, renderData)
 }
 
-export function toJoltOperation(block: ParsedIngredientsUiBlock) {
+export function toJoltOperation(block: SmartLabelNutritionUiBlock) {
     const operation = new JoltOperation(block.operation, block.renderComponent, block.spec)
-    if ((block.renderData as ShiftBlockRenderData).passAlong) {
+    if ((block.renderData as SmartLabelNutritionRenderData).passAlong) {
         // @ts-ignore
         operation.spec['@'] = ''
     }

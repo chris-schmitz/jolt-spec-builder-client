@@ -21,7 +21,7 @@ import ShiftMenuItem from "@/domain/operations/shift/BlockMenuItem"
 import SingleCardinalityMenuItem from "@/domain/operations/single-cardinality/BlockMenuItem"
 import RemoveMenuItem from "@/domain/operations/remove/BlockMenuItem"
 import RawMenuItem from "@/domain/operations/raw/BlockMenuItem"
-import ParsedIngredientsMenuItem from "@/domain/operations/parsed-ingredients/BlockMenuItem"
+import SmartLabelNutritionMenuItem from "@/domain/operations/smartlabel-nutrition/BlockMenuItem"
 import DefaultMenuItem from "@/domain/operations/default/BlockMenuItem"
 import CoreProductMenuItem from "@/domain/li-operations/core-product/BlockMenuItem"
 
@@ -39,7 +39,7 @@ const blockButtons: UiBlockButton[] = [
   ShiftMenuItem,
   RemoveMenuItem,
   RawMenuItem,
-  ParsedIngredientsMenuItem,
+  SmartLabelNutritionMenuItem,
   DefaultMenuItem,
   CoreProductMenuItem
 ]
