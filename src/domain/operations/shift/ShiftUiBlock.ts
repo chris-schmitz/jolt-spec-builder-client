@@ -1,5 +1,5 @@
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockUtilities";
 
 export interface ShiftBlockRenderData {
     passAlong: boolean

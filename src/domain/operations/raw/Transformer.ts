@@ -1,4 +1,4 @@
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 

@@ -11,11 +11,11 @@
 
 <script lang="ts" setup>
 import {computed, defineEmits, defineProps, reactive, ref, watch} from "vue";
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {joltDocToUiBlock} from "@/utilities/TransformationUtilities";
 import isValidJson from "@/utilities/JsonValidator";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockUtilities";
 
 const state = reactive({
   specContentString: {},

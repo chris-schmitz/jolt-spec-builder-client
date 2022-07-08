@@ -1,4 +1,4 @@
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockUtilities";
 
 export class JoltOperation {
     operation: string

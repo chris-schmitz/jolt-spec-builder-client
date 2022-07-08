@@ -1,5 +1,5 @@
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
-import {SmartLabelNutritionRenderData, SmartLabelNutritionUiBlock} from "@/domain/operations/smartlabel-nutrition/SmartLabelNutritionUiBlock";
+import {SmartLabelNutritionRenderData, SmartLabelNutritionUiBlock} from "@/domain/li-operations/smartlabel-nutrition/SmartLabelNutritionUiBlock";
 
 
 export function toUiBlock(operation: JoltOperation): SmartLabelNutritionUiBlock {

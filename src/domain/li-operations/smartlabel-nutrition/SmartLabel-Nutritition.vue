@@ -24,7 +24,7 @@ import {computed, defineEmits, defineProps, reactive, ref, watch} from "vue";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import isValidJson from "@/utilities/JsonValidator";
-import {SmartLabelNutritionRenderData, SmartLabelNutritionUiBlock} from "@/domain/operations/smartlabel-nutrition/SmartLabelNutritionUiBlock";
+import {SmartLabelNutritionRenderData, SmartLabelNutritionUiBlock} from "@/domain/li-operations/smartlabel-nutrition/SmartLabelNutritionUiBlock";
 
 const state = reactive({
   specContentString: {},

@@ -42,6 +42,7 @@ export function getBlockRenderTools() {
     }
 
     async function updateSingleBlock(event: BlockUpdateRequest) {
+        console.log(event)
         store.updateBlock(event);
         await specSubmitter.runTransformationOnUiBlockOperationList()
     }

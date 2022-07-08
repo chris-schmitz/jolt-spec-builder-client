@@ -13,7 +13,7 @@
 <script lang="ts" setup>
 import {defineEmits, defineProps, reactive, watch} from "vue";
 import {BlockRenderData, UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockUtilities";
 
 const state = reactive({
   renderData: {},

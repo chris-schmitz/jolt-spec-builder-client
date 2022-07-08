@@ -1,10 +1,47 @@
 # spec-builder-client
 
+## Preamble
+
+This codebase is a prototype upgraded from a proof of concept and therefore is full of duplication, lack of abstraction, and hacky shit. I started this project
+thinking it would just be a thin idea and didn't concern myself with structure or unit tests and by the time it ballooned into something bigger I was
+facepalming for not putting in that up-front thinking.
+
+As I went I tried to make it easy to add in tests and refactor, but yeah, in some ways it's a hot mess. That said, it's a functional hot mess that can either be
+cleaned up or at least can inform a proper rebuild sooooo there's that.
+
 ## Overview
 
 The jolt-builder-client (or jolt spec builder or whatever I land on for a name :|) is a tool that facilitates the building of jolt specs by abstracting the jolt
-language behind clearly named UI elements and focusing in on the parts of jolt spec objects that we really need to
-edit. <come back and clarify this explanation>
+language behind clearly named UI elements and focusing in on the parts of jolt spec objects that we really need to edit.
+
+The thought behind it is that part of what makes building jolt transformations difficult is that you need to KNOW jolt to use it and jolt is a really cumbersome
+and non-obvious concept to try to wrap your brain around. Also, when creating a transformation "knowing jolt" isn't the problem to solve; transforming the
+product is the problem to solve and knowing jolt is just implementation necessity. With this mindset, what if we could remove the need to know jolt from using
+it. If we abstract the logic for formatting a valid jolt document array behind UI tooling that's focused on understandability then we can let the end user worry
+about transforming the product and let the bits and boops do the pedantic work of formatting the transformations with the correct
+only-the-computer-needs-to-know-about-these artifacts to make a valid jolt.
+
+### Focusing on the actual problem to solve
+
+Sometimes this is just a light abstraction to allow the user to focus on the part of the jolt that's the actual concern like a shift operation:
+
+![](readme_attachments/shift-ui-block.png)
+_the only thing we really care about in a shift operation is the spec property itself_
+
+![](readme_attachments/shift-jolt.png)
+_as opposed to the full shift jolt which contains a lot of extra artifacts_
+
+Sometimes it's a heavy abstraction to simplify a complex task for a user like rekey-ing a property:
+
+![](readme_attachments/rekey-ui-block.png)
+_if the concept is "rename one of these properties", then we can heavily abstract the task_
+
+![](readme_attachments/rekey-jolt.png)
+_and in the background the client can handle any of the actual formatting needs to make it a valid jolt operation_
+
+### Seeing live results
+
+<fill in with concept>
 
 ## Terms
 
@@ -64,16 +101,14 @@ processor. This isn't to say that custom transforms couldn't be added to the ser
 - [x] translate an existing jolt document into a data structure that can be represented in customizable UI blocks
 - [x] translate the customizable UI blocks back into valid jolt syntax
 - [x] submit data for transformation on blur of UI components
-- [ ] Delete blocks
-- [ ] Reorder blocks
-- [ ] Disable/enable blocks
-- [ ] validate jolt built from UI blocks
+- [x] Delete blocks
+- [x] Disable/enable blocks
+- [~] validate jolt built from UI blocks
 - [~] create UI blocks that represent each of the stock jolt operations with tools that make understanding and building those blocks easier
 - [ ] allow for reordering of blocks
-- [ ] allow for disabling of blocks
 - [x] given an example input structure, quickly run transformations with given UI blocks and immediately show output object
 - [ ] add tooling and UI hints for jolt specific symbols to give the user a hint of what the symbol would be referring to in the example input
-- [ ] create domain specific transformations as stock blocks
+- [x] create domain specific transformations as stock blocks
 
 ### Passed MVP
 
@@ -118,3 +153,46 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Creating a new Operation
+
+## Create a new `domain/operations` or `domain/li-operations` folder
+
+As an attempt at combatting the business logic spread and possibly moving to a more plugin-style structure I'm storing all of the logic for operations in
+a `domain` folder (for a lack of better name).
+
+The intention of the `operations` folder is to house generic operations; i.e. the logic in this folder should apply to any kind of jolt doc.
+
+The `shift` operation is a good example, shift is just a generic "rekey the values at the end of this json structure to something else". This also included more
+specialized but still general operations like the `rekey-property` operation which does the same thing as a shift operation but can only operate on ONE property
+within the input data and is heavily abstracted in the UI.
+
+The intention of the `li-operations` folder is to hold operations that are specific to Label Insight. Operations in this folder should be seen as specific
+pre-defined transformations of our product model that are needed frequently.
+
+E.g. the `smartlabel-nutrition` operation is very specific to LI usage and would only be used in certain circumstances.
+
+### Required files
+
+The domain operations folders consist of:
+
+- BlockMenuItem.ts: <add desc>
+- DefaultJoltDoc: <add desc>
+- Vue component file: <add desc>
+- UiBlock.ts: <add desc>
+- Transformer.ts: <add desc>
+
+## Add cases to TransformationUtilities
+
+TransformationUtilities routes requests to convert ui blocks to jolt operations and vice versa. Theoretically/hopefully we could make this more dynamic to allow
+us to pull in the needed logic automatically, but for now you need to add case statements and function calls to the conversion methods.
+
+## Add enum and case to UiBlockUtilities
+
+UiBlockUtilities contains an enum that's used across the codebase to refer to UI Blocks that should be used to render the operations along with a function used
+to determine which vue component to use based on the enum value. Any new component needs to be referenced here.
+
+## Add new RenderData to UiBlockOperations BlockRenderData type
+
+The RenderData interfaces define the shape of data ancillary data used to render the UI Blocks. Because we're typescripting we need to add any new RenderData
+interfaces to a generic BlockRenderData type.

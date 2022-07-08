@@ -11,7 +11,7 @@
 
 <script lang="ts" setup>
 import {computed, defineEmits, defineProps, reactive, ref, watch} from "vue";
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockUtilities";
 import {UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {joltDocToUiBlock} from "@/utilities/TransformationUtilities";

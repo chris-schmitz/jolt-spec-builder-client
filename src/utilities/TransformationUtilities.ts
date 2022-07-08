@@ -1,5 +1,5 @@
 import {AllBlocksGetThisRenderData, UIBlockOperation} from "@/domain/ui-block/UIBlockOperation";
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
+import {UiBlockTypes} from "@/domain/ui-block/UiBlockUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {toJoltOperation as toShiftJoltOperation, toUiBlock as toShiftUiBlock} from "@/domain/operations/shift/Transformer";
 import {toJoltOperation as toRawJoltOperation, toUiBlock as toRawUiBlock} from "@/domain/operations/raw/Transformer";
@@ -9,7 +9,8 @@ import {toJoltOperation as toSingleCardinalityJoltOperation, toUiBlock as toSing
 import {
     toJoltOperation as toSmartLabelNutritionJoltOperation,
     toUiBlock as toSmartLabelNutritionUiBlock
-} from "@/domain/operations/smartlabel-nutrition/Transformer"
+} from "@/domain/li-operations/smartlabel-nutrition/Transformer"
+import {toJoltOperation as toRekeyJoltOperation, toUiBlock as toRekeyPropertyUiBlock} from "@/domain/operations/rekey-property/Transformer"
 
 
 export function joltDocToUiBlock(specDocument: JoltOperation): UIBlockOperation {
@@ -24,6 +25,8 @@ export function joltDocToUiBlock(specDocument: JoltOperation): UIBlockOperation 
             return toSmartLabelNutritionUiBlock(specDocument)
         case UiBlockTypes.SHIFT:
             return toShiftUiBlock(specDocument)
+        case UiBlockTypes.REKEY_PROPERTY:
+            return toRekeyPropertyUiBlock(specDocument)
         default:
             return toRawUiBlock(specDocument)
     }
@@ -41,6 +44,8 @@ export function uiBlockToJoltDoc(block: UIBlockOperation) {
             return toDefaultJoltOperation(block)
         case UiBlockTypes.SMARTLABEL_NUTRITION:
             return toSmartLabelNutritionJoltOperation(block)
+        case UiBlockTypes.REKEY_PROPERTY:
+            return toRekeyJoltOperation(block)
         // case 'sort':
         // case 'cardinality':
         default:

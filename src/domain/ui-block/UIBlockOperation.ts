@@ -1,9 +1,9 @@
-import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
-import {RawBlockRenderData} from "@/domain/ui-block/UiBlockUtilities";
+import {RawBlockRenderData, UiBlockTypes} from "@/domain/ui-block/UiBlockUtilities";
 import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {v4 as uuidv4} from 'uuid';
 import {SingleCardinalityRenderData} from "@/domain/operations/single-cardinality/SingleCardinalityUiBlock";
 import {ShiftBlockRenderData} from "@/domain/operations/shift/ShiftUiBlock";
+import {RekeyPropertyRenderData} from "@/domain/operations/rekey-property/RekeyPropertyUiBlock";
 
 export interface AllBlocksGetThisRenderData {
     disabled: boolean
@@ -14,6 +14,7 @@ export type BlockRenderData =
     | ShiftBlockRenderData
     | RawBlockRenderData
     | AllBlocksGetThisRenderData
+    | RekeyPropertyRenderData
     | Record<string, any>
 
 export class UIBlockOperation implements JoltOperation {
