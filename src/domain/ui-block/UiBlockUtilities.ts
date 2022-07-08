@@ -1,6 +1,3 @@
-// TODO: consider moving
-// ? does it make sense to leave this logic in here, or would this be better
-// ? placed in a utility file?
 import {UiBlockTypes} from "@/domain/ui-block/UiBlockTypes";
 import ShiftOperation from "@/domain/operations/shift/ShiftOperation.vue";
 import DefaultOperation from "@/domain/operations/default/DefaultOperation.vue";
@@ -14,11 +11,6 @@ export interface RawBlockRenderData {
     passAlong: boolean
 }
 
-// TODO: consider refactor
-// * think about the object map idea that josh brought up. it may be a good way to remove the switch here and
-// * determine the component to return dynamically
-// TODO: consider move
-// * really this is kind of the domain of the SpecRenderer component, consider moving it back in there
 export function determineBlockComponent(block: JoltOperation) {
     switch (block.renderComponent) {
         case UiBlockTypes.SHIFT:

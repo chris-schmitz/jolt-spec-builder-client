@@ -2,8 +2,6 @@ import {JoltOperation} from "@/domain/jolt-spec/JoltOperation";
 import {ShiftBlockRenderData, ShiftUiBlock} from "@/domain/operations/shift/ShiftUiBlock";
 
 
-// TODO: consider location
-// ? does this really belong in with the stores, or is this more of a utility class? does it belong in the domain directory??
 export function toUiBlock(operation: JoltOperation): ShiftUiBlock {
     const renderData: ShiftBlockRenderData = {
         passAlong: false

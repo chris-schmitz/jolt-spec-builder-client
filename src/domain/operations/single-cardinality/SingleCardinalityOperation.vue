@@ -57,7 +57,6 @@ let badFormat = ref(false)
 const props = defineProps<{ block: UIBlockOperation, index: number }>()
 
 
-// TODO: come back and make an interface per UI block type and then pass it through in all of the watchers
 watch(() => props.block as SingleCardinalityUiBlock, (block: SingleCardinalityUiBlock) => {
       // * transform block json to dot notation path
       state.pathToKey = (block.renderData as SingleCardinalityRenderData).targetKeyPath
